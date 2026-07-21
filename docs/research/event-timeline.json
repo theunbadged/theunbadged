@@ -1,6 +1,6 @@
 {
-  "generated": "2026-07-21T19:54:12+05:30",
-  "note": "Sourced from published reporting 18-21 July 2026. Live-blog timestamps are the publishing outlet's report, not independently verified clock readings. Updated as events unfold.",
+  "generated": "2026-07-21T19:49:22+05:30",
+  "_note": "IMPORTANT DATE FINDING: The 'Chalo Sansad' / 'Sansad Chalo' march and the police lathi-charge are dated Monday, 20 July 2026 (opening day of Parliament's Monsoon Session) by every outlet that gives a date, including Outlook, Deccan Chronicle (PTI), Al Jazeera, The Wire (IFF), SFLC.in, ThePrint and PTC News live blogs, and IANS wire copy. 21 July 2026 (today) is the aftermath: protesters reclaiming Jantar Mantar, detention/FIR confirmations, court orders, political reactions, a Congress dharna at the PM's residence, and nationwide solidarity protests. This timeline therefore spans 18-21 July. All clock times are IST (+05:30); live-blog timestamps are attributed to the publishing outlet and should be treated as that outlet's report, not independently verified clock readings.",
   "events": [
     {
       "id": "evt-001",
@@ -11,18 +11,10 @@
       "description": "Activist Sonam Wangchuk, who had been on a hunger strike at Jantar Mantar in support of the protest over alleged NEET-UG paper leaks, was forcibly removed from the site by police on Saturday, 18 July, and taken to hospital, according to Daily Pioneer and Al Jazeera. Al Jazeera reported the removal came after a roughly 20-day hunger strike.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "Daily Pioneer",
-          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
-        }
+        {"outlet": "Daily Pioneer", "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"},
+        {"outlet": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"}
       ],
-      "tags": [
-        "detention"
-      ]
+      "tags": ["detention"]
     },
     {
       "id": "evt-002",
@@ -33,26 +25,12 @@
       "description": "DCP Sachin Sharma said no permission had been sought or granted for the CJP's march from Jantar Mantar to Parliament, per Outlook. Prohibitory orders under Section 163 of the BNSS were imposed in central Delhi, over 5,000 police personnel were deployed per a PTI report carried by Deccan Chronicle, and metro stations including Rajiv Chowk, Janpath and Patel Chowk were closed, per SFLC.in and PTC News.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-        },
-        {
-          "outlet": "Deccan Chronicle (PTI)",
-          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-        },
-        {
-          "outlet": "SFLC.in",
-          "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
-        },
-        {
-          "outlet": "PTC News",
-          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-        }
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"},
+        {"outlet": "Deccan Chronicle (PTI)", "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"},
+        {"outlet": "SFLC.in", "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"},
+        {"outlet": "PTC News", "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-003",
@@ -63,14 +41,9 @@
       "description": "ThePrint's live blog reported at 7:00 am that Delhi Police had beefed up their presence with over 300 personnel, tear-gas vehicles and barricades around Jantar Mantar ahead of the unauthorised march. Thousands of protesters, largely students and CJP supporters, had assembled at the site, where a sit-in over alleged NEET-UG irregularities had been running for weeks.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-004",
@@ -81,14 +54,9 @@
       "description": "ThePrint's live blog reported at 7:30 am that police used lathis on crowds near the Park Hotel to disperse demonstrators toward Palika Bazaar, before the march had formally begun. This is the earliest reported use of force that day; it appears only in ThePrint's account.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"}
       ],
-      "tags": [
-        "lathi-charge"
-      ]
+      "tags": ["lathi-charge"]
     },
     {
       "id": "evt-005",
@@ -99,18 +67,10 @@
       "description": "Outlook reported the procession was scheduled to begin at 9 am but 'never formally started' amid barricading and prohibitory orders. Entry to Jantar Mantar had been restricted to the Tolstoy Marg side, per ThePrint's live blog (8:14 am entry).",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-        },
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        }
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"},
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-006",
@@ -121,31 +81,13 @@
       "description": "As protesters began moving from Jantar Mantar toward Parliament, police lathi-charged the crowd (ThePrint live blog, 10:04 am entry) and fired tear gas near the Parliament premises (ThePrint, 10:50 am), with tear-gas use also reported near Shastri Bhawan, Raisina Road and the Sansad Marg-Tolstoy Marg stretch by Daily Pioneer and Outlook. Accounts of the trigger conflict: police sources told PTI the action followed stone-pelting and barricade breaches by protesters, while protesters quoted by Al Jazeera and Daily Pioneer said the march was peaceful when the lathi-charge began suddenly.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        },
-        {
-          "outlet": "Deccan Chronicle (PTI)",
-          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-        },
-        {
-          "outlet": "Al Jazeera",
-          "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
-        },
-        {
-          "outlet": "Daily Pioneer",
-          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-        },
-        {
-          "outlet": "The South First",
-          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"},
+        {"outlet": "Deccan Chronicle (PTI)", "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"},
+        {"outlet": "Al Jazeera", "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"},
+        {"outlet": "Daily Pioneer", "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"},
+        {"outlet": "The South First", "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"}
       ],
-      "tags": [
-        "march",
-        "lathi-charge"
-      ]
+      "tags": ["march", "lathi-charge"]
     },
     {
       "id": "evt-007",
@@ -156,15 +98,9 @@
       "description": "Newslaundry's photo report stated that several police personnel were without name badges even before the protest began, and that some personnel in plain clothes wielded lathis against demonstrators, making identification difficult. This specific claim was found in one independent outlet's reporting and is not confirmed by police.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "Newslaundry",
-          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-        }
+        {"outlet": "Newslaundry", "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"}
       ],
-      "tags": [
-        "unbadged",
-        "lathi-charge"
-      ]
+      "tags": ["unbadged", "lathi-charge"]
     },
     {
       "id": "evt-008",
@@ -175,19 +111,10 @@
       "description": "PTC News' live blog reported at 11:29 am that protesters breached barricades near the Parliament Street police station, with several injuries reported. Police sources quoted by PTI said barricade-breach attempts occurred at Parliament Street, Patel Chowk, Constitution Club, Rail Bhavan and Shastri Bhawan through the day.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "PTC News (live blog)",
-          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        }
+        {"outlet": "PTC News (live blog)", "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"}
       ],
-      "tags": [
-        "march",
-        "injuries"
-      ]
+      "tags": ["march", "injuries"]
     },
     {
       "id": "evt-009",
@@ -198,30 +125,13 @@
       "description": "Mobile internet services were suspended in parts of central Delhi, including around Jantar Mantar and Sansad Marg; The South First reported the shutdown covered roughly a 5-km radius from Jantar Mantar. The Internet Freedom Foundation said that, as of its statement (published 6:14 pm on 20 July via The Wire), no copy of any suspension order had been published by the MHA, DoT, Delhi government or police; SFLC.in and The Logical Indian also reported the shutdown.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "The Wire (IFF statement)",
-          "url": "https://m.thewire.in/article/rights/iff-slams-delhi-internet-shutdown-during-chalo-sansad-protest-demands-immediate-restoration"
-        },
-        {
-          "outlet": "SFLC.in",
-          "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
-        },
-        {
-          "outlet": "The Logical Indian",
-          "url": "https://thelogicalindian.com/internet-suspended-delhi-cjp-protest-sansad/"
-        },
-        {
-          "outlet": "The Tribune",
-          "url": "https://www.tribuneindia.com/news/delhi/mobile-internet-disruption-leaves-protesters-commuters-stranded/"
-        },
-        {
-          "outlet": "The South First",
-          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-        }
+        {"outlet": "The Wire (IFF statement)", "url": "https://m.thewire.in/article/rights/iff-slams-delhi-internet-shutdown-during-chalo-sansad-protest-demands-immediate-restoration"},
+        {"outlet": "SFLC.in", "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"},
+        {"outlet": "The Logical Indian", "url": "https://thelogicalindian.com/internet-suspended-delhi-cjp-protest-sansad/"},
+        {"outlet": "The Tribune", "url": "https://www.tribuneindia.com/news/delhi/mobile-internet-disruption-leaves-protesters-commuters-stranded/"},
+        {"outlet": "The South First", "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"}
       ],
-      "tags": [
-        "shutdown"
-      ]
+      "tags": ["shutdown"]
     },
     {
       "id": "evt-010",
@@ -232,18 +142,10 @@
       "description": "On the Monsoon Session's opening day, the Lok Sabha was adjourned around 11:30 am and the Rajya Sabha around noon amid Opposition uproar over the NEET paper leaks, per PTC News. Leader of Opposition Mallikarjun Kharge accused the government of using force on demonstrators (IANS wire, 1:20 pm). At that stage Delhi Police denied the reports, saying 'no such incident has taken place and the protest is being handled professionally' — a denial contradicted by the injury figures police themselves released later the same day.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "IANS via Prokerala",
-          "url": "https://www.prokerala.com/news/articles/a1790111.html"
-        },
-        {
-          "outlet": "PTC News (live blog)",
-          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-        }
+        {"outlet": "IANS via Prokerala", "url": "https://www.prokerala.com/news/articles/a1790111.html"},
+        {"outlet": "PTC News (live blog)", "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"}
       ],
-      "tags": [
-        "lathi-charge"
-      ]
+      "tags": ["lathi-charge"]
     },
     {
       "id": "evt-011",
@@ -254,27 +156,12 @@
       "description": "Delhi Police said around 60 protesters and more than 118 police personnel, including senior officers, sustained injuries (ThePrint live blog, 12:10 pm entry; also reported by Newslaundry and Daily Pioneer). A later Deccan Chronicle report citing police put total police-side injuries above 160, including over 50 officers, some of IPS/DANIPS rank; protester-side counts vary by source (see evt-014 for hospital figures).",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        },
-        {
-          "outlet": "Newslaundry",
-          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        },
-        {
-          "outlet": "Daily Pioneer",
-          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"},
+        {"outlet": "Newslaundry", "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"},
+        {"outlet": "Daily Pioneer", "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"}
       ],
-      "tags": [
-        "injuries",
-        "lathi-charge"
-      ]
+      "tags": ["injuries", "lathi-charge"]
     },
     {
       "id": "evt-012",
@@ -285,23 +172,11 @@
       "description": "CJP founder Abhijeet Dipke ended his hunger strike to lead the march to Parliament (PTC News live blog, 12:06 pm; ThePrint placed it at 12:58 pm). PTC News reported Dipke was detained at Jantar Mantar at 12:51 pm, and The South First reported Dipke, Samajwadi Party MP Dimple Yadav and others were detained and released later in the day; ThePrint reported (2:56 pm) that the CJP first claimed Dipke was picked up by police and later clarified he was not detained or arrested. Accounts conflict.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "PTC News (live blog)",
-          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-        },
-        {
-          "outlet": "The South First",
-          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-        },
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        }
+        {"outlet": "PTC News (live blog)", "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"},
+        {"outlet": "The South First", "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"},
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"}
       ],
-      "tags": [
-        "detention",
-        "march"
-      ]
+      "tags": ["detention", "march"]
     },
     {
       "id": "evt-013",
@@ -312,23 +187,11 @@
       "description": "ThePrint's live blog reported heavy clashes at Patel Chowk metro around 3:08 pm, with protesters hurling bottles at security forces and extensive tear-gas use. Daily Pioneer reported that by 4 pm stone-pelting had begun and police vehicles were smashed; police cited by Deccan Chronicle said 15-20 government vehicles were vandalised, with further damage at Connaught Place. Protest organisers disputed the police characterisation, alleging excessive force including, per CJP claims reported by Outlook, the use of pellet guns — a claim not confirmed by other outlets.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        },
-        {
-          "outlet": "Daily Pioneer",
-          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"},
+        {"outlet": "Daily Pioneer", "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"}
       ],
-      "tags": [
-        "march",
-        "injuries"
-      ]
+      "tags": ["march", "injuries"]
     },
     {
       "id": "evt-014",
@@ -339,18 +202,10 @@
       "description": "Around 100 injured people, including 10 police personnel, had been brought to Ram Manohar Lohia Hospital's emergency by 5:30 pm, with four protesters admitted to ICU and overflow cases sent to Lady Hardinge Hospital, per Newslaundry citing The Indian Express and hospital sources. Deccan Chronicle, citing police/hospital figures, reported RML recorded 65 medico-legal cases by 7 pm.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "Newslaundry (citing The Indian Express)",
-          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        }
+        {"outlet": "Newslaundry (citing The Indian Express)", "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"}
       ],
-      "tags": [
-        "injuries"
-      ]
+      "tags": ["injuries"]
     },
     {
       "id": "evt-015",
@@ -361,22 +216,11 @@
       "description": "A CJP delegation including spokespersons Saurav Das and Ashutosh Ranka met Union Health Minister J.P. Nadda and submitted a memorandum demanding release of detained activists, Education Minister Dharmendra Pradhan's removal, and compensation (Outlook reported a Rs 1 crore compensation demand). PTC News' live blog logged the meeting at 3:16 pm, while Nadda later said dialogue began at 11:50 am and a written petition was submitted around 4 pm; Das said Nadda gave assurances but 'no immediate commitment'.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "PTC News (live blog)",
-          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-        },
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-        },
-        {
-          "outlet": "The News Minute",
-          "url": "https://www.thenewsminute.com/news/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp"
-        }
+        {"outlet": "PTC News (live blog)", "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"},
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"},
+        {"outlet": "The News Minute", "url": "https://www.thenewsminute.com/news/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-016",
@@ -387,18 +231,10 @@
       "description": "By evening, Delhi Police cleared the Jantar Mantar protest site, removing barricades, the stage and tents (ThePrint live blog, 6:43 pm entry; Newslaundry also reported the site was cleared by evening). Protesters regrouped overnight and resumed their demonstration, per Newslaundry.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        },
-        {
-          "outlet": "Newslaundry",
-          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"},
+        {"outlet": "Newslaundry", "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-017",
@@ -409,26 +245,12 @@
       "description": "ThePrint's live blog reported shortly after midnight that approximately 70 protesters had been detained and an FIR registered on charges including rioting and assault; a PTI report carried by Deccan Chronicle put detentions at over 100, moved to police stations including Parliament Street and Mandir Marg areas, to be released after verification. Police stated those detained 'were not students', while eyewitness accounts cited in aggregate coverage said students and minors were among those put in police buses; the CJP's Ashutosh Ranka demanded police disclose how many remained in custody.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        },
-        {
-          "outlet": "Deccan Chronicle (PTI)",
-          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        },
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-        }
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"},
+        {"outlet": "Deccan Chronicle (PTI)", "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"},
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"}
       ],
-      "tags": [
-        "detention"
-      ]
+      "tags": ["detention"]
     },
     {
       "id": "evt-018",
@@ -439,22 +261,11 @@
       "description": "Demonstrators returned to Jantar Mantar on Tuesday morning as the protest entered its 24th day, reclaiming the site after police had removed the stage and tents the previous evening, per Outlook and Newslaundry. Deccan Herald's live coverage reported Delhi tightening security across central Delhi after the previous day's unrest.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-        },
-        {
-          "outlet": "Newslaundry",
-          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-        },
-        {
-          "outlet": "Deccan Herald (live blog)",
-          "url": "https://www.deccanherald.com/india/cjp-chalo-sansad-parliament-march-live-updates-cockroach-janta-party-founder-abhijeet-dipke-sonam-wangchuk-hunger-strike-protest-delhi-jantar-mantar-dharmendra-pradhan-abhijeet-dipke-opposition-mps-to-join-delhi-protest-police-brutality-jantar-mantar-sonam-wangchuk-delhi-hc-hearing-demands-nadda-abhijeet-dipke-news-july-21-cjp-protest-jantar-mantar-cockroach-janta-party-jp-nadda-cjp-meet-abhijeet-dipke-jantar-mantar-neet-exam-pradhan-cjp-chalo-sansad-parliament-march-live-updates-4081192"
-        }
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"},
+        {"outlet": "Newslaundry", "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"},
+        {"outlet": "Deccan Herald (live blog)", "url": "https://www.deccanherald.com/india/cjp-chalo-sansad-parliament-march-live-updates-cockroach-janta-party-founder-abhijeet-dipke-sonam-wangchuk-hunger-strike-protest-delhi-jantar-mantar-dharmendra-pradhan-abhijeet-dipke-opposition-mps-to-join-delhi-protest-police-brutality-jantar-mantar-sonam-wangchuk-delhi-hc-hearing-demands-nadda-abhijeet-dipke-news-july-21-cjp-protest-jantar-mantar-cockroach-janta-party-jp-nadda-cjp-meet-abhijeet-dipke-jantar-mantar-neet-exam-pradhan-cjp-chalo-sansad-parliament-march-live-updates-4081192"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-019",
@@ -465,14 +276,8 @@
       "description": "The Delhi High Court on 21 July ordered that Sonam Wangchuk, hospitalised after his hunger strike and removal from Jantar Mantar, be transferred to Medanta Hospital, per aggregate coverage of the protests. His wife Gitanjali Angmo had challenged an earlier order denying a shift to a private hospital, per ThePrint's live coverage; Wangchuk vowed to continue his hunger strike, citing 'brutality' against peaceful protesters.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating BBC/The Hindu/HT citations)",
-          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-        },
-        {
-          "outlet": "ThePrint (live blog)",
-          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-        }
+        {"outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating BBC/The Hindu/HT citations)", "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"},
+        {"outlet": "ThePrint (live blog)", "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"}
       ],
       "tags": []
     },
@@ -485,22 +290,10 @@
       "description": "CJP founder Abhijeet Dipke apologised to supporters, 'especially the girls who were brutally beaten by male police officers', and vowed to continue the protest until Education Minister Dharmendra Pradhan resigns (Outlook; Deccan Chronicle). Leader of Opposition Rahul Gandhi called the Delhi Police's handling of the protest 'disgusting' (Daily Pioneer coverage), while Parliamentary Affairs Minister Kiren Rijiju said the PM 'made it clear that the government stands with students and that paper leaks are a matter of national concern' (Outlook); The Federal reported Pradhan refused to resign.",
       "status": "corroborated",
       "sources": [
-        {
-          "outlet": "Outlook India",
-          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-        },
-        {
-          "outlet": "Deccan Chronicle",
-          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-        },
-        {
-          "outlet": "Daily Pioneer",
-          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-        },
-        {
-          "outlet": "The Federal (live blog)",
-          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-        }
+        {"outlet": "Outlook India", "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"},
+        {"outlet": "Deccan Chronicle", "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"},
+        {"outlet": "Daily Pioneer", "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"},
+        {"outlet": "The Federal (live blog)", "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"}
       ],
       "tags": []
     },
@@ -513,14 +306,9 @@
       "description": "The Federal's live blog reported that Sharad Pawar, Arvind Kejriwal and Left MPs visited Jantar Mantar in solidarity with the protesters (6:05 pm entry), and that the Congress demanded Home Minister Amit Shah make a statement in Parliament on the police action (5:52 pm entry).",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "The Federal (live blog)",
-          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-        }
+        {"outlet": "The Federal (live blog)", "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     },
     {
       "id": "evt-022",
@@ -531,15 +319,9 @@
       "description": "The Federal's live blog reported police detained Congress leaders holding a dharna near the PM's residence after Rahul Gandhi rejected a government proposal, conveyed by Minister Jitendra Singh, to relocate the protest; Priyanka Gandhi was 'pushed inside a bus' during the clearance operation (6:45 pm entry). At 7:22 pm, The Federal reported Rahul Gandhi sustained injuries in a scuffle with police while being detained. Found in one outlet's live coverage at time of writing.",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "The Federal (live blog)",
-          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-        }
+        {"outlet": "The Federal (live blog)", "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"}
       ],
-      "tags": [
-        "detention",
-        "injuries"
-      ]
+      "tags": ["detention", "injuries"]
     },
     {
       "id": "evt-023",
@@ -550,14 +332,9 @@
       "description": "The Federal's live blog reported Mumbai protests continuing for a second day, with an MNS demonstration at Shivaji Park and a Shiv Sena (UBT) rally in Dongri (7:39 pm entry), and CJP members in Hyderabad marching from Somajiguda toward Lok Bhavan (7:20 pm entry).",
       "status": "claimed",
       "sources": [
-        {
-          "outlet": "The Federal (live blog)",
-          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-        }
+        {"outlet": "The Federal (live blog)", "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"}
       ],
-      "tags": [
-        "march"
-      ]
+      "tags": ["march"]
     }
   ]
 }

@@ -9,15 +9,20 @@
   }
 
   function whenLabel(ev) {
+    // Force IST display regardless of viewer's timezone.
+    const day = ev.date
+      ? new Intl.DateTimeFormat("en-IN", {
+          weekday: "short", day: "numeric", month: "short",
+          timeZone: "Asia/Kolkata"
+        }).format(new Date(ev.date + "T12:00:00+05:30"))
+      : "";
     if (ev.time) {
-      const d = new Date(ev.time);
-      // Force IST display regardless of viewer's timezone.
       const t = new Intl.DateTimeFormat("en-IN", {
         hour: "2-digit", minute: "2-digit", hour12: true, timeZone: "Asia/Kolkata"
-      }).format(d);
-      return `${t} IST` + (ev.timeApprox ? " (approx.)" : "");
+      }).format(new Date(ev.time));
+      return `${day} · ${t} IST (as timestamped by the cited outlet)`;
     }
-    return ev.timeLabel || "Time unconfirmed";
+    return `${day} · ${ev.timeLabel || "time unconfirmed"}`;
   }
 
   try {

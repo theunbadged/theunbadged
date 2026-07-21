@@ -1,7 +1,7 @@
 # The Unbadged
 
-A citizen evidence archive documenting the 21 July 2026 Delhi Police crackdown
-on student protesters — built to preserve court-grade evidence where it cannot
+A citizen evidence archive documenting the 20 July 2026 Delhi Police crackdown
+on the &ldquo;Chalo Sansad&rdquo; protest — built to preserve court-grade evidence where it cannot
 be taken down, make the pattern publicly visible without endangering anyone,
 and route accountability through the legal process.
 

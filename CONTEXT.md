@@ -7,14 +7,17 @@
 
 ## Why this exists
 
-On 21 July 2026, during the CJP "Sansad Chalo" march from Jantar Mantar toward
-Parliament — a protest over NEET-UG paper leaks and demands for the Education
-Minister's resignation — Delhi Police lathi-charged protesters. Many in the crowd
-were 16–17 year old exam aspirants. Reports: 60+ protesters injured, 118+ police
-personnel injured, two dozen+ students detained, internet shutdowns in parts of
-Delhi. Contested triggers, counter-narratives, and — critically — **many officers
-were deployed without visible badges/identifiers**, a deliberate accountability-
-evasion tactic.
+On 20 July 2026 (date corrected from 21 July against published reporting —
+see docs/research/event-sources.md), during the CJP "Chalo Sansad" march from
+Jantar Mantar toward Parliament — a protest over NEET-UG paper leaks and demands
+for the Education Minister's resignation — Delhi Police lathi-charged protesters.
+Reports: ~60 protesters and 118+ police personnel injured (police-released
+figures), 70–100+ detained, mobile internet shut down in central Delhi with no
+published suspension order. The crowd was largely students; claims that minors
+were among those detained are eyewitness accounts, not yet corroborated.
+Contested triggers, counter-narratives, and — critically — **photo reporting
+shows personnel deployed without name badges** (single-outlet so far; logged as
+claimed), a deliberate accountability-evasion tactic.
 
 The name **The Unbadged** turns that tactic into the brand: they removed the
 badges; we keep the record.
