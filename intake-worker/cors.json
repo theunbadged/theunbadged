@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "allowed": {
+        "origins": ["https://theunbadged.com", "https://www.theunbadged.com"],
+        "methods": ["PUT"],
+        "headers": ["content-type"]
+      },
+      "maxAgeSeconds": 3600
+    }
+  ]
+}

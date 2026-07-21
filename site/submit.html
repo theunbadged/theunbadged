@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Submit evidence — The Unbadged</title>
+<meta name="description" content="Anonymously submit photos or video of the 21 July 2026 Delhi Police crackdown. No account, no name, no IP logging.">
+<meta name="robots" content="noarchive">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="wrap">
+    <span class="brand">THE <span class="un">UN</span>BADGED</span>
+    <nav class="site">
+      <a href="/">About</a>
+      <a href="/timeline.html">Timeline</a>
+      <a href="/submit.html" aria-current="page">Submit evidence</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h1>Submit evidence</h1>
+
+    <div class="card">
+      <p><strong>You stay anonymous.</strong> No account. No name. No email.
+      Our systems are built to never log IP addresses, and we publish
+      <a href="https://github.com/shrey16/theunbadged" rel="noopener">the code</a>
+      so you can verify that.</p>
+      <p class="small dim">Highest safety: open this page in
+      <a href="https://www.torproject.org/download/" rel="noopener">Tor Browser</a>,
+      which hides even your network location. If you are at personal risk, do that.</p>
+    </div>
+
+    <div class="card warn">
+      <p><strong>Send originals.</strong> The file straight from your phone's
+      gallery — <em>not</em> a WhatsApp/Telegram forward (forwarding strips the
+      technical data that makes footage court-grade). Original files carry
+      metadata such as time and possibly location: <strong>we protect it in a
+      restricted vault and it never appears publicly</strong> — anything shown
+      publicly is a separate blurred, stripped copy.</p>
+      <p class="small dim">If that metadata worries you anyway, you may strip it
+      before sending — the footage is still valuable.</p>
+    </div>
+
+    <form id="f">
+      <label for="files">Files (photo / video / audio)</label>
+      <div class="dropzone" id="drop" tabindex="0" role="button"
+           aria-label="Choose files or drop them here">
+        <input id="files" type="file" multiple
+               accept="video/*,image/*,audio/*,application/pdf">
+        <span>Tap to choose files, or drop them here.<br>
+        <span class="small">Up to 2 GB per file.</span></span>
+      </div>
+      <ul class="filelist" id="filelist"></ul>
+
+      <label for="desc">What does this show? <span class="dim">(optional)</span></label>
+      <p class="hint">E.g. “police hitting people near the barricade; two officers with no name plates visible”.</p>
+      <textarea id="desc" maxlength="4000"></textarea>
+
+      <label for="loc">Where was this? <span class="dim">(optional)</span></label>
+      <p class="hint">Landmark or street is enough.</p>
+      <input id="loc" type="text" maxlength="300">
+
+      <label for="when">When was this? <span class="dim">(optional, IST)</span></label>
+      <input id="when" type="datetime-local" min="2026-07-21T00:00" max="2026-07-22T23:59">
+
+      <label for="contact">Contact — <strong>only</strong> if you are willing to be a witness later <span class="dim">(optional)</span></label>
+      <p class="hint">Leave empty to stay fully anonymous. If you fill it, use a
+      Signal number or an email that isn't tied to your name. This is stored in
+      the restricted vault only.</p>
+      <input id="contact" type="text" maxlength="300" autocomplete="off">
+
+      <button class="primary" id="send" type="submit">Submit anonymously</button>
+      <progress id="prog" max="100" value="0" hidden></progress>
+      <div class="result" id="result" role="status"></div>
+    </form>
+
+    <p class="small dim" style="margin-top:2rem">
+      By submitting, you confirm the material is yours to share or publicly
+      recorded, and you understand it may be provided to courts, the NHRC, or
+      rights organizations. We verify before we publish; public copies are
+      redacted (faces blurred, exact locations generalized).
+    </p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>The Unbadged — a citizen evidence archive.</span>
+    <span>All timestamps IST (UTC+05:30).</span>
+    <span>Open source: <a href="https://github.com/shrey16/theunbadged" rel="noopener">code &amp; methods</a>.</span>
+  </div>
+</footer>
+
+<script src="/assets/submit.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+# The Unbadged — intake worker
+#
+# HARD RULE: this worker must never log, store, or forward submitter IPs or
+# request headers. Do NOT enable Workers Logs, logpush, or tail workers on
+# this script in the Cloudflare dashboard. Observability stays OFF.
+
+name = "unbadged-intake"
+main = "src/index.js"
+compatibility_date = "2026-07-01"
+
+# Serve on the site's own domain so the form needs no cross-origin config.
+routes = [
+  { pattern = "theunbadged.com/api/*", zone_name = "theunbadged.com" },
+  { pattern = "www.theunbadged.com/api/*", zone_name = "theunbadged.com" }
+]
+
+[observability]
+enabled = false
+
+[[r2_buckets]]
+binding = "INTAKE"
+bucket_name = "unbadged-intake"
+
+[vars]
+# Account ID + bucket for presigned large-file uploads (S3 API).
+# R2_ACCOUNT_ID is not secret; the keys below must be set as secrets:
+#   wrangler secret put R2_ACCESS_KEY_ID
+#   wrangler secret put R2_SECRET_ACCESS_KEY
+# Create that token scoped to ONLY the unbadged-intake bucket, object write.
+R2_ACCOUNT_ID = "SET_ME"
+R2_BUCKET = "unbadged-intake"

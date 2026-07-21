@@ -1,0 +1,50 @@
+{
+  "generated": "2026-07-21T19:45:00+05:30",
+  "note": "Seed entries from initial reporting; times deliberately coarse until pinned to sources. Superseded by the sourced timeline under verification.",
+  "events": [
+    {
+      "id": "evt-001",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "“Sansad Chalo” march assembles at Jantar Mantar",
+      "description": "Protesters — reported to include large numbers of NEET-UG aspirants, many aged 16–17 — assemble at Jantar Mantar for a march toward Parliament over the NEET-UG paper leaks, demanding the Education Minister's resignation.",
+      "status": "claimed",
+      "sources": [],
+      "tags": ["march"]
+    },
+    {
+      "id": "evt-002",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Time unconfirmed",
+      "title": "Police lathi-charge the march",
+      "description": "Delhi Police are reported to have lathi-charged protesters as the march moved toward Parliament. Accounts of what triggered the escalation are contested; both protester and police injuries are reported.",
+      "status": "claimed",
+      "sources": [],
+      "tags": ["lathi-charge", "injuries"]
+    },
+    {
+      "id": "evt-003",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Time unconfirmed",
+      "title": "Officers reported without visible badges or name plates",
+      "description": "Multiple accounts report that many deployed officers wore no visible badge numbers or name plates. Badge concealment during a public-order deployment is itself a documented accountability concern, and this archive logs it as evidence.",
+      "status": "claimed",
+      "sources": [],
+      "tags": ["unbadged"]
+    },
+    {
+      "id": "evt-004",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Aftermath",
+      "title": "Detentions, injuries, and internet shutdowns reported",
+      "description": "Reports indicate 60+ protesters and 118+ police personnel injured, more than two dozen students detained, and internet shutdowns in parts of Delhi.",
+      "status": "claimed",
+      "sources": [],
+      "tags": ["detention", "injuries", "shutdown"]
+    }
+  ]
+}

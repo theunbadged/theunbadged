@@ -1,0 +1,42 @@
+# --- EVIDENCE MUST NEVER ENTER GIT ---
+# This repo holds code and documentation only. Originals live in the vault,
+# derivatives in the public store — both outside version control.
+vault/
+intake/
+evidence/
+submissions/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.heif
+*.gif
+*.wav
+*.mp3
+*.m4a
+*.aac
+
+# Secrets and local config
+.env
+.env.*
+*.local
+*.key
+*.pem
+secrets/
+
+# Dependency and build artifacts
+node_modules/
+dist/
+build/
+__pycache__/
+*.pyc
+.venv/
+
+# Editor/OS noise
+.DS_Store
+Thumbs.db

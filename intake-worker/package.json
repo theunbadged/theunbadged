@@ -1,0 +1,17 @@
+{
+  "name": "unbadged-intake",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Anonymous evidence intake worker for The Unbadged. Never logs IPs.",
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev"
+  },
+  "dependencies": {
+    "aws4fetch": "^1.0.20"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
