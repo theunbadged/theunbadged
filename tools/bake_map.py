@@ -61,31 +61,59 @@ def simplify(points, min_gap_units=1.2):
     return kept
 
 
-def main():
-    raw_path = sys.argv[1] if len(sys.argv) > 1 else None
-    if not raw_path or not Path(raw_path).is_file():
-        sys.exit("usage: bake_map.py <raw-overpass.json>")
-    raw = json.loads(Path(raw_path).read_text(encoding="utf-8"))
+def building_height(tags):
+    """Rough extrusion height in scene units (1u = 10m)."""
+    try:
+        if tags.get("height"):
+            return round(float(str(tags["height"]).split()[0]) * UNITS_PER_M, 2)
+        if tags.get("building:levels"):
+            return round(float(tags["building:levels"]) * 3.5 * UNITS_PER_M, 2)
+    except ValueError:
+        pass
+    name = (tags.get("name") or "").lower()
+    if "samrat yantra" in name:
+        return 2.7  # 27 m gnomon
+    if "yantra" in name:
+        return 1.2
+    if "sabha" in name or "parliament" in name:
+        return 2.4
+    return 0.8
 
-    roads = []
+
+def main():
+    paths = [p for p in sys.argv[1:] if Path(p).is_file()]
+    if not paths:
+        sys.exit("usage: bake_map.py <raw-overpass.json> [more.json ...]")
+
+    roads, parks, buildings = [], [], []
     total_pts = 0
-    for el in raw.get("elements", []):
-        if el.get("type") != "way" or "geometry" not in el:
-            continue
-        tags = el.get("tags", {})
-        pts = simplify([project(g["lat"], g["lon"]) for g in el["geometry"]])
-        if len(pts) < 2:
-            continue
-        roads.append({
-            "w": 2 if tags.get("highway") in MAJOR else 1,
-            "pts": pts,
-        })
-        total_pts += len(pts)
+    seen_ways = set()
+    for path in paths:
+        raw = json.loads(Path(path).read_text(encoding="utf-8"))
+        for el in raw.get("elements", []):
+            if el.get("type") != "way" or "geometry" not in el or el["id"] in seen_ways:
+                continue
+            seen_ways.add(el["id"])
+            tags = el.get("tags", {})
+            pts = simplify([project(g["lat"], g["lon"]) for g in el["geometry"]])
+            if len(pts) < 2:
+                continue
+            if tags.get("highway"):
+                roads.append({"w": 2 if tags["highway"] in MAJOR else 1, "pts": pts})
+                total_pts += len(pts)
+            elif tags.get("building"):
+                if len(pts) >= 3:
+                    buildings.append({"h": building_height(tags), "pts": pts})
+            elif tags.get("leisure") in ("park", "garden") or tags.get("landuse") in ("grass", "recreation_ground"):
+                if len(pts) >= 3:
+                    parks.append({"pts": pts})
 
     out = {
         "attribution": "Map data (c) OpenStreetMap contributors (ODbL). Stylized; locations approximate.",
         "unitsPerMeter": UNITS_PER_M,
         "roads": roads,
+        "parks": parks,
+        "buildings": buildings,
         "landmarks": [
             {**{k: lm[k] for k in ("id", "name") if k in lm},
              "approx": lm.get("approx", False),
@@ -97,7 +125,8 @@ def main():
 
     dest = Path(__file__).resolve().parent.parent / "site" / "data" / "map.json"
     dest.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
-    print(f"{len(roads)} roads, {total_pts} points, {len(out['landmarks'])} landmarks -> {dest}")
+    print(f"{len(roads)} roads ({total_pts} pts), {len(parks)} parks, "
+          f"{len(buildings)} buildings, {len(out['landmarks'])} landmarks -> {dest}")
 
 
 if __name__ == "__main__":

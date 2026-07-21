@@ -471,3 +471,19 @@ strong { color: #fff; font-weight: 650; }
   .route-overlay { position: static; }
   .route-caption { position: static; opacity: 1 !important; visibility: visible !important; transform: none !important; margin: 1.2rem; }
 }
+
+.route-cta {
+  margin: 1.1rem 0 0;
+  font-size: .92rem;
+  color: var(--paper-dim);
+}
+.route-cta a {
+  display: inline-block;
+  margin-top: .2rem;
+  color: var(--ember);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(211,107,51,.45);
+  pointer-events: auto;
+}
+.route-cta a:hover { border-bottom-color: var(--ember); }

@@ -31,12 +31,12 @@
     }
     SHOTS = [
       { s: 0.00, e: 0.13, a: { pos: [0, 340, 130], look: [0, 0, -20] }, b: { pos: [10, 300, 110], look: [5, 0, -20] } },
-      { s: 0.13, e: 0.30, a: null, b: at("jm", 36, 20, 55) },
+      { s: 0.13, e: 0.30, a: null, b: at("jm", 20, 12, 32) },
       { s: 0.30, e: 0.45, a: null, b: at("park", 46, 32, 68) },
       { s: 0.45, e: 0.60, a: null, b: at("patel", 32, 24, 50) },
       { s: 0.60, e: 0.74, a: null, b: at("ps", 28, 26, 46) },
-      { s: 0.74, e: 0.88, a: null, b: at("sansad", 46, 42, 62) },
-      { s: 0.88, e: 1.00, a: null, b: { pos: [0, 620, 260], look: [0, 0, 0] } }
+      { s: 0.74, e: 0.88, a: null, b: at("sansad", 26, 30, 42) },
+      { s: 0.88, e: 1.00, a: null, b: { pos: [20, 800, 330], look: [20, 0, -30] } }
     ];
     // chain: each shot starts where the previous ended
     for (var i = 1; i < SHOTS.length; i++) SHOTS[i].a = SHOTS[i - 1].b;
@@ -60,8 +60,8 @@
 
   var scene = new THREE.Scene();
   scene.background = new THREE.Color("#070a0e");
-  scene.fog = new THREE.Fog(0x070a0e, 260, 760);
-  var camera = new THREE.PerspectiveCamera(46, 1, 1, 1600);
+  scene.fog = new THREE.Fog(0x070a0e, 300, 1500);
+  var camera = new THREE.PerspectiveCamera(46, 1, 1, 2200);
 
   var group = new THREE.Group();
   scene.add(group);
@@ -85,15 +85,81 @@
     return g;
   }
 
+  function flatShape(pts) {
+    // baked (x, z) -> Shape space (x, -z); rotateX(-PI/2) restores world z
+    return new THREE.Shape(pts.map(function (p) { return new THREE.Vector2(p[0], -p[1]); }));
+  }
+
+  /* widen a polyline into a flat triangle ribbon */
+  function ribbon(pts, width, y, positions, indices) {
+    var hw = width / 2;
+    var base = positions.length / 3;
+    for (var i = 0; i < pts.length; i++) {
+      var prev = pts[Math.max(0, i - 1)], next = pts[Math.min(pts.length - 1, i + 1)];
+      var dx = next[0] - prev[0], dz = next[1] - prev[1];
+      var len = Math.sqrt(dx * dx + dz * dz) || 1;
+      var nx = -dz / len * hw, nz = dx / len * hw;
+      positions.push(pts[i][0] + nx, y, pts[i][1] + nz, pts[i][0] - nx, y, pts[i][1] - nz);
+    }
+    for (var j = 0; j < pts.length - 1; j++) {
+      var a = base + j * 2;
+      indices.push(a, a + 1, a + 2, a + 2, a + 1, a + 3);
+    }
+  }
+
   function buildScene(map) {
     map.landmarks.forEach(function (lm) { LM[lm.id] = lm.xz; });
     buildShots();
 
+    // parks and greens: barely-there fills that shape the city's negative space
+    (map.parks || []).forEach(function (pk, i) {
+      var g = new THREE.ShapeGeometry(flatShape(pk.pts));
+      g.rotateX(-Math.PI / 2);
+      var m = new THREE.Mesh(g, new THREE.MeshBasicMaterial({
+        color: 0x0c1712, transparent: true, opacity: 0.55, depthWrite: false
+      }));
+      m.position.y = 0.03 + (i % 7) * 0.002; // avoid z-fighting between overlaps
+      m.matrixAutoUpdate = false; m.updateMatrix();
+      group.add(m);
+    });
+
+    // major roads as width ribbons under the line grid
+    var rpos = [], ridx = [];
+    map.roads.forEach(function (r) { if (r.w === 2) ribbon(r.pts, 1.5, 0.08, rpos, ridx); });
+    var rgeo = new THREE.BufferGeometry();
+    rgeo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(rpos), 3));
+    rgeo.setIndex(ridx);
+    group.add(new THREE.Mesh(rgeo, new THREE.MeshBasicMaterial({
+      color: 0x1a222c, transparent: true, opacity: 0.9, depthWrite: false
+    })));
+
     // street grid: minor faint, major brighter
-    group.add(new THREE.LineSegments(segmentsFromRoads(map.roads, 1),
-      new THREE.LineBasicMaterial({ color: 0x27313d, transparent: true, opacity: 0.5 })));
-    group.add(new THREE.LineSegments(segmentsFromRoads(map.roads, 2),
-      new THREE.LineBasicMaterial({ color: 0x46596d, transparent: true, opacity: 0.85 })));
+    var minor = new THREE.LineSegments(segmentsFromRoads(map.roads, 1),
+      new THREE.LineBasicMaterial({ color: 0x27313d, transparent: true, opacity: 0.5 }));
+    minor.position.y = 0.12; group.add(minor);
+    var major = new THREE.LineSegments(segmentsFromRoads(map.roads, 2),
+      new THREE.LineBasicMaterial({ color: 0x46596d, transparent: true, opacity: 0.85 }));
+    major.position.y = 0.15; group.add(major);
+
+    // key buildings: dark extruded volumes with lit edges (Parliament,
+    // the Jantar Mantar yantras, ministries along the route)
+    var edgePositions = [];
+    (map.buildings || []).forEach(function (b) {
+      var g = new THREE.ExtrudeGeometry(flatShape(b.pts), { depth: b.h || 0.8, bevelEnabled: false });
+      g.rotateX(-Math.PI / 2);
+      var mesh = new THREE.Mesh(g, new THREE.MeshBasicMaterial({ color: 0x111922 }));
+      mesh.matrixAutoUpdate = false; mesh.updateMatrix();
+      group.add(mesh);
+      var eg = new THREE.EdgesGeometry(g, 18);
+      var arr = eg.attributes.position.array;
+      for (var k = 0; k < arr.length; k++) edgePositions.push(arr[k]);
+      eg.dispose();
+    });
+    var egeo = new THREE.BufferGeometry();
+    egeo.setAttribute("position", new THREE.BufferAttribute(new Float32Array(edgePositions), 3));
+    group.add(new THREE.LineSegments(egeo, new THREE.LineBasicMaterial({
+      color: 0x51667c, transparent: true, opacity: 0.6
+    })));
 
     // ground shimmer: sparse points so the dark isn't empty
     var n = window.innerWidth < 700 ? 250 : 600;
