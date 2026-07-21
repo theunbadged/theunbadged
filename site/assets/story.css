@@ -427,3 +427,47 @@ strong { color: #fff; font-weight: 650; }
   }
   [data-beat], .line-mask > span { opacity: 1 !important; transform: none !important; }
 }
+
+/* ---- the route: map walkthrough (Jantar Mantar -> Parliament) ---- */
+.route-rail { position: relative; height: 540vh; background: #070a0e; }
+.route-stick { position: sticky; top: 0; height: 100vh; overflow: hidden; }
+#route-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.route-overlay { position: absolute; inset: 0; pointer-events: none; z-index: 2; }
+.route-caption {
+  position: absolute;
+  left: clamp(1.2rem, 6vw, 5.5rem);
+  bottom: 13vh;
+  max-width: 26rem;
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, transform;
+}
+.route-kicker {
+  margin: 0 0 .55rem;
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .3em; text-transform: uppercase;
+  color: var(--ember);
+}
+.route-line {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2.4vw, 1.5rem);
+  line-height: 1.45;
+  color: var(--paper);
+  text-shadow: 0 1px 18px rgba(0,0,0,.75);
+}
+.route-credit {
+  margin: .9rem 0 0;
+  font-size: .68rem; letter-spacing: .06em;
+  color: var(--paper-dim); opacity: .8;
+}
+@media (max-width: 640px) {
+  .route-caption { left: 1.2rem; right: 1.2rem; bottom: 9vh; max-width: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .route-rail { height: auto; }
+  .route-stick { position: static; height: auto; }
+  #route-canvas { position: relative; height: 60vh; }
+  .route-overlay { position: static; }
+  .route-caption { position: static; opacity: 1 !important; visibility: visible !important; transform: none !important; margin: 1.2rem; }
+}
