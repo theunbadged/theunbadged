@@ -27,5 +27,5 @@ bucket_name = "unbadged-intake"
 #   wrangler secret put R2_ACCESS_KEY_ID
 #   wrangler secret put R2_SECRET_ACCESS_KEY
 # Create that token scoped to ONLY the unbadged-intake bucket, object write.
-R2_ACCOUNT_ID = "SET_ME"
+R2_ACCOUNT_ID = "9052960e62cdc2eb10a0a5097117334c"
 R2_BUCKET = "unbadged-intake"

@@ -1,0 +1,197 @@
+/* The Unbadged — scrollytold story
+   Fire on the banner, steel in the vault: cinematic, factual, dignified. */
+
+:root {
+  --ink: #0b0d10;
+  --text: #ece9e2;
+  --dim: #9aa3ad;
+  --ember: #d9822b;
+  --steel: #5b9bd5;
+  --blood: #b3402f;
+  --claimed: #d9a62b;
+  --line: rgba(255,255,255,.14);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body.story {
+  margin: 0;
+  background: var(--ink);
+  color: var(--text);
+  font: 17px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ---- 3D canvas sits behind everything ---- */
+#scene {
+  position: fixed; inset: 0;
+  width: 100%; height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ---- floating header ---- */
+header.story {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 1rem 1.4rem;
+  background: linear-gradient(to bottom, rgba(11,13,16,.85), transparent);
+}
+header.story .brand {
+  font-family: Georgia, serif; letter-spacing: .04em; font-size: 1.05rem;
+  color: var(--text); text-decoration: none;
+}
+header.story .brand .un { color: var(--ember); }
+header.story nav a {
+  color: var(--dim); text-decoration: none; margin-left: 1.1rem; font-size: .9rem;
+}
+header.story nav a:hover { color: var(--text); }
+
+/* ---- chapters ---- */
+main.story { position: relative; z-index: 1; }
+
+.chapter {
+  min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: center;
+  padding: 14vh 1.5rem;
+  max-width: 44rem;
+  margin: 0 auto;
+}
+.chapter.tall { min-height: 130vh; }
+
+.kicker {
+  font-size: .78rem; font-weight: 700; letter-spacing: .28em;
+  text-transform: uppercase; color: var(--ember);
+  margin-bottom: 1.2rem;
+}
+.chapter h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  line-height: 1.12; font-weight: 600;
+  margin: 0 0 1.6rem;
+}
+.chapter p { margin: .9rem 0; color: var(--text); max-width: 38rem; }
+.chapter p.dim { color: var(--dim); }
+.chapter .foot {
+  margin-top: 2rem; font-size: .82rem; color: var(--dim);
+}
+.chapter .foot a { color: var(--steel); text-decoration: none; }
+.chapter .foot a:hover { text-decoration: underline; }
+
+.label {
+  display: inline-block; font-size: .68rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  padding: .12rem .5rem; border-radius: 999px; border: 1px solid;
+  vertical-align: 2px; margin-left: .4rem;
+}
+.label.claimed { color: var(--claimed); border-color: var(--claimed); }
+.label.corroborated { color: var(--steel); border-color: var(--steel); }
+
+/* two attributed versions of a contested moment */
+.versus {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+  background: var(--line); border: 1px solid var(--line);
+  border-radius: 6px; overflow: hidden; margin: 1.6rem 0;
+}
+.versus > div { background: rgba(11,13,16,.82); padding: 1.1rem 1.2rem; }
+.versus .who {
+  font-size: .74rem; font-weight: 700; letter-spacing: .18em;
+  text-transform: uppercase; color: var(--dim); margin-bottom: .5rem;
+}
+.versus p { margin: 0; font-size: .95rem; }
+@media (max-width: 620px) { .versus { grid-template-columns: 1fr; } }
+
+/* ---- hero ---- */
+.hero-story {
+  min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  text-align: center; padding: 0 1.5rem; position: relative;
+}
+.hero-story h1 {
+  font-family: Georgia, serif; font-weight: 600;
+  font-size: clamp(2.6rem, 9vw, 5.5rem);
+  letter-spacing: .06em; margin: 0;
+}
+.hero-story h1 .un { color: var(--ember); }
+.hero-story .tag {
+  margin-top: 1.4rem; font-size: clamp(1rem, 2.6vw, 1.3rem);
+  color: var(--dim); font-family: Georgia, serif; font-style: italic;
+}
+.scrollcue {
+  position: absolute; bottom: 4vh; left: 50%; transform: translateX(-50%);
+  color: var(--dim); font-size: .78rem; letter-spacing: .22em; text-transform: uppercase;
+  animation: cue 2.4s ease-in-out infinite;
+}
+@keyframes cue { 0%,100% { transform: translate(-50%,0); opacity:.55 } 50% { transform: translate(-50%,8px); opacity:1 } }
+
+/* ---- reveals ---- */
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s ease, transform .9s ease; }
+.reveal.on { opacity: 1; transform: none; }
+.reveal:nth-child(2) { transition-delay: .12s }
+.reveal:nth-child(3) { transition-delay: .22s }
+.reveal:nth-child(4) { transition-delay: .32s }
+.reveal:nth-child(5) { transition-delay: .42s }
+
+/* ---- illustration blocks (stylized silhouettes) ---- */
+.art { margin: 2.2rem 0 0; }
+.art svg { width: 100%; height: auto; display: block; overflow: visible; }
+
+/* line-drawing draw-on */
+.draw path, .draw line, .draw polyline, .draw rect.stroke, .draw circle.stroke {
+  stroke-dasharray: 600; stroke-dashoffset: 600;
+  transition: stroke-dashoffset 1.6s ease .2s;
+}
+.on .draw path, .on .draw line, .on .draw polyline,
+.on .draw rect.stroke, .on .draw circle.stroke { stroke-dashoffset: 0; }
+
+/* signal bars die */
+.bars rect { transition: opacity .5s ease, fill .5s ease; }
+.on .bars rect.b4 { transition-delay: .4s; opacity: .12; }
+.on .bars rect.b3 { transition-delay: .9s; opacity: .12; }
+.on .bars rect.b2 { transition-delay: 1.4s; opacity: .12; }
+.on .bars rect.b1 { transition-delay: 1.9s; opacity: .12; }
+.on .bars text { transition: opacity .6s ease 2.4s; opacity: 1 !important; }
+
+/* the name plate fades from the chest */
+.plate-group rect.plate { transition: opacity 2.2s ease .6s; }
+.on .plate-group rect.plate { opacity: 0; }
+.plate-group text.gone { opacity: 0; transition: opacity 1s ease 2.6s; }
+.on .plate-group text.gone { opacity: 1; }
+
+/* ---- the count ---- */
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); gap: 1.4rem; margin-top: 2.2rem; }
+.figure .n {
+  font-family: Georgia, serif; font-size: clamp(2.4rem, 6vw, 3.6rem);
+  line-height: 1; color: var(--text); font-variant-numeric: tabular-nums;
+}
+.figure .n .pfx, .figure .n .sfx { color: var(--ember); }
+.figure .cap { margin-top: .5rem; font-size: .85rem; color: var(--dim); max-width: 13rem; }
+.figures-note { margin-top: 1.6rem; font-size: .82rem; color: var(--dim); }
+
+/* ---- final CTAs ---- */
+.ctas { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2.4rem; }
+.btn {
+  display: inline-block; text-decoration: none; font-weight: 700;
+  padding: .85rem 1.7rem; border-radius: 4px; font-size: 1rem;
+}
+.btn.fire { background: var(--ember); color: #14100a; }
+.btn.fire:hover { filter: brightness(1.1); }
+.btn.steel { border: 1px solid var(--steel); color: var(--steel); }
+.btn.steel:hover { background: rgba(91,155,213,.12); }
+
+footer.story {
+  position: relative; z-index: 1;
+  border-top: 1px solid var(--line);
+  padding: 2rem 1.5rem 3rem; text-align: center;
+  color: var(--dim); font-size: .85rem;
+  background: rgba(11,13,16,.9);
+}
+footer.story a { color: var(--steel); text-decoration: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .scrollcue { animation: none; }
+  .draw path, .draw line, .draw polyline { stroke-dashoffset: 0 !important; }
+}

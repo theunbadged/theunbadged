@@ -3,99 +3,229 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Unbadged — a citizen evidence archive</title>
-<meta name="description" content="Preserving court-grade evidence of the 20 July 2026 Delhi Police crackdown on the Chalo Sansad protest. They removed the badges; we keep the record.">
-<link rel="stylesheet" href="/assets/style.css">
+<title>The Unbadged — they removed the badges; we keep the record</title>
+<meta name="description" content="The story of the 20 July 2026 Delhi Police crackdown on the Chalo Sansad protest — and the citizen evidence archive keeping the record.">
+<link rel="stylesheet" href="/assets/story.css">
 </head>
-<body>
+<body class="story">
 
-<header class="site">
-  <div class="wrap">
-    <span class="brand">THE <span class="un">UN</span>BADGED</span>
-    <nav class="site">
-      <a href="/" aria-current="page">About</a>
-      <a href="/timeline.html">Timeline</a>
-      <a href="/submit.html">Submit evidence</a>
-    </nav>
-  </div>
+<canvas id="scene" aria-hidden="true"></canvas>
+
+<header class="story">
+  <a class="brand" href="/">THE <span class="un">UN</span>BADGED</a>
+  <nav>
+    <a href="/timeline.html">Timeline</a>
+    <a href="/about.html">The archive</a>
+    <a href="/submit.html">Submit evidence</a>
+  </nav>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <h1>They removed the badges.<br>We keep the record.</h1>
-    <p class="lede">
-      On 20 July 2026 — the opening day of Parliament's Monsoon Session — Delhi
-      Police lathi-charged and tear-gassed the &ldquo;Chalo Sansad&rdquo; march
-      over the NEET-UG paper leaks. Police's own figures put the injured at
-      about 60 protesters and 118+ personnel; over a hundred people were
-      detained, mobile internet was cut in central Delhi with no published
-      suspension order, and photo reporting shows personnel deployed without
-      name badges. This archive exists to preserve the evidence — in a form
-      that survives takedowns and holds up in court.
-    </p>
-    <p class="tagline">A citizen evidence archive. Not a rumor mill. Not a verdict.</p>
-  </div>
-</section>
+<main class="story">
 
-<main>
-  <div class="wrap">
+  <!-- CH 0 — HERO -->
+  <section class="hero-story" data-ch="0">
+    <h1>THE <span class="un">UN</span>BADGED</h1>
+    <p class="tag">They removed the badges. We keep the record.</p>
+    <div class="scrollcue">Scroll ▾</div>
+  </section>
 
-    <h2>What this is</h2>
-    <ul class="plain">
-      <li><strong>A secure evidence vault.</strong> Every original file is
-        SHA-256-hashed the moment it arrives, then never altered. Metadata intact,
-        chain of custody logged, stored redundantly — reserved for legal process.</li>
-      <li><strong>A public record.</strong> A timeline of the day's events and,
-        as verification proceeds, redacted evidence — faces of protesters and
-        bystanders blurred, locations generalized.</li>
-      <li><strong>A path to accountability.</strong> Evidence packages prepared
-        for courts, the NHRC, and rights organizations — including the pattern of
-        badge concealment itself, which is misconduct and points up the chain of
-        command.</li>
-    </ul>
-
-    <h2>What this is not</h2>
-    <ul class="plain">
-      <li><strong>Not facial recognition.</strong> We never extract faces and
-        search them against databases — not even officers'. Identification rests
-        only on markers visible in footage (badge numbers, name plates, unit and
-        vehicle markings) and corroborated witness testimony.</li>
-      <li><strong>Not a public trial.</strong> We document incidents; courts
-        declare guilt. No individual is named as guilty here before adjudication.</li>
-      <li><strong>Not unverified.</strong> Everything public carries a status
-        label, and nothing is presented as established fact until it earns it.</li>
-    </ul>
-
-    <h2>How to read this archive</h2>
-    <div class="card">
-      <p><span class="status claimed">Claimed</span>&nbsp; Reported or submitted,
-        not yet independently verified.</p>
-      <p><span class="status corroborated">Corroborated</span>&nbsp; Supported by
-        two or more independent sources.</p>
-      <p><span class="status court-ready">Court-ready</span>&nbsp; Original
-        preserved with intact chain of custody, verified, and packaged for legal
-        proceedings.</p>
+  <!-- CH 1 — THE WAIT -->
+  <section class="chapter" data-ch="1">
+    <div class="kicker reveal">Chapter one — the wait</div>
+    <h2 class="reveal">For weeks, students sat at Jantar Mantar with one question: <em>who leaked our exam?</em></h2>
+    <p class="reveal">A sit-in over the alleged NEET-UG paper leaks had been running for weeks —
+      aspirants who did everything right, asking why the system didn't. On
+      18&nbsp;July, activist Sonam Wangchuk — roughly twenty days into a hunger
+      strike beside them — was removed from the site by police and taken to
+      hospital. <span class="label corroborated">corroborated</span></p>
+    <div class="art reveal" aria-hidden="true">
+      <svg viewBox="0 0 640 120" class="draw" fill="none" stroke="#9aa3ad" stroke-width="2">
+        <!-- seated silhouettes -->
+        <g opacity=".9">
+          <path d="M40 110 q0 -28 22 -28 q22 0 22 28 M62 82 a11 11 0 1 1 0.1 0"/>
+          <path d="M130 110 q0 -28 22 -28 q22 0 22 28 M152 82 a11 11 0 1 1 0.1 0"/>
+          <path d="M220 110 q0 -28 22 -28 q22 0 22 28 M242 82 a11 11 0 1 1 0.1 0"/>
+          <path d="M310 110 q0 -28 22 -28 q22 0 22 28 M332 82 a11 11 0 1 1 0.1 0"/>
+          <path d="M400 110 q0 -28 22 -28 q22 0 22 28 M422 82 a11 11 0 1 1 0.1 0"/>
+          <path d="M490 110 q0 -28 22 -28 q22 0 22 28 M512 82 a11 11 0 1 1 0.1 0"/>
+        </g>
+        <!-- one placard -->
+        <rect class="stroke" x="562" y="40" width="46" height="32" stroke="#d9822b"/>
+        <line x1="585" y1="72" x2="585" y2="110" stroke="#d9822b"/>
+      </svg>
     </div>
+    <p class="foot reveal">Sources on every claim: <a href="/timeline.html">the sourced timeline</a>.</p>
+  </section>
 
-    <h2>If you were there</h2>
-    <div class="card warn">
-      <p>If you have photos or video from the crackdown, or from any day of the
-      protest — even shaky, even partial — it matters. Originals matter most:
-      the file straight off your phone, not a WhatsApp forward.</p>
-      <p><a href="/submit.html"><strong>Submit evidence anonymously →</strong></a></p>
-      <p class="small dim">No account. No name. We never log IP addresses.</p>
+  <!-- CH 2 — THE MORNING -->
+  <section class="chapter" data-ch="2">
+    <div class="kicker reveal">Chapter two — 20 July, morning</div>
+    <h2 class="reveal">Parliament's Monsoon Session opened. The city answered a march with a fortress.</h2>
+    <p class="reveal">Permission for the march was denied. Prohibitory orders went up across
+      central Delhi. Over <strong>5,000 police personnel</strong> were deployed;
+      metro stations — Rajiv Chowk, Janpath, Patel Chowk — were closed.
+      <span class="label corroborated">corroborated</span></p>
+    <p class="reveal">By 7:30&nbsp;am, per ThePrint's live blog, lathis had already been used near
+      the Park Hotel — <em>before the march had formally begun</em>.
+      <span class="label claimed">claimed</span></p>
+    <div class="art reveal" aria-hidden="true">
+      <svg viewBox="0 0 640 110" class="draw" fill="none" stroke="#9aa3ad" stroke-width="2">
+        <!-- barricades -->
+        <g stroke="#d9a62b">
+          <line x1="30" y1="100" x2="90" y2="40"/><line x1="90" y1="100" x2="30" y2="40"/>
+          <line x1="120" y1="100" x2="180" y2="40"/><line x1="180" y1="100" x2="120" y2="40"/>
+          <line x1="20" y1="100" x2="190" y2="100"/>
+        </g>
+        <!-- shield wall -->
+        <g>
+          <path d="M300 45 h40 v38 q0 14 -20 20 q-20 -6 -20 -20 z"/>
+          <path d="M360 45 h40 v38 q0 14 -20 20 q-20 -6 -20 -20 z"/>
+          <path d="M420 45 h40 v38 q0 14 -20 20 q-20 -6 -20 -20 z"/>
+          <path d="M480 45 h40 v38 q0 14 -20 20 q-20 -6 -20 -20 z"/>
+          <path d="M540 45 h40 v38 q0 14 -20 20 q-20 -6 -20 -20 z"/>
+        </g>
+      </svg>
     </div>
+  </section>
 
-  </div>
+  <!-- CH 3 — THE CHARGE -->
+  <section class="chapter tall" data-ch="3">
+    <div class="kicker reveal">Chapter three — 10:04 am</div>
+    <h2 class="reveal">The charge.</h2>
+    <p class="reveal">As marchers moved from Jantar Mantar toward Parliament, police
+      lathi-charged the crowd and fired tear gas near the Parliament premises,
+      Shastri Bhawan and Raisina Road. <span class="label corroborated">corroborated</span></p>
+    <div class="versus reveal">
+      <div>
+        <div class="who">Police, via PTI</div>
+        <p>The action followed stone-pelting and barricade breaches by protesters.</p>
+      </div>
+      <div>
+        <div class="who">Marchers, via Al Jazeera &amp; Daily Pioneer</div>
+        <p>The march was peaceful when the lathi-charge began, suddenly.</p>
+      </div>
+    </div>
+    <p class="dim reveal">Two versions exist. That is precisely why evidence — with time, place and
+      chain of custody — matters more than anyone's press briefing.</p>
+    <div class="art reveal" aria-hidden="true">
+      <svg viewBox="0 0 640 110" class="draw" fill="none" stroke-width="2.5">
+        <g stroke="#b3402f">
+          <line x1="60" y1="95" x2="150" y2="20"/>
+          <line x1="140" y1="98" x2="230" y2="23"/>
+          <line x1="220" y1="95" x2="310" y2="20"/>
+        </g>
+        <g stroke="#9aa3ad" opacity=".7">
+          <circle class="stroke" cx="450" cy="60" r="16"/>
+          <circle class="stroke" cx="495" cy="42" r="24"/>
+          <circle class="stroke" cx="550" cy="65" r="32"/>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- CH 4 — THE BLACKOUT -->
+  <section class="chapter tall" data-ch="4">
+    <div class="kicker reveal">Chapter four — the blackout</div>
+    <h2 class="reveal">Then the phones died.</h2>
+    <p class="reveal">Mobile internet was suspended across parts of central Delhi — reportedly a
+      ~5&nbsp;km radius around Jantar Mantar. As of the Internet Freedom
+      Foundation's statement that evening, <strong>no legal suspension order had
+      been published</strong> by any authority. <span class="label corroborated">corroborated</span></p>
+    <div class="art reveal" aria-hidden="true">
+      <svg viewBox="0 0 640 130">
+        <g class="bars">
+          <rect class="b1" x="240" y="80" width="22" height="30" fill="#ece9e2"/>
+          <rect class="b2" x="272" y="60" width="22" height="50" fill="#ece9e2"/>
+          <rect class="b3" x="304" y="40" width="22" height="70" fill="#ece9e2"/>
+          <rect class="b4" x="336" y="20" width="22" height="90" fill="#ece9e2"/>
+          <text x="320" y="126" text-anchor="middle" fill="#b3402f" opacity="0"
+                font-family="Georgia, serif" font-size="15">no order was ever published</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal">A blackout doesn't erase footage. It only delays it. The clips recorded in
+      that window are still on phones across this city — waiting to be preserved.</p>
+  </section>
+
+  <!-- CH 5 — THE UNBADGED -->
+  <section class="chapter tall" data-ch="5">
+    <div class="kicker reveal">Chapter five — the unbadged</div>
+    <h2 class="reveal">Look closely at the uniform. Something is missing.</h2>
+    <p class="reveal">Newslaundry's photo report documented police personnel <strong>without name
+      badges</strong> — before the protest had even begun — and personnel in plain
+      clothes carrying lathis. <span class="label claimed">claimed — one photo report so far</span></p>
+    <div class="art reveal" aria-hidden="true">
+      <svg viewBox="0 0 640 190" fill="none">
+        <g class="plate-group">
+          <!-- chest silhouette -->
+          <path d="M250 185 v-60 q0 -34 34 -40 l12 -3 a24 24 0 1 1 48 0 l12 3 q34 6 34 40 v60"
+                stroke="#9aa3ad" stroke-width="2.5"/>
+          <!-- the name plate -->
+          <rect class="plate" x="292" y="118" width="56" height="16" fill="#d9a62b" opacity=".95"/>
+          <text class="gone" x="320" y="170" text-anchor="middle" fill="#d9822b"
+                font-family="Georgia, serif" font-size="15">name plate: absent</text>
+        </g>
+      </svg>
+    </div>
+    <p class="reveal">A name plate is not decoration. It is the one thing that makes a uniform
+      answerable to the public it polices. When it is removed before a
+      deployment, accountability doesn't disappear — <strong>it moves up the
+      chain of command</strong>, to whoever sent that unit out unmarked.</p>
+    <p class="dim reveal">One photo report is a claim. Your footage is what turns a claim into a
+      corroborated fact. That is the entire reason this archive exists.</p>
+  </section>
+
+  <!-- CH 6 — THE COUNT -->
+  <section class="chapter" data-ch="6">
+    <div class="kicker reveal">Chapter six — the count</div>
+    <h2 class="reveal">By nightfall, the numbers spoke.</h2>
+    <div class="figures reveal">
+      <div class="figure"><div class="n"><span class="pfx">~</span><span class="count" data-n="60">0</span></div>
+        <div class="cap">protesters injured — police's own figure</div></div>
+      <div class="figure"><div class="n"><span class="count" data-n="118">0</span><span class="sfx">+</span></div>
+        <div class="cap">police personnel injured — police's own figure</div></div>
+      <div class="figure"><div class="n"><span class="pfx">~</span><span class="count" data-n="100">0</span></div>
+        <div class="cap">people in one hospital's emergency by 5:30 pm</div></div>
+      <div class="figure"><div class="n"><span class="count" data-n="70">0</span><span class="sfx">–100+</span></div>
+        <div class="cap">detained; an FIR for rioting and assault</div></div>
+      <div class="figure"><div class="n"><span class="count" data-n="1">0</span></div>
+        <div class="cap">internet shutdown</div></div>
+      <div class="figure"><div class="n"><span class="count" data-n="0">0</span></div>
+        <div class="cap">published suspension orders</div></div>
+    </div>
+    <p class="figures-note reveal">Injury figures are police-released; independent counts vary. Every number
+      links to its source on the <a href="/timeline.html" style="color:var(--steel)">timeline</a>.</p>
+  </section>
+
+  <!-- CH 7 — THE RECORD -->
+  <section class="chapter tall" data-ch="7">
+    <div class="kicker reveal">Chapter seven — the record</div>
+    <h2 class="reveal">What they un-badged, we index.</h2>
+    <p class="reveal">Every original file that reaches this archive is fingerprinted the moment it
+      arrives — SHA-256, write-once, an append-only custody ledger built to stand
+      in court. Every public claim carries a status label:
+      <span class="label claimed">claimed</span>
+      <span class="label corroborated">corroborated</span>. Nothing is published
+      as fact before it earns it, and no one is named guilty here — courts do that.</p>
+    <p class="reveal">Officers who removed their identification are not anonymous. They are
+      <strong>unidentified — so far</strong>. Clip by clip, marker by marker, the
+      record grows.</p>
+    <div class="ctas reveal">
+      <a class="btn fire" href="/submit.html">Submit evidence — anonymously</a>
+      <a class="btn steel" href="/timeline.html">Read the sourced timeline</a>
+    </div>
+    <p class="foot reveal">No account. No name. No IP logs — <a href="https://github.com/shrey16/theunbadged" rel="noopener">verify the code yourself</a>.</p>
+  </section>
+
 </main>
 
-<footer class="site">
-  <div class="wrap">
-    <span>The Unbadged — a citizen evidence archive.</span>
-    <span>All timestamps IST (UTC+05:30).</span>
-    <span>Open source: <a href="https://github.com/shrey16/theunbadged" rel="noopener">code &amp; methods</a>.</span>
-  </div>
+<footer class="story">
+  <span>The Unbadged — a citizen evidence archive. All timestamps IST (UTC+05:30).
+  Open source: <a href="https://github.com/shrey16/theunbadged" rel="noopener">code &amp; methods</a>.
+  · <a href="/about.html">How the archive works</a></span>
 </footer>
 
+<script src="/assets/vendor/three.min.js"></script>
+<script src="/assets/story.js"></script>
 </body>
 </html>
