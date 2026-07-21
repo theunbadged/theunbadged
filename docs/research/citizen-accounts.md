@@ -300,6 +300,28 @@ together" https://www.instagram.com/reel/Da_oXNyvSDh/ , permission-denial
 explainer https://www.instagram.com/reel/DZz2-Hlky_d/ , police-denial reel
 https://www.instagram.com/reel/Da7BOakBH6c/ (all handles/dates unverified).
 
+## Addendum — 22 Jul 2026 reconciliation sweep
+
+Compiled 2026-07-22T01:55+05:30 while merging this file's events into the
+public timeline (cit-001..013 now live on site/data/timeline.json).
+
+- **Stone-loaded lorries allegation (now cit-013, claimed).** Ahead of the
+  march, Dipke posted photos of lorries parked at Jantar Mantar which he
+  claimed were loaded with stones, alleging authorities might allow "goons"
+  to disrupt the protest and blame CJP — carried by Wikipedia's article.
+  The original post + photos are a top capture priority: they bear directly
+  on the official stone-pelting narrative. Locate the post URL.
+- **Police counter-frame (now evt-024, corroborated).** Five FIRs; 250+
+  videos, CCTV, drones, body-cams being analysed to identify protesters;
+  conspiracy angle probed (The Week, India TV, ANI, IANS, Republic, 21 Jul).
+- **UNSOURCED LEAD — CCTV said to show police breaking car glass.** Operator
+  recall of late-night public reports (night of 20–21 Jul) that CCTV footage
+  circulated showing police personnel smashing car windows — the counter-
+  record to the vehicle-vandalism FIRs. Three targeted searches this session
+  found only the police-side framing. NOT added to the public timeline: no
+  URL, no carrier outlet identified. Find the post/footage; if located,
+  it enters as claimed with the FIR entry cross-referenced.
+
 ## What could not be reached (honest gaps)
 
 1. Reddit — fully blocked to our tooling; zero coverage above.

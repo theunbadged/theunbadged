@@ -29,7 +29,8 @@
     const res = await fetch("/data/timeline.json", { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    const events = (data.events || []);
+    // newest first; the data file stays chronological
+    const events = (data.events || []).slice().reverse();
 
     if (!events.length) {
       el.innerHTML = '<p class="dim">No timeline entries published yet.</p>';
@@ -37,17 +38,32 @@
     }
 
     el.innerHTML = events.map(ev => `
-      <article class="event">
-        <div class="when">${esc(whenLabel(ev))}</div>
-        <h3>${esc(ev.title)}
-          <span class="status ${esc(ev.status)}">${esc(ev.status)}</span>
-        </h3>
-        <p>${esc(ev.description)}</p>
-        <div class="sources">
-          ${(ev.sources || []).map(s =>
-            `<a href="${esc(s.url)}" rel="noopener nofollow">${esc(s.outlet)}</a>`
-          ).join("")}
+      <article class="event${ev.action ? " has-action" : ""}">
+        <div class="event-main">
+          <div class="when">${esc(whenLabel(ev))}</div>
+          <h3>${esc(ev.title)}
+            <span class="status ${esc(ev.status)}">${esc(ev.status)}</span>
+          </h3>
+          <p>${esc(ev.description)}</p>
+          ${(ev.media || []).length ? `<div class="ev-media">
+            ${ev.media.map(m => `
+              <figure class="ev">
+                <img loading="lazy" src="${esc(m.src)}" alt="${esc(m.caption)}"
+                     onerror="this.closest('figure').style.display='none'">
+                <figcaption>${esc(m.caption)}<span>${esc(m.credit || "")}</span></figcaption>
+              </figure>`).join("")}
+          </div>` : ""}
+          <div class="sources">
+            ${(ev.sources || []).map(s =>
+              `<a href="${esc(s.url)}" rel="noopener nofollow">${esc(s.outlet)}</a>`
+            ).join("")}
+          </div>
         </div>
+        ${ev.action ? `<aside class="event-action">
+          <p class="tag">Help the record</p>
+          <p>${esc(ev.action)}</p>
+          <a href="/submit.html">Submit anonymously →</a>
+        </aside>` : ""}
       </article>
     `).join("");
   } catch (err) {

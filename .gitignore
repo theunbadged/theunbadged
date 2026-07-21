@@ -41,3 +41,6 @@ __pycache__/
 .DS_Store
 Thumbs.db
 .playwright-mcp/
+
+# Working documents with embedded evidence media
+*.docx

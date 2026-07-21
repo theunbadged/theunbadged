@@ -104,7 +104,7 @@
           body: JSON.stringify({ name: f.name, size: f.size, type: f.type, ref })
         });
         if (init.status === 503) {
-          throw new Error("Large-file uploads are temporarily unavailable. Files over 90 MB: please trim into shorter parts and try again — or submit the smaller files now.");
+          throw new Error("Large-file uploads are temporarily unavailable. Files over 90 MB: please trim into shorter parts and try again, or submit the smaller files now.");
         }
         if (!init.ok) throw new Error("could not start upload");
         const { url, key, ref: r, token: t } = await init.json();
@@ -150,14 +150,14 @@
 
       prog.value = 100;
       show(true,
-        `<strong>Received. Thank you — this matters.</strong><br><br>
-         Your claim code: <code>${token || "—"}</code><br>
-         <span class="small">This code is shown only once and only you have it —
+        `<strong>Received. Thank you. This matters.</strong><br><br>
+         Your claim code: <code>${token || "(none)"}</code><br>
+         <span class="small">This code is shown only once and only you have it;
          we keep just a fingerprint of it. If you filmed this footage and ever
          choose to come forward (for example, so it can be certified as evidence
          in court), this code proves the submission is yours. Write it somewhere
          safe that isn't your phone. If you never want any link to this
-         submission, simply don't keep it — nothing else connects you to it.</span>`);
+         submission, simply don't keep it; nothing else connects you to it.</span>`);
       form.reset(); files = []; renderList();
     } catch (err) {
       show(false, "Submission failed: " + err.message +
