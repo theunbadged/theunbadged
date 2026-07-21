@@ -487,3 +487,38 @@ strong { color: #fff; font-weight: 650; }
   pointer-events: auto;
 }
 .route-cta a:hover { border-bottom-color: var(--ember); }
+
+/* ---- inline sources (findings carry their evidence) ---- */
+.sources-row {
+  margin: 1.1rem 0 0;
+  font-size: .76rem;
+  letter-spacing: .05em;
+  color: var(--paper-dim);
+}
+.sources-row a {
+  color: var(--steel-bright);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(159,196,222,.3);
+  margin: 0 .85rem 0 .1rem;
+  white-space: nowrap;
+}
+.sources-row a:hover { border-bottom-color: var(--steel-bright); }
+.inline-cta {
+  color: var(--ember);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(211,107,51,.45);
+}
+.inline-cta:hover { border-bottom-color: var(--ember); }
+.route-src {
+  font-size: .72rem;
+  letter-spacing: .06em;
+  color: var(--steel-bright);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(159,196,222,.3);
+  margin-left: .5rem;
+  pointer-events: auto;
+  white-space: nowrap;
+}
+.route-src:hover { border-bottom-color: var(--steel-bright); }
+.route-caption a { pointer-events: auto; }
