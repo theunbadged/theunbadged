@@ -522,3 +522,33 @@ strong { color: #fff; font-weight: 650; }
 }
 .route-src:hover { border-bottom-color: var(--steel-bright); }
 .route-caption a { pointer-events: auto; }
+
+/* ---- exhibits: their statements vs their record ---- */
+.chapter-copy.wide { max-width: 46rem; }
+.exhibit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid var(--hairline);
+  margin-top: 1.7rem;
+  background: rgba(7,10,14,.5);
+}
+.exhibit .said { border-right: 1px solid var(--hairline); }
+.exhibit .said, .exhibit .record { padding: 1.25rem 1.4rem; }
+.exhibit .tag {
+  margin: 0 0 .6rem;
+  font-size: .68rem; font-weight: 700;
+  letter-spacing: .26em; text-transform: uppercase;
+  color: var(--paper-dim);
+}
+.exhibit .record .tag { color: var(--ember); }
+.exhibit blockquote {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.12rem; line-height: 1.5;
+}
+.exhibit p { margin: 0; line-height: 1.6; }
+.exhibit .attr { margin-top: .7rem; font-size: .78rem; color: var(--paper-dim); }
+@media (max-width: 680px) {
+  .exhibit { grid-template-columns: 1fr; }
+  .exhibit .said { border-right: 0; border-bottom: 1px solid var(--hairline); }
+}

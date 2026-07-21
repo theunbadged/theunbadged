@@ -1,0 +1,181 @@
+{
+  "generated": "2026-07-21T21:35:00+05:30",
+  "_note": "Citizen-sourced additions to event-timeline.json, compiled 21 Jul 2026. All events status 'claimed': each rests on citizen posts seen second-hand (via Wikipedia citations, the delhi-police-violence.vercel.app public record, or article embeds) — no X/Instagram post was directly fetchable this session, and Reddit is entirely blocked to our tooling. Post content descriptions are the intermediary's rendering. Upgrade only after direct capture of the original post plus independent alignment per the status rules. Companion detail: docs/research/citizen-accounts.md. All clock times IST (+05:30); times on citizen posts are as listed by delhi-police-violence.vercel.app.",
+  "events": [
+    {
+      "id": "cit-001",
+      "date": "2026-07-18",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Viral images: plainclothes police screen Wangchuk's removal behind white curtains",
+      "description": "Aggregate coverage states that police entered the Jantar Mantar protest site in civilian dress on 18 July and covered the stage with white curtains while removing Sonam Wangchuk, with images of the operation going viral on social media; the CJP's account (@Cockroachisback) posted Abhijeet Dipke's statement on the removal. Filmibeat coverage separately reported Wangchuk was taken to Safdarjung Hospital by plainclothes personnel. The viral images themselves have not yet been located and captured.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @Cockroachisback (via Wikipedia citation)", "url": "https://x.com/Cockroachisback/status/2078778925585449150"},
+        {"outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)", "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"}
+      ],
+      "tags": ["citizen", "unbadged", "detention"]
+    },
+    {
+      "id": "cit-002",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Journalist's on-the-spot post marks the moment the lathi charge began",
+      "description": "Piyush Rai (@Benarasiyaa) posted video with the caption 'And it has finally begun. Security personnel using lathicharge to disperse crowd at CJP protest in Delhi' — an on-the-ground timestamp for the onset of force, phrased as a sudden beginning rather than a response to violence. Seen via IBTimes UK's embed (media fragment pic.twitter.com/JYTNKLq0Tj); exact status URL not yet resolved.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "IBTimes UK (embedding @Benarasiyaa)", "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"}
+      ],
+      "tags": ["citizen", "lathi-charge"]
+    },
+    {
+      "id": "cit-003",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Beating and dragging videos circulate while Delhi Police's X account denies any force",
+      "description": "Citizen videos showing police beating protesters (@ViralDecoder) and dragging demonstrators (@diplomattimes) circulated on X the same day Delhi Police's official account posted that no such incident had taken place and the protest was being handled 'professionally'. Madhyamam reported the denial explicitly against the viral footage. The denial post is itself a capture priority: it is contradicted by the injury figures police released the same evening (see evt-011).",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @ViralDecoder (via Wikipedia citation)", "url": "https://x.com/ViralDecoder/status/2079227176055152886"},
+        {"outlet": "X @diplomattimes (via Wikipedia citation)", "url": "https://x.com/diplomattimes/status/2079258288798232635"},
+        {"outlet": "X @DelhiPolice (denial, via Wikipedia citation)", "url": "https://x.com/DelhiPolice/status/2079072102691565811"},
+        {"outlet": "Madhyamam", "url": "https://madhyamamonline.com/india/delhi-police-deny-lathi-charge-on-cjp-protesters-despite-viral-videos-from-jantar-mantar-1538938"}
+      ],
+      "tags": ["citizen", "lathi-charge"]
+    },
+    {
+      "id": "cit-004",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "13-second 'maro sir, maar dalo humko' video of youth under lathis goes viral",
+      "description": "A 13-second clip of a young protester crying 'मारो सर, मार डालो हमको' ('hit me sir, kill me') while being beaten by police went widely viral on 20 July, per Navbharat Live, which describes the clip but gives no originating handle or post URL. A separate YouTube upload titled 'छात्रों पर लाठीचार्ज, कई लोगों के सिर फूटे, चीख पुकार' carries footage of head injuries and screaming (cited by Wikipedia for police conduct). Locating the original upload of the 13-second clip is a capture priority.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "Navbharat Live", "url": "https://navbharatlive.com/videos/delhi-youth-protest-paper-leak-lathicharge-viral-video-1876912.html"},
+        {"outlet": "YouTube (via Wikipedia citation)", "url": "https://www.youtube.com/watch?v=D9kCEsVQq2E"}
+      ],
+      "tags": ["citizen", "lathi-charge", "injuries"]
+    },
+    {
+      "id": "cit-005",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Lathi charge on students marching from Mandi House toward Jantar Mantar",
+      "description": "Video carried by Assam Tribune shows Delhi Police using lathis on protesters marching from Mandi House metro station toward Jantar Mantar — force applied to people attempting to reach the protest site, distinct from the Parliament-bound march covered in evt-006. Corroborates that dispersal actions extended beyond the Sansad Marg axis.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "Assam Tribune (video)", "url": "https://assamtribune.com/video/delhi-police-lathi-charge-students-marching-towards-jantar-mantar-1614500"}
+      ],
+      "tags": ["citizen", "lathi-charge", "march"]
+    },
+    {
+      "id": "cit-006",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Videos of detainees loaded into police buses circulate; police later say detainees 'were not students'",
+      "description": "Two X posts by @TyrantOppressor carried video of detainees being taken into police buses during the crackdown (cited by Wikipedia). These are the checkable counter-record to the police statement, reported after midnight, that those detained 'were not students' (evt-017): the faces and ages of those boarding the buses are ascertainable from the footage.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @TyrantOppressor (via Wikipedia citation)", "url": "https://x.com/TyrantOppressor/status/2079092607502954810"},
+        {"outlet": "X @TyrantOppressor (via Wikipedia citation)", "url": "https://x.com/TyrantOppressor/status/2079143362511466590"},
+        {"outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)", "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"}
+      ],
+      "tags": ["citizen", "detention"]
+    },
+    {
+      "id": "cit-007",
+      "date": "2026-07-20",
+      "time": "2026-07-20T22:58:00+05:30",
+      "timeLabel": "Night",
+      "title": "Claim that Rapid Action Force beat students",
+      "description": "An X post by @Nher_who at 10:58 pm claimed students were beaten by Rapid Action Force personnel (preserved by the independent delhi-police-violence.vercel.app public record). RAF/RPF involvement in lathi use is separately visible in an ANI video embedded in State Mirror's five-video roundup and in @brijshyam8 footage embedded by Bhadas4Media — meaning force that day was applied by units beyond Delhi Police proper, which matters for accountability mapping.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @Nher_who (via delhi-police-violence.vercel.app)", "url": "https://x.com/Nher_who/status/2079257100279247190"},
+        {"outlet": "State Mirror (five-video roundup)", "url": "https://www.statemirror.com/state/delhi-ncr/jantar-mantar-protest-5-videos-cockroach-janata-party-protest-170489"},
+        {"outlet": "Bhadas4Media (embedding @brijshyam8)", "url": "https://www.bhadas4media.com/jantar-mantar-police-lathicharge/"}
+      ],
+      "tags": ["citizen", "lathi-charge"]
+    },
+    {
+      "id": "cit-008",
+      "date": "2026-07-20",
+      "time": "2026-07-20T23:36:00+05:30",
+      "timeLabel": "Night",
+      "title": "Video of Class 7 student circulates; viral post claims 12-year-old girl among injured — police deny",
+      "description": "An X post by @SidKeVichaar (11:36 pm) carried video of a Class 7 student from Odisha speaking against the authorities, preserved by the delhi-police-violence.vercel.app record. Separately, a viral post alleged police assaulted a woman said to be Sonam Wangchuk's wife Geetanjali Angmo and injured 40-50 protesters including a 12-year-old girl — Delhi Police dismissed that post as false (per Siasat's live blog); its original has not been located. IBTimes UK reported that independent media verified footage of police assaulting protesters as young as 15 or 16. Minors' presence in the crowd is consistent across accounts; each specific minor-injury claim remains unverified.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @SidKeVichaar (via delhi-police-violence.vercel.app)", "url": "https://x.com/SidKeVichaar/status/2079266679763382719"},
+        {"outlet": "IBTimes UK", "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"},
+        {"outlet": "Siasat (live blog, police denial of viral post)", "url": "https://www.siasat.com/live-sonams-new-message-cjp-continues-sit-in-amid-heavy-police-pressence-3509588/"},
+        {"outlet": "The Wire (headline citing minors; via Wikipedia citation, not directly fetched)", "url": "https://thewire.in/government/police-lathicharges-thousands-fires-tear-gas-at-protesters-including-minors"}
+      ],
+      "tags": ["citizen", "injuries", "minors"]
+    },
+    {
+      "id": "cit-009",
+      "date": "2026-07-20",
+      "time": "2026-07-20T23:59:00+05:30",
+      "timeLabel": "Night",
+      "title": "Single-source claim of electrified barricades",
+      "description": "An X post by @Kumarjyoti49291 carried video claimed to show electrified barricades at the protest perimeter (cited by Wikipedia). No second citizen account and no outlet pickup were found in targeted searching; this is an extraordinary claim resting on one post. Recorded here at lowest confidence solely so the video is captured before any takedown; do not surface publicly without independent verification.",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @Kumarjyoti49291 (via Wikipedia citation)", "url": "https://x.com/Kumarjyoti49291/status/2079199366217453738"},
+        {"outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)", "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"}
+      ],
+      "tags": ["citizen"]
+    },
+    {
+      "id": "cit-010",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "MHA issued at least two shutdown orders for a 1.5 km radius; ground workarounds via WiFi hotspots",
+      "description": "Vijaita Singh of The Hindu posted on X that at least two internet suspension orders were issued by the MHA on 20 July covering a 1.5 km radius of Jantar Mantar — the first effective 6 am to 12 noon, then extended to 6 pm — asking whether the government assumed the protest would end by noon. Medianama reported the shutdown forced journalists and demonstrators onto WiFi from nearby establishments, one person filing updates through a Jio hotspot with 34 MB of data; WION carried video of commuters jumping metro gates amid station closures. The 1.5 km radius conflicts with The South First's earlier 5 km figure (evt-009).",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @vijaita (The Hindu journalist)", "url": "https://x.com/vijaita/status/2079393447208009768"},
+        {"outlet": "Medianama", "url": "https://www.medianama.com/2026/07/223-internet-shutdown-delhi-jantar-mantar-protest-march/"},
+        {"outlet": "The Wire (telecoms confirm orders)", "url": "https://m.thewire.in/article/government/telecom-companies-confirm-delhi-internet-shutdown-order-government-yet-to-publish-it"},
+        {"outlet": "WION (metro-gate videos)", "url": "https://www.wionews.com/india-news/lathi-charge-tear-gas-commuters-jumping-metro-gates-videos-show-what-s-happening-at-cjp-s-chalo-sansad-march-watch-1784529207478"}
+      ],
+      "tags": ["citizen", "shutdown"]
+    },
+    {
+      "id": "cit-011",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Congress MP demands identification of plainclothes men who wielded lathis",
+      "description": "Congress MP Ummeda Ram Beniwal posted on X asking who the men in civil clothes carrying lathis alongside Delhi Police were, demanding the government clarify their authorisation and identities, per TV9 Hindi, which reported social-media videos of plainclothes personnel beating protesters and set out the legal frame: mandatory name tags under D.K. Basu v. West Bengal (1997) even for plainclothes officers, BNSS s.36 self-identification, and lathi-charge authorisation limits. This is the first parliamentary-level demand tied to the unbadged/plainclothes claims (extends evt-007).",
+      "status": "claimed",
+      "sources": [
+        {"outlet": "X @UmmedaRamBaytu (via TV9 Hindi embed)", "url": "https://x.com/UmmedaRamBaytu/status/2079445672701649353"},
+        {"outlet": "TV9 Hindi", "url": "https://www.tv9hindi.com/india/without-uniform-police-in-protest-lathicharge-rules-cjp-march-delhi-3856836.html"}
+      ],
+      "tags": ["citizen", "unbadged"]
+    },
+    {
+      "id": "cit-012",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Recycled and false videos begin contaminating the citizen record",
+      "description": "The Quint's fact-check found a 2023 pro-Palestine-protest video (woman's flag snatched by police) recirculating as footage from the CJP protest; Delhi Police had separately debunked (19 July) a viral video falsely linking actor Vijay to the protest and warned against sharing unverified content. A genuine viral clip of a student threatening to 'uproot' Parliament (Newstrack) was meanwhile amplified to justify the security posture. Logged for archive hygiene: intake verification must reverse-search every submission against pre-20-July footage.",
+      "status": "corroborated",
+      "sources": [
+        {"outlet": "The Quint (Webqoof fact-check)", "url": "https://www.thequint.com/news/webqoof/old-unrelated-video-shared-as-a-visual-from-the-cjp-protest-at-jantar-mantar-false-claim-fact-check"},
+        {"outlet": "Newskarnataka (police debunk)", "url": "https://newskarnataka.com/india/delhi-police-debunks-viral-claim-linking-vijay-to-jantar-mantar-protest/20072026/"},
+        {"outlet": "Newstrack (student threat video)", "url": "https://newstrack.com/india/student-threat-video-goes-viral-delhi-jantar-mantar-protest-parliament-security-tightened-video-616427"}
+      ],
+      "tags": ["citizen"]
+    }
+  ]
+}
