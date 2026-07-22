@@ -21,7 +21,7 @@ design choices against [docs/threat-model.md](docs/threat-model.md).
 ## Working notes
 
 - This repo is standalone; the parent Projects repo ignores it. It is public
-  at github.com/shrey16/theunbadged (decision 0003) — never commit secrets,
+  at github.com/theunbadged/theunbadged (decision 0003) — never commit secrets,
   vault contents, or submitter-identifying anything.
 - All timestamps are IST (Asia/Kolkata), ISO-8601 with explicit +05:30,
   taken from the operator's system clock.
