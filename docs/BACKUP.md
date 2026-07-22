@@ -6,7 +6,10 @@ the threat model). restic encrypts client-side: Google only ever holds
 ciphertext.
 
 ## Layout
-- GCP project: `unbadged-vault-38608` (dedicated; billing = personal account)
+- GCP project: `unbadged-vault-38608` (dedicated). **Billing migration
+  pending:** currently on the operator's personal Google account; move to the
+  project (anon) identity as part of the deanonymization sweep so the backup
+  is not linkable to the operator via billing records.
 - Bucket: `gs://unbadged-vault-38608-evidence` (uniform access, public-access
   prevention ON)
 - restic repo: `gs:unbadged-vault-38608-evidence:/restic`
@@ -23,7 +26,7 @@ to a password manager and one offline location today.
 ## Run a backup (after each ingest)
 ```bash
 source ~/.config/unbadged/backup-env.sh
-restic backup "/c/Users/Shrey Gupta/Projects/theunbadged/vault/" --tag manual
+restic backup "$UNBADGED_REPO/vault/" --tag manual   # $UNBADGED_REPO = repo checkout
 restic snapshots        # list
 restic check            # verify integrity
 ```

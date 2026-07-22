@@ -45,7 +45,13 @@ VAULT = Path(os.environ.get("UNBADGED_VAULT", REPO / "vault"))
 ORIGINALS = VAULT / "originals"
 SUBMISSIONS = VAULT / "submissions"
 LEDGER = VAULT / "ledger.jsonl"
-CUSTODIAN = os.environ.get("UNBADGED_CUSTODIAN", "Shrey Gupta")
+# Custodian recorded in each ledger line. Default is the project identity so
+# no operator name is baked into new entries or the public tooling. For a
+# court-grade chain of custody a real, testifiable custodian may be required:
+# set UNBADGED_CUSTODIAN in the local environment to that sealed identity;
+# it never lives in the repo. (Past ledger lines are immutable by design and
+# are not rewritten — that would break the hash chain.)
+CUSTODIAN = os.environ.get("UNBADGED_CUSTODIAN", "The Unbadged (custodian on file)")
 CHUNK = 4 * 1024 * 1024
 
 
