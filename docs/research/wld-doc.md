@@ -62,8 +62,7 @@ extracted image (vault/doc-capture/) illustrates it.
    https://drive.google.com/file/d/1LG0bCef4_gQFW-TCT7L5hDtgv-XFh5_q/view ;
    slapping/beating a minor with baton:
    https://drive.google.com/file/d/1iMRtMal7xbxcU4PrtCNAmWS9CxAWCjMM/view —
-   image8.png (officer mid-swing at a young protester; age and the bag
-   are not clearly readable from the frame). SITE
+   image8.png (officer mid-swing with a lathi at a young protester). SITE
    EXHIBIT. Choking a minor:
    https://x.com/Cockroachisback/status/2079443179527684502 ,
    https://x.com/mandeeppunia1/status/2079186425636098210 — image6.png
