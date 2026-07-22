@@ -187,7 +187,7 @@ def r2_client():
     )
 
 
-def pull() -> None:
+def pull(keep: bool = False) -> None:
     s3 = r2_client()
     bucket = os.environ["R2_BUCKET"]
 
@@ -251,6 +251,7 @@ def pull() -> None:
                 "size": size,
                 "original_name": declared.get("originalName"),
                 "declared_type": declared.get("type"),
+                "sniff": declared.get("sniff"),  # worker's magic-byte verdict; "unknown" = triage
                 "channel": meta.get("channel", "webform"),
                 "submission": sub_id,
                 "uploaded_at": meta.get("receivedAt"),
@@ -262,13 +263,23 @@ def pull() -> None:
 
         record["ingested"] = ingested
         rec_path = sub_dir / "record.json"
-        rec_path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
-        make_read_only(rec_path)
+        if rec_path.exists():
+            # write-once: a record vaulted by an earlier (possibly interrupted)
+            # run is never rewritten; the ledger carries any re-pull as duplicates
+            print(f"submission {sub_id[:8]}… record already vaulted; keeping original")
+        else:
+            rec_path.write_text(json.dumps(record, ensure_ascii=False, indent=2), encoding="utf-8")
+            make_read_only(rec_path)
 
         # only after everything is safely vaulted: empty the mailbox
-        for k in sub_keys:
-            s3.delete_object(Bucket=bucket, Key=k)
-        print(f"submission {sub_id[:8]}… vaulted ({len(ingested)} file(s)), mailbox cleared")
+        # (--keep skips this, for tokens without delete permission; safe to
+        # re-run later — duplicates are detected by hash and discarded)
+        if keep:
+            print(f"submission {sub_id[:8]}… vaulted ({len(ingested)} file(s)), left in mailbox (--keep)")
+        else:
+            for k in sub_keys:
+                s3.delete_object(Bucket=bucket, Key=k)
+            print(f"submission {sub_id[:8]}… vaulted ({len(ingested)} file(s)), mailbox cleared")
 
 
 # ---------- fixity ----------
@@ -302,7 +313,10 @@ def main() -> None:
     load_dotenv()
     ap = argparse.ArgumentParser(description="The Unbadged vault ingestion")
     sub = ap.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("pull", help="drain the R2 intake mailbox into the vault")
+    pp = sub.add_parser("pull", help="drain the R2 intake mailbox into the vault")
+    pp.add_argument("--keep", action="store_true",
+                    help="vault everything but leave the mailbox untouched "
+                         "(for read-only tokens; re-runs dedupe by hash)")
     pf = sub.add_parser("file", help="ingest a locally received file")
     pf.add_argument("path", type=Path)
     pf.add_argument("--via", default="local", help="channel (signal/local/...)")
@@ -311,7 +325,7 @@ def main() -> None:
     args = ap.parse_args()
 
     if args.cmd == "pull":
-        pull()
+        pull(keep=args.keep)
     elif args.cmd == "file":
         ingest_local(args.path, args.via, args.note)
     elif args.cmd == "verify":
