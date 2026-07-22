@@ -44,3 +44,10 @@ Thumbs.db
 
 # Working documents with embedded evidence media
 *.docx
+
+# Operator's private working notes (kept local, never public)
+DIRECTIONS.md
+
+# Local MCP config + Instagram monitor secrets (operator machine only)
+.mcp.json
+tools/ig-monitor/.env
