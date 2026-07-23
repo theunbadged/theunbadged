@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T20:55:04+05:30",
+  "generated": "2026-07-24T03:31:48+05:30",
   "note": "Sourced from published reporting 18-21 July 2026. Live-blog timestamps are the publishing outlet's report, not independently verified clock readings. Entries with ids beginning cit- rest on citizen posts seen second-hand (article embeds, Wikipedia citations, or the independent delhi-police-violence.vercel.app public record); they stay at claimed until the original posts are captured and verified. Updated as events unfold.",
   "events": [
     {
@@ -1253,6 +1253,87 @@
         }
       ],
       "tags": [
+        "parliament"
+      ]
+    },
+    {
+      "id": "evt-030",
+      "date": "2026-07-23",
+      "time": null,
+      "timeLabel": "Past midnight",
+      "title": "Sonam Wangchuk ends his 26-day hunger strike",
+      "description": "Wangchuk ended his hunger strike shortly after midnight at Medanta Hospital in Gurugram, in the presence of Union Ministers J.P. Nadda and Jitendra Singh. He had said he would stop only if the government assured no punitive action against Chalo Sansad protesters, compensated families of students who died by suicide over the NEET-UG paper leak, and held a substantive parliamentary debate including consideration of Education Minister Dharmendra Pradhan's resignation.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Khaleej Times",
+          "url": "https://www.khaleejtimes.com/world/asia/india-neet-protest-sonam-wangchuk-ends-hunger-strike"
+        },
+        {
+          "outlet": "India TV",
+          "url": "https://www.indiatvnews.com/news/india/sonam-wangchuk-agrees-to-end-hunger-strike-today-but-lays-down-three-conditions-for-govt-2026-07-20-1048787"
+        },
+        {
+          "outlet": "Organiser",
+          "url": "https://organiser.org/2026/07/23/371325/bharat/sonam-sonam-wangchuk-offers-to-end-hunger-strike-on-three-conditions-what-are-they/"
+        }
+      ],
+      "tags": [
+        "parliament",
+        "hunger-strike"
+      ]
+    },
+    {
+      "id": "evt-031",
+      "date": "2026-07-23",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "PM Modi announces fast-track courts for exam paper-leak cases",
+      "description": "Prime Minister Narendra Modi said the government will set up fast-track courts to try and punish those behind exam paper leaks, adding that culprits will not be spared. The step addresses the leak itself; it does not touch the protesters' central demands, which are accountability for the 20 July police crackdown and the resignation of Education Minister Dharmendra Pradhan.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint",
+          "url": "https://theprint.in/india/pm-modi-announces-fast-track-courts-for-paper-leak-cases-says-culprits-wont-be-spared/2994088/"
+        },
+        {
+          "outlet": "Business Standard",
+          "url": "https://www.business-standard.com/politics/pm-announces-fast-track-courts-as-cjp-rejects-outreach-steps-up-protests-126072301516_1.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/23/indias-modi-promises-fast-track-courts-for-exam-fraud-fuelling-protests"
+        }
+      ],
+      "tags": [
+        "courts",
+        "parliament"
+      ]
+    },
+    {
+      "id": "evt-032",
+      "date": "2026-07-23",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "CJP rejects the outreach and calls for a nationwide protest; Pradhan must resign",
+      "description": "The Cockroach Janta Party said the fast-track-courts announcement did not address accountability for the paper leak or the police crackdown, and called for a nationwide protest, reiterating that Education Minister Dharmendra Pradhan must resign. Founder Abhijeet Dipke said the movement would keep protesting but hold no further street marches, for the safety of the young people beaten on 20 July, and that the Prime Minister looked ready to shut down all of Delhi but not to sack Pradhan.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Business Standard",
+          "url": "https://www.business-standard.com/politics/pm-announces-fast-track-courts-as-cjp-rejects-outreach-steps-up-protests-126072301516_1.html"
+        },
+        {
+          "outlet": "The Week",
+          "url": "https://www.theweek.in/news/india/2026/07/23/pm-modi-pledges-fast-track-courts-for-paper-leaks-cjp-reiterates-pradhan-must-resign.html"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/21/indias-cockroach-protest-movement-halts-marches-after-police-violence"
+        }
+      ],
+      "tags": [
+        "march",
         "parliament"
       ]
     }

@@ -216,20 +216,16 @@ footer.site .wrap { display: flex; flex-wrap: wrap; gap: .4rem 2rem; justify-con
   .event-action { position: static; margin-top: .8rem; }
 }
 
-/* slide export controls */
-.tl-tools { display: flex; justify-content: flex-end; margin: 0 0 1.4rem; }
-.tl-export {
-  cursor: pointer; font: 600 .8rem/1 "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: .04em; padding: .7rem 1.15rem; border-radius: 4px;
-  border: 1px solid #c53b2c; background: #c53b2c; color: #f3ede2;
+/* per-entry share-as-image control */
+.event-head { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.tl-share {
+  flex: none; display: inline-flex; align-items: center; justify-content: center;
+  width: 2.1rem; height: 2.1rem; cursor: pointer;
+  border: 1px solid rgba(159,196,222,.32); border-radius: 999px;
+  background: transparent; color: #9fc4de;
+  transition: color .15s ease, border-color .15s ease, background-color .15s ease;
 }
-.tl-export:hover { filter: brightness(1.08); }
-.tl-export:disabled { opacity: .6; cursor: default; }
-.tl-slide-btn {
-  cursor: pointer; font: 600 .72rem/1 "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: .04em; padding: .35rem .7rem; margin-left: .5rem;
-  border-radius: 4px; border: 1px solid rgba(159,196,222,.4);
-  background: transparent; color: #9fc4de; vertical-align: middle;
-}
-.tl-slide-btn:hover { border-color: #9fc4de; }
-.tl-slide-btn:disabled { opacity: .6; cursor: default; }
+.tl-share:hover { color: #f3ede2; border-color: #c53b2c; background: rgba(197,59,44,.14); }
+.tl-share:disabled { opacity: .55; cursor: default; }
+.tl-share.busy { color: #c53b2c; }
+.tl-share svg { display: block; }

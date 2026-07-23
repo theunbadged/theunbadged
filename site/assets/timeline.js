@@ -127,38 +127,30 @@
     URL.revokeObjectURL(link.href);
   }
 
-  async function exportOne(ev, filename, btn) {
-    const orig = btn.textContent;
-    btn.disabled = true; btn.textContent = "Rendering…";
+  // If the device supports the native share sheet with files, offer it;
+  // otherwise fall back to a download. Either way the slide is built locally.
+  async function shareOrSaveOne(ev, filename, btn) {
+    btn.classList.add("busy"); btn.disabled = true;
     try {
-      saveBlob(await slideBlob(ev), filename);
+      const blob = await slideBlob(ev);
+      const file = new File([blob], filename, { type: "image/png" });
+      if (navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({ files: [file], title: "The Unbadged" });
+          return;
+        } catch (e) {
+          if (e && e.name === "AbortError") return; // user dismissed the sheet
+        }
+      }
+      saveBlob(blob, filename);
     } catch (e) {
-      console.error(e); alert("Could not render that slide.");
+      console.error(e); alert("Could not create the image.");
     } finally {
-      btn.textContent = orig; btn.disabled = false;
+      btn.classList.remove("busy"); btn.disabled = false;
     }
   }
 
-  async function exportAll(events, btn) {
-    const orig = btn.textContent;
-    btn.disabled = true;
-    try {
-      btn.textContent = "Preparing…";
-      const JSZip = await loadLocalScript("/assets/vendor/jszip.min.js", "JSZip");
-      const zip = new JSZip();
-      const folder = zip.folder("unbadged-timeline-slides");
-      for (let i = 0; i < events.length; i++) {
-        btn.textContent = `Rendering ${i + 1} of ${events.length}…`;
-        folder.file(`slide-${String(i + 1).padStart(2, "0")}.png`, await slideBlob(events[i]));
-      }
-      btn.textContent = "Zipping…";
-      saveBlob(await zip.generateAsync({ type: "blob" }), "unbadged-timeline-slides.zip");
-    } catch (e) {
-      console.error(e); alert("Could not build the slide archive.");
-    } finally {
-      btn.textContent = orig; btn.disabled = false;
-    }
-  }
+  var SHARE_SVG = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92s2.92-1.31 2.92-2.92-1.31-2.92-2.92-2.92z"/></svg>';
 
   try {
     const res = await fetch("/data/timeline.json", { cache: "no-cache" });
@@ -172,14 +164,14 @@
       return;
     }
 
-    const toolbar = `<div class="tl-tools">
-      <button id="tl-export-all" class="tl-export" type="button">Download all as slides</button>
-    </div>`;
-
-    el.innerHTML = toolbar + events.map((ev, idx) => `
+    el.innerHTML = events.map((ev, idx) => `
       <article class="event${ev.action ? " has-action" : ""}">
         <div class="event-main">
-          <div class="when">${esc(whenLabel(ev))}</div>
+          <div class="event-head">
+            <div class="when">${esc(whenLabel(ev))}</div>
+            <button class="tl-share" type="button" data-index="${idx}"
+              aria-label="Share this entry as an image" title="Share as image">${SHARE_SVG}</button>
+          </div>
           <h3>${esc(ev.title)}
             <span class="status ${esc(ev.status)}">${esc(ev.status)}</span>
           </h3>
@@ -196,7 +188,6 @@
             ${(ev.sources || []).map(s =>
               `<a href="${esc(s.url)}" rel="noopener nofollow">${esc(s.outlet)}</a>`
             ).join("")}
-            <button class="tl-slide-btn" type="button" data-index="${idx}" title="Save this entry as a shareable image">Save slide</button>
           </div>
         </div>
         ${ev.action ? `<aside class="event-action">
@@ -207,14 +198,12 @@
       </article>
     `).join("");
 
-    el.querySelectorAll(".tl-slide-btn").forEach(btn => {
+    el.querySelectorAll(".tl-share").forEach(btn => {
       btn.addEventListener("click", () => {
         const i = Number(btn.getAttribute("data-index"));
-        exportOne(events[i], `unbadged-slide-${String(i + 1).padStart(2, "0")}.png`, btn);
+        shareOrSaveOne(events[i], `unbadged-slide-${String(i + 1).padStart(2, "0")}.png`, btn);
       });
     });
-    const allBtn = document.getElementById("tl-export-all");
-    if (allBtn) allBtn.addEventListener("click", () => exportAll(events, allBtn));
   } catch (err) {
     el.innerHTML = '<p class="dim">Could not load the timeline. Please refresh.</p>';
   }
