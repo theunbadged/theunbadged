@@ -1,1160 +1,1260 @@
 {
- "generated": "2026-07-22T02:25:00+05:30",
- "note": "Sourced from published reporting 18-21 July 2026. Live-blog timestamps are the publishing outlet's report, not independently verified clock readings. Entries with ids beginning cit- rest on citizen posts seen second-hand (article embeds, Wikipedia citations, or the independent delhi-police-violence.vercel.app public record); they stay at claimed until the original posts are captured and verified. Updated as events unfold.",
- "events": [
-  {
-   "id": "evt-001",
-   "date": "2026-07-18",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Sonam Wangchuk removed from Jantar Mantar during hunger strike",
-   "description": "Activist Sonam Wangchuk, who had been on a hunger strike at Jantar Mantar in support of the protest over alleged NEET-UG paper leaks, was forcibly removed from the site by police on Saturday, 18 July, and taken to hospital, according to Daily Pioneer and Al Jazeera. Al Jazeera reported the removal came after a roughly 20-day hunger strike.",
-   "status": "corroborated",
-   "sources": [
+  "generated": "2026-07-23T20:55:04+05:30",
+  "note": "Sourced from published reporting 18-21 July 2026. Live-blog timestamps are the publishing outlet's report, not independently verified clock readings. Entries with ids beginning cit- rest on citizen posts seen second-hand (article embeds, Wikipedia citations, or the independent delhi-police-violence.vercel.app public record); they stay at claimed until the original posts are captured and verified. Updated as events unfold.",
+  "events": [
     {
-     "outlet": "Daily Pioneer",
-     "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+      "id": "evt-001",
+      "date": "2026-07-18",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Sonam Wangchuk removed from Jantar Mantar during hunger strike",
+      "description": "Activist Sonam Wangchuk, who had been on a hunger strike at Jantar Mantar in support of the protest over alleged NEET-UG paper leaks, was forcibly removed from the site by police on Saturday, 18 July, and taken to hospital, according to Daily Pioneer and Al Jazeera. Al Jazeera reported the removal came after a roughly 20-day hunger strike.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Daily Pioneer",
+          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
+        }
+      ],
+      "tags": [
+        "detention"
+      ]
     },
     {
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
+      "id": "cit-001",
+      "date": "2026-07-18",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Viral images: plainclothes police screen Wangchuk's removal behind white curtains",
+      "description": "Aggregate coverage states that police entered the Jantar Mantar protest site in civilian dress on 18 July and covered the stage with white curtains while removing Sonam Wangchuk, with images of the operation going viral on social media; the CJP's account (@Cockroachisback) posted Abhijeet Dipke's statement on the removal. Filmibeat coverage separately reported Wangchuk was taken to Safdarjung Hospital by plainclothes personnel. The viral images themselves have not yet been located and captured.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @Cockroachisback (via Wikipedia citation)",
+          "url": "https://x.com/Cockroachisback/status/2078778925585449150"
+        },
+        {
+          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "unbadged",
+        "detention"
+      ],
+      "action": "Find and capture the viral images of the white-curtain removal."
+    },
+    {
+      "id": "evt-002",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "March to Parliament denied permission; prohibitory orders and metro closures imposed",
+      "description": "DCP Sachin Sharma said no permission had been sought or granted for the CJP's march from Jantar Mantar to Parliament, per Outlook. Prohibitory orders under Section 163 of the BNSS were imposed in central Delhi, over 5,000 police personnel were deployed per a PTI report carried by Deccan Chronicle, and metro stations including Rajiv Chowk, Janpath and Patel Chowk were closed, per SFLC.in and PTC News.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
+        },
+        {
+          "outlet": "Deccan Chronicle (PTI)",
+          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
+        },
+        {
+          "outlet": "SFLC.in",
+          "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
+        },
+        {
+          "outlet": "PTC News",
+          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-003",
+      "date": "2026-07-20",
+      "time": "2026-07-20T07:00:00+05:30",
+      "timeLabel": "Morning",
+      "title": "Heavy police buildup around Jantar Mantar",
+      "description": "ThePrint's live blog reported at 7:00 am that Delhi Police had beefed up their presence with over 300 personnel, tear-gas vehicles and barricades around Jantar Mantar ahead of the unauthorised march. Thousands of protesters, largely students and CJP supporters, had assembled at the site, where a sit-in over alleged NEET-UG irregularities had been running for weeks.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        }
+      ],
+      "tags": [
+        "march"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-a1-qrt.jpg",
+          "caption": "Quick-response team, rifles raised over an armoured vehicle at the Parliament approach (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ]
+    },
+    {
+      "id": "cit-013",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Ahead of the march, Dipke posts photos of lorries at Jantar Mantar, alleging planted stones",
+      "description": "Before the march set out, CJP founder Abhijeet Dipke posted photographs of lorries parked at Jantar Mantar which he claimed were loaded with stones, alleging that authorities might allow 'goons' to disrupt the protest so that the violence would be blamed on CJP. If genuine, the photographs bear directly on the later official account that escalation began with stone-pelting by protesters; the original post and photos are a capture priority. Single-sided allegation, aggregated by Wikipedia's account of the protests; not confirmed by police and no outlet verification of the lorries' contents found.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating Dipke's post)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "stone-pelting"
+      ],
+      "action": "Locate Dipke's original lorry photos and post."
+    },
+    {
+      "id": "evt-004",
+      "date": "2026-07-20",
+      "time": "2026-07-20T07:30:00+05:30",
+      "timeLabel": "Morning",
+      "title": "First reported use of lathis, near Park Hotel",
+      "description": "ThePrint's live blog reported at 7:30 am that police used lathis on crowds near the Park Hotel to disperse demonstrators toward Palika Bazaar, before the march had formally begun. This is the earliest reported use of force that day; it appears only in ThePrint's account.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        }
+      ],
+      "tags": [
+        "lathi-charge"
+      ]
+    },
+    {
+      "id": "evt-005",
+      "date": "2026-07-20",
+      "time": "2026-07-20T09:00:00+05:30",
+      "timeLabel": "Morning",
+      "title": "Scheduled 9 am march start passes without a formal start",
+      "description": "Outlook reported the procession was scheduled to begin at 9 am but 'never formally started' amid barricading and prohibitory orders. Entry to Jantar Mantar had been restricted to the Tolstoy Marg side, per ThePrint's live blog (8:14 am entry).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
+        },
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-006",
+      "date": "2026-07-20",
+      "time": "2026-07-20T10:04:00+05:30",
+      "timeLabel": "Morning",
+      "title": "Police lathi-charge and tear gas as marchers move toward Parliament",
+      "description": "As protesters began moving from Jantar Mantar toward Parliament, police lathi-charged the crowd (ThePrint live blog, 10:04 am entry) and fired tear gas near the Parliament premises (ThePrint, 10:50 am), with tear-gas use also reported near Shastri Bhawan, Raisina Road and the Sansad Marg-Tolstoy Marg stretch by Daily Pioneer and Outlook. Accounts of the trigger conflict: police sources told PTI the action followed stone-pelting and barricade breaches by protesters, while protesters quoted by Al Jazeera and Daily Pioneer said the march was peaceful when the lathi-charge began suddenly.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Deccan Chronicle (PTI)",
+          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
+        },
+        {
+          "outlet": "Al Jazeera",
+          "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
+        },
+        {
+          "outlet": "Daily Pioneer",
+          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+        },
+        {
+          "outlet": "The South First",
+          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
+        }
+      ],
+      "tags": [
+        "march",
+        "lathi-charge"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-b1-teargas-downed.jpg",
+          "caption": "A shell lands on a protester already on the ground (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        },
+        {
+          "src": "/evidence/ev-e1-teargas-wide.jpg",
+          "caption": "Tear gas over the crowd (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ]
+    },
+    {
+      "id": "cit-002",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Journalist's on-the-spot post marks the moment the lathi charge began",
+      "description": "Piyush Rai (@Benarasiyaa) posted video with the caption 'And it has finally begun. Security personnel using lathicharge to disperse crowd at CJP protest in Delhi'; an on-the-ground timestamp for the onset of force, phrased as a sudden beginning rather than a response to violence. Seen via IBTimes UK's embed (media fragment pic.twitter.com/JYTNKLq0Tj); exact status URL not yet resolved.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "IBTimes UK (embedding @Benarasiyaa)",
+          "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge"
+      ],
+      "action": "Resolve the exact URL of the journalist's onset post."
+    },
+    {
+      "id": "evt-007",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Officers reported without name badges; plainclothes personnel with lathis",
+      "description": "Newslaundry's photo report stated that several police personnel were without name badges even before the protest began, and that some personnel in plain clothes wielded lathis against demonstrators, making identification difficult. TV9 Hindi separately reported social-media videos of plainclothes men beating protesters with lathis at Jantar Mantar, and set out the legal frame: name identification is mandatory under D.K. Basu (1997) even in plain clothes, and BNSS s.36 requires self-identification. The badge-absence photographs still rest on one outlet and are not confirmed by police; the plainclothes-lathis reports now appear in two outlets. A separate Instagram reel preserved in the protestor-side compilation shows RAF personnel at Jantar Mantar without visible name badges, a third independent carrier of the identification claim.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Newslaundry",
+          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
+        },
+        {
+          "outlet": "TV9 Hindi",
+          "url": "https://www.tv9hindi.com/india/without-uniform-police-in-protest-lathicharge-rules-cjp-march-delhi-3856836.html"
+        },
+        {
+          "outlet": "Instagram reel (RAF without name badges)",
+          "url": "https://www.instagram.com/reel/DbAIG2FvUTG/"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "unbadged",
+        "lathi-charge"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-d1-raf-nobadges.jpg",
+          "caption": "RAF personnel at Jantar Mantar without visible name badges (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ],
+      "action": "Photos showing crews with or without name plates? Submit them."
+    },
+    {
+      "id": "evt-008",
+      "date": "2026-07-20",
+      "time": "2026-07-20T11:29:00+05:30",
+      "timeLabel": "Morning",
+      "title": "Barricades breached near Parliament Street; injuries reported",
+      "description": "PTC News' live blog reported at 11:29 am that protesters breached barricades near the Parliament Street police station, with several injuries reported. Police sources quoted by PTI said barricade-breach attempts occurred at Parliament Street, Patel Chowk, Constitution Club, Rail Bhavan and Shastri Bhawan through the day.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "PTC News (live blog)",
+          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        }
+      ],
+      "tags": [
+        "march",
+        "injuries"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-a2-barricades.jpg",
+          "caption": "Crowds against overturned barricades (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ]
+    },
+    {
+      "id": "evt-009",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Mobile internet suspended in parts of central Delhi; no suspension order published",
+      "description": "Mobile internet services were suspended in parts of central Delhi, including around Jantar Mantar and Sansad Marg; The South First reported the shutdown covered roughly a 5-km radius from Jantar Mantar. The Internet Freedom Foundation said that, as of its statement (published 6:14 pm on 20 July via The Wire), no copy of any suspension order had been published by the MHA, DoT, Delhi government or police; SFLC.in and The Logical Indian also reported the shutdown. Reported radii conflict: roughly 5 km per The South First, while MHA orders reported on 21 July covered a 1.5 km radius (see that entry); telecom operators confirmed receiving orders that were never published.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "The Wire (IFF statement)",
+          "url": "https://m.thewire.in/article/rights/iff-slams-delhi-internet-shutdown-during-chalo-sansad-protest-demands-immediate-restoration"
+        },
+        {
+          "outlet": "SFLC.in",
+          "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
+        },
+        {
+          "outlet": "The Logical Indian",
+          "url": "https://thelogicalindian.com/internet-suspended-delhi-cjp-protest-sansad/"
+        },
+        {
+          "outlet": "The Tribune",
+          "url": "https://www.tribuneindia.com/news/delhi/mobile-internet-disruption-leaves-protesters-commuters-stranded/"
+        },
+        {
+          "outlet": "The South First",
+          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
+        }
+      ],
+      "tags": [
+        "shutdown"
+      ]
+    },
+    {
+      "id": "evt-010",
+      "date": "2026-07-20",
+      "time": "2026-07-20T12:00:00+05:30",
+      "timeLabel": "Afternoon",
+      "title": "Parliament disrupted; Kharge raises lathi-charge in Rajya Sabha; police initially deny use of force",
+      "description": "On the Monsoon Session's opening day, the Lok Sabha was adjourned around 11:30 am and the Rajya Sabha around noon amid Opposition uproar over the NEET paper leaks, per PTC News. Leader of Opposition Mallikarjun Kharge accused the government of using force on demonstrators (IANS wire, 1:20 pm). At that stage Delhi Police denied the reports, saying 'no such incident has taken place and the protest is being handled professionally', a denial contradicted by the injury figures police themselves released later the same day.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "IANS via Prokerala",
+          "url": "https://www.prokerala.com/news/articles/a1790111.html"
+        },
+        {
+          "outlet": "PTC News (live blog)",
+          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
+        }
+      ],
+      "tags": [
+        "lathi-charge"
+      ]
+    },
+    {
+      "id": "cit-017",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Afternoon",
+      "title": "Congress MP alleges signal jammers around Parliament in session; MPs 'locked inside'",
+      "description": "Per a PTI post preserved in the protestor-side compilation, Congress MP Renuka Chowdhury alleged that signal or cell-phone jammers were used around Parliament while the House sat, so that members inside could not learn what was happening on the street outside, and that members were locked inside. Attributed to a sitting MP via a wire agency's account; the PTI post itself is a capture priority and the claim is otherwise unverified.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @PTI_News (quoting MP Renuka Chowdhury)",
+          "url": "https://x.com/PTI_News/status/2079135837225472499"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "shutdown",
+        "parliament"
+      ]
+    },
+    {
+      "id": "cit-003",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Beating and dragging videos circulate while Delhi Police's X account denies any force",
+      "description": "Citizen videos showing police beating protesters (@ViralDecoder) and dragging demonstrators (@diplomattimes) circulated on X the same day Delhi Police's official account posted that no such incident had taken place and the protest was being handled 'professionally'. Madhyamam reported the denial explicitly against the viral footage. The denial post is itself a capture priority: it is contradicted by the injury figures police released the same evening (see evt-011).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @ViralDecoder (via Wikipedia citation)",
+          "url": "https://x.com/ViralDecoder/status/2079227176055152886"
+        },
+        {
+          "outlet": "X @diplomattimes (via Wikipedia citation)",
+          "url": "https://x.com/diplomattimes/status/2079258288798232635"
+        },
+        {
+          "outlet": "X @DelhiPolice (denial, via Wikipedia citation)",
+          "url": "https://x.com/DelhiPolice/status/2079072102691565811"
+        },
+        {
+          "outlet": "Madhyamam",
+          "url": "https://madhyamamonline.com/india/delhi-police-deny-lathi-charge-on-cjp-protesters-despite-viral-videos-from-jantar-mantar-1538938"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge"
+      ]
+    },
+    {
+      "id": "cit-004",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "13-second 'maro sir, maar dalo humko' video of youth under lathis goes viral",
+      "description": "A 13-second clip of a young protester crying 'मारो सर, मार डालो हमको' ('hit me sir, kill me') while being beaten by police went widely viral on 20 July, per Navbharat Live, which describes the clip but gives no originating handle or post URL. A separate YouTube upload titled 'छात्रों पर लाठीचार्ज, कई लोगों के सिर फूटे, चीख पुकार' carries footage of head injuries and screaming (cited by Wikipedia for police conduct). Locating the original upload of the 13-second clip is a capture priority.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Navbharat Live",
+          "url": "https://navbharatlive.com/videos/delhi-youth-protest-paper-leak-lathicharge-viral-video-1876912.html"
+        },
+        {
+          "outlet": "YouTube (via Wikipedia citation)",
+          "url": "https://www.youtube.com/watch?v=D9kCEsVQq2E"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge",
+        "injuries"
+      ],
+      "action": "Locate the original upload of the 13-second 'maro sir' clip."
+    },
+    {
+      "id": "cit-015",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Close-up video claims nails embedded in police lathis",
+      "description": "An Instagram reel, preserved in the protestor-side compilation, shows a close-up of what is presented as a lathi with a nail through its tip, said to have been taken from police lines during the crackdown. A modified weapon in official hands would move the force used that day into a different legal category; single-sourced and not independently verified.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Instagram reel",
+          "url": "https://www.instagram.com/reels/DbBd3HkiXtm/"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-c2-nailed-lathi.jpg",
+          "caption": "Close-up presented as a nail through a lathi tip (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ],
+      "action": "Identify the original poster of the nailed-lathi reel."
+    },
+    {
+      "id": "evt-011",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Afternoon",
+      "title": "Delhi Police report injury toll: around 60 protesters, more than 118 police personnel",
+      "description": "Delhi Police said around 60 protesters and more than 118 police personnel, including senior officers, sustained injuries (ThePrint live blog, 12:10 pm entry; also reported by Newslaundry and Daily Pioneer). A later Deccan Chronicle report citing police put total police-side injuries above 160, including over 50 officers, some of IPS/DANIPS rank; protester-side counts vary by source (see evt-014 for hospital figures).",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Newslaundry",
+          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        },
+        {
+          "outlet": "Daily Pioneer",
+          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+        }
+      ],
+      "tags": [
+        "injuries",
+        "lathi-charge"
+      ]
+    },
+    {
+      "id": "evt-012",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Afternoon",
+      "title": "Wire reports say Dipke ended his hunger strike; the claim is disputed and the strike continued",
+      "description": "PTC News's live blog (12:06 pm) and ThePrint (12:58 pm) reported that CJP founder Abhijeet Dipke ended his hunger strike to lead the march. That report is disputed and treated as incorrect in this record: subsequent coverage described the strike and sit-in continuing, including Siasat's live blog the next day headlined on CJP continuing the sit-in. Detention accounts conflict as well: PTC News reported Dipke detained at Jantar Mantar at 12:51 pm; The South First reported Dipke, Samajwadi Party MP Dimple Yadav and others detained and released later in the day; ThePrint reported (2:56 pm) that CJP first claimed Dipke was picked up by police and later clarified he was not detained or arrested.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "PTC News (live blog)",
+          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
+        },
+        {
+          "outlet": "The South First",
+          "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
+        },
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Siasat (live blog: CJP continues sit-in)",
+          "url": "https://www.siasat.com/live-sonams-new-message-cjp-continues-sit-in-amid-heavy-police-pressence-3509588/"
+        }
+      ],
+      "tags": [
+        "detention",
+        "march"
+      ],
+      "action": "Were you near the stage around noon? Footage settles whether the strike ended."
+    },
+    {
+      "id": "evt-013",
+      "date": "2026-07-20",
+      "time": "2026-07-20T15:08:00+05:30",
+      "timeLabel": "Afternoon",
+      "title": "Afternoon clashes at Patel Chowk; stone-pelting and vehicle damage reported",
+      "description": "ThePrint's live blog reported heavy clashes at Patel Chowk metro around 3:08 pm, with protesters hurling bottles at security forces and extensive tear-gas use. Daily Pioneer reported that by 4 pm stone-pelting had begun and police vehicles were smashed; police cited by Deccan Chronicle said 15-20 government vehicles were vandalised, with further damage at Connaught Place. Protest organisers disputed the police characterisation, alleging excessive force including, per CJP claims reported by Outlook, the use of pellet guns, a claim not confirmed by other outlets.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Daily Pioneer",
+          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        }
+      ],
+      "tags": [
+        "march",
+        "injuries"
+      ]
+    },
+    {
+      "id": "cit-005",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Lathi charge on students marching from Mandi House toward Jantar Mantar",
+      "description": "Video carried by Assam Tribune shows Delhi Police using lathis on protesters marching from Mandi House metro station toward Jantar Mantar; force applied to people attempting to reach the protest site, distinct from the Parliament-bound march covered in evt-006. Corroborates that dispersal actions extended beyond the Sansad Marg axis.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Assam Tribune (video)",
+          "url": "https://assamtribune.com/video/delhi-police-lathi-charge-students-marching-towards-jantar-mantar-1614500"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge",
+        "march"
+      ]
+    },
+    {
+      "id": "cit-014",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Video circulated as police smashing a car's glass themselves, 'to make protesters look aggressive'",
+      "description": "Footage circulated on X, and preserved in a protestor-side compilation, is presented as showing police personnel beside a car with its rear glass freshly smashed, with the claim that officers vandalised vehicles themselves so the damage would be blamed on protesters. If genuine and geolocatable this is the direct counter-record to the vehicle-vandalism FIRs registered against protesters (see the 21 July FIR entry). Anonymous posts, not independently verified; the underlying video is a top capture priority.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X post (via compilation)",
+          "url": "https://x.com/i/status/2079265193683816647"
+        },
+        {
+          "outlet": "X @Cockroachisback",
+          "url": "https://x.com/Cockroachisback/status/2079447899759681853"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "staging"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-c1-carglass.jpg",
+          "caption": "Personnel beside a car with its rear glass freshly smashed (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ],
+      "action": "Geolocate the smashed-car footage; find the CCTV original."
+    },
+    {
+      "id": "evt-014",
+      "date": "2026-07-20",
+      "time": "2026-07-20T17:30:00+05:30",
+      "timeLabel": "Evening",
+      "title": "Hospitals receive casualties: ~100 at RML emergency by 5:30 pm; 65 medico-legal cases by 7 pm",
+      "description": "Around 100 injured people, including 10 police personnel, had been brought to Ram Manohar Lohia Hospital's emergency by 5:30 pm, with four protesters admitted to ICU and overflow cases sent to Lady Hardinge Hospital, per Newslaundry citing The Indian Express and hospital sources. Deccan Chronicle, citing police/hospital figures, reported RML recorded 65 medico-legal cases by 7 pm.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Newslaundry (citing The Indian Express)",
+          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        }
+      ],
+      "tags": [
+        "injuries"
+      ],
+      "action": "Hospital-scene footage from RML or Lady Hardinge is missing entirely."
+    },
+    {
+      "id": "evt-015",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Afternoon",
+      "title": "CJP delegation meets Union Health Minister J.P. Nadda",
+      "description": "A CJP delegation including spokespersons Saurav Das and Ashutosh Ranka met Union Health Minister J.P. Nadda and submitted a memorandum demanding release of detained activists, Education Minister Dharmendra Pradhan's removal, and compensation (Outlook reported a Rs 1 crore compensation demand). PTC News' live blog logged the meeting at 3:16 pm, while Nadda later said dialogue began at 11:50 am and a written petition was submitted around 4 pm; Das said Nadda gave assurances but 'no immediate commitment'.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "PTC News (live blog)",
+          "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
+        },
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
+        },
+        {
+          "outlet": "The News Minute",
+          "url": "https://www.thenewsminute.com/news/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-016",
+      "date": "2026-07-20",
+      "time": "2026-07-20T18:43:00+05:30",
+      "timeLabel": "Evening",
+      "title": "Police clear Jantar Mantar protest site",
+      "description": "By evening, Delhi Police cleared the Jantar Mantar protest site, removing barricades, the stage and tents (ThePrint live blog, 6:43 pm entry; Newslaundry also reported the site was cleared by evening). Protesters regrouped overnight and resumed their demonstration, per Newslaundry.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Newslaundry",
+          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "cit-006",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Videos of detainees loaded into police buses circulate; police later say detainees 'were not students'",
+      "description": "Two X posts by @TyrantOppressor carried video of detainees being taken into police buses during the crackdown (cited by Wikipedia). These are the checkable counter-record to the police statement, reported after midnight, that those detained 'were not students' (evt-017): the faces and ages of those boarding the buses are ascertainable from the footage.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @TyrantOppressor (via Wikipedia citation)",
+          "url": "https://x.com/TyrantOppressor/status/2079092607502954810"
+        },
+        {
+          "outlet": "X @TyrantOppressor (via Wikipedia citation)",
+          "url": "https://x.com/TyrantOppressor/status/2079143362511466590"
+        },
+        {
+          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "detention"
+      ]
+    },
+    {
+      "id": "cit-007",
+      "date": "2026-07-20",
+      "time": "2026-07-20T22:58:00+05:30",
+      "timeLabel": "Night",
+      "title": "Claim that Rapid Action Force beat students",
+      "description": "An X post by @Nher_who at 10:58 pm claimed students were beaten by Rapid Action Force personnel (preserved by the independent delhi-police-violence.vercel.app public record). RAF/RPF involvement in lathi use is separately visible in an ANI video embedded in State Mirror's five-video roundup and in @brijshyam8 footage embedded by Bhadas4Media; meaning force that day was applied by units beyond Delhi Police proper, which matters for accountability mapping.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @Nher_who (via delhi-police-violence.vercel.app)",
+          "url": "https://x.com/Nher_who/status/2079257100279247190"
+        },
+        {
+          "outlet": "State Mirror (five-video roundup)",
+          "url": "https://www.statemirror.com/state/delhi-ncr/jantar-mantar-protest-5-videos-cockroach-janata-party-protest-170489"
+        },
+        {
+          "outlet": "Bhadas4Media (embedding @brijshyam8)",
+          "url": "https://www.bhadas4media.com/jantar-mantar-police-lathicharge/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "lathi-charge"
+      ]
+    },
+    {
+      "id": "cit-018",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Night",
+      "title": "Reporters arrested; doctors reported beaten while treating injured; crowd of police filmed beating one detainee",
+      "description": "Posts collected in the protestor-side compilation claim: reporters were arrested during the crackdown; doctors were beaten while giving medical aid to injured protesters; and a widely shared video shows dozens of policemen beating a single bare-chested boy after pulling him off a bus carrying detainees. Each rests on citizen posts not yet captured or independently verified.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @neeraj_jhaa (reporters)",
+          "url": "https://x.com/neeraj_jhaa/status/2079269300502950060"
+        },
+        {
+          "outlet": "X @kadaipaneeeer (doctors)",
+          "url": "https://x.com/kadaipaneeeer/status/2079244343857254603"
+        },
+        {
+          "outlet": "X post (detainee beating)",
+          "url": "https://x.com/i/status/2079237953042502120"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "detention",
+        "injuries"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-e2-detained-reporter.jpg",
+          "caption": "From inside a detainee bus: 'Delhi police detained me for covering the protests' (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        },
+        {
+          "src": "/evidence/ev-e3-rain-bus.jpg",
+          "caption": "Detainee bus in the rain, police massed alongside (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ],
+      "action": "Medical staff and reporters who were there: contact the archive."
+    },
+    {
+      "id": "cit-008",
+      "date": "2026-07-20",
+      "time": "2026-07-20T23:36:00+05:30",
+      "timeLabel": "Night",
+      "title": "Video of Class 7 student circulates; viral post claims 12-year-old girl among injured; police deny",
+      "description": "An X post by @SidKeVichaar (11:36 pm) carried video of a Class 7 student from Odisha speaking against the authorities, preserved by the delhi-police-violence.vercel.app record. Separately, a viral post alleged police assaulted a woman said to be Sonam Wangchuk's wife Geetanjali Angmo and injured 40-50 protesters including a 12-year-old girl; Delhi Police dismissed that post as false (per Siasat's live blog); its original has not been located. IBTimes UK reported that independent media verified footage of police assaulting protesters as young as 15 or 16. Minors' presence in the crowd is consistent across accounts; each specific minor-injury claim remains unverified.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @SidKeVichaar (via delhi-police-violence.vercel.app)",
+          "url": "https://x.com/SidKeVichaar/status/2079266679763382719"
+        },
+        {
+          "outlet": "IBTimes UK",
+          "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"
+        },
+        {
+          "outlet": "Siasat (live blog, police denial of viral post)",
+          "url": "https://www.siasat.com/live-sonams-new-message-cjp-continues-sit-in-amid-heavy-police-pressence-3509588/"
+        },
+        {
+          "outlet": "The Wire (headline citing minors; via Wikipedia citation, not directly fetched)",
+          "url": "https://thewire.in/government/police-lathicharges-thousands-fires-tear-gas-at-protesters-including-minors"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "injuries",
+        "minors"
+      ],
+      "media": [
+        {
+          "src": "/evidence/ev-b2-minor-lathi.jpg",
+          "caption": "An officer swings a lathi at a young protester; minors reported among those beaten (claimed)",
+          "credit": "via the citizen record; civilian faces blurred"
+        }
+      ]
+    },
+    {
+      "id": "cit-016",
+      "date": "2026-07-20",
+      "time": null,
+      "timeLabel": "Night",
+      "title": "Gravest night reports: sexual violence against women protesters and electric shocks in the rain",
+      "description": "Posts collected in the protestor-side compilation allege, on video: an officer attacking a woman protester's private parts; women beaten; women given electric shocks amid heavy rain; and policemen groping girls 'and laughing about it'. These are the gravest allegations in the record and each rests on a single anonymous post that has not been independently verified or captured; they are logged so the originals are preserved before takedown, and they will not be presented as established unless verification succeeds.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @TyrantOppressor",
+          "url": "https://x.com/TyrantOppressor/status/2079444223569559766"
+        },
+        {
+          "outlet": "X post (women beaten)",
+          "url": "https://x.com/i/status/2079423530987573275"
+        },
+        {
+          "outlet": "X post (electric shocks in rain)",
+          "url": "https://x.com/i/status/2079495077043581231"
+        },
+        {
+          "outlet": "X post (groping)",
+          "url": "https://x.com/i/status/2079481177493397836"
+        },
+        {
+          "outlet": "Protestor compilation doc (anonymous, running)",
+          "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "injuries",
+        "women"
+      ],
+      "action": "Capture these originals before takedown. Handle with care; do not reshare."
+    },
+    {
+      "id": "cit-009",
+      "date": "2026-07-20",
+      "time": "2026-07-20T23:59:00+05:30",
+      "timeLabel": "Night",
+      "title": "Single-source claim of electrified barricades",
+      "description": "An X post by @Kumarjyoti49291 carried video claimed to show electrified barricades at the protest perimeter (cited by Wikipedia). No second citizen account and no outlet pickup were found in targeted searching; this is an extraordinary claim resting on one post. Recorded here at lowest confidence solely so the video is captured before any takedown; do not surface publicly without independent verification.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @Kumarjyoti49291 (via Wikipedia citation)",
+          "url": "https://x.com/Kumarjyoti49291/status/2079199366217453738"
+        },
+        {
+          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "citizen"
+      ],
+      "action": "Capture the electrified-barricade video before it disappears."
+    },
+    {
+      "id": "evt-017",
+      "date": "2026-07-21",
+      "time": "2026-07-21T00:10:00+05:30",
+      "timeLabel": "Night",
+      "title": "Police confirm detentions and FIR; detainee numbers and identities disputed",
+      "description": "ThePrint's live blog reported shortly after midnight that approximately 70 protesters had been detained and an FIR registered on charges including rioting and assault; a PTI report carried by Deccan Chronicle put detentions at over 100, moved to police stations including Parliament Street and Mandir Marg areas, to be released after verification. Police stated those detained 'were not students', while eyewitness accounts cited in aggregate coverage said students and minors were among those put in police buses; the CJP's Ashutosh Ranka demanded police disclose how many remained in custody.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        },
+        {
+          "outlet": "Deccan Chronicle (PTI)",
+          "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        },
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
+        }
+      ],
+      "tags": [
+        "detention"
+      ]
+    },
+    {
+      "id": "evt-018",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Protesters return to Jantar Mantar; protest enters day 24 amid tightened security",
+      "description": "Demonstrators returned to Jantar Mantar on Tuesday morning as the protest entered its 24th day, reclaiming the site after police had removed the stage and tents the previous evening, per Outlook and Newslaundry. Deccan Herald's live coverage reported Delhi tightening security across central Delhi after the previous day's unrest.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
+        },
+        {
+          "outlet": "Newslaundry",
+          "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
+        },
+        {
+          "outlet": "Deccan Herald (live blog)",
+          "url": "https://www.deccanherald.com/india/cjp-chalo-sansad-parliament-march-live-updates-cockroach-janta-party-founder-abhijeet-dipke-sonam-wangchuk-hunger-strike-protest-delhi-jantar-mantar-dharmendra-pradhan-abhijeet-dipke-opposition-mps-to-join-delhi-protest-police-brutality-jantar-mantar-sonam-wangchuk-delhi-hc-hearing-demands-nadda-abhijeet-dipke-news-july-21-cjp-protest-jantar-mantar-cockroach-janta-party-jp-nadda-cjp-meet-abhijeet-dipke-jantar-mantar-neet-exam-pradhan-cjp-chalo-sansad-parliament-march-live-updates-4081192"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-019",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Delhi High Court orders Sonam Wangchuk's transfer to Medanta Hospital",
+      "description": "The Delhi High Court on 21 July ordered that Sonam Wangchuk, hospitalised after his hunger strike and removal from Jantar Mantar, be transferred to Medanta Hospital, per aggregate coverage of the protests. His wife Gitanjali Angmo had challenged an earlier order denying a shift to a private hospital, per ThePrint's live coverage; Wangchuk vowed to continue his hunger strike, citing 'brutality' against peaceful protesters.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating BBC/The Hindu/HT citations)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        },
+        {
+          "outlet": "ThePrint (live blog)",
+          "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "evt-020",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Political reactions: Dipke apology, Rahul Gandhi criticism, government response",
+      "description": "CJP founder Abhijeet Dipke apologised to supporters, 'especially the girls who were brutally beaten by male police officers', and vowed to continue the protest until Education Minister Dharmendra Pradhan resigns (Outlook; Deccan Chronicle). Leader of Opposition Rahul Gandhi called the Delhi Police's handling of the protest 'disgusting' (Daily Pioneer coverage), while Parliamentary Affairs Minister Kiren Rijiju said the PM 'made it clear that the government stands with students and that paper leaks are a matter of national concern' (Outlook); The Federal reported Pradhan refused to resign.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "Outlook India",
+          "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
+        },
+        {
+          "outlet": "Deccan Chronicle",
+          "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
+        },
+        {
+          "outlet": "Daily Pioneer",
+          "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
+        },
+        {
+          "outlet": "The Federal (live blog)",
+          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
+        }
+      ],
+      "tags": []
+    },
+    {
+      "id": "cit-010",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "MHA issued at least two shutdown orders for a 1.5 km radius; ground workarounds via WiFi hotspots",
+      "description": "Vijaita Singh of The Hindu posted on X that at least two internet suspension orders were issued by the MHA on 20 July covering a 1.5 km radius of Jantar Mantar (the first effective 6 am to 12 noon, then extended to 6 pm), asking whether the government assumed the protest would end by noon. Medianama reported the shutdown forced journalists and demonstrators onto WiFi from nearby establishments, one person filing updates through a Jio hotspot with 34 MB of data; WION carried video of commuters jumping metro gates amid station closures. The 1.5 km radius conflicts with The South First's earlier 5 km figure (evt-009).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @vijaita (The Hindu journalist)",
+          "url": "https://x.com/vijaita/status/2079393447208009768"
+        },
+        {
+          "outlet": "Medianama",
+          "url": "https://www.medianama.com/2026/07/223-internet-shutdown-delhi-jantar-mantar-protest-march/"
+        },
+        {
+          "outlet": "The Wire (telecoms confirm orders)",
+          "url": "https://m.thewire.in/article/government/telecom-companies-confirm-delhi-internet-shutdown-order-government-yet-to-publish-it"
+        },
+        {
+          "outlet": "WION (metro-gate videos)",
+          "url": "https://www.wionews.com/india-news/lathi-charge-tear-gas-commuters-jumping-metro-gates-videos-show-what-s-happening-at-cjp-s-chalo-sansad-march-watch-1784529207478"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "shutdown"
+      ],
+      "action": "Have a copy of either MHA suspension order? Submit it."
+    },
+    {
+      "id": "cit-011",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Congress MP demands identification of plainclothes men who wielded lathis",
+      "description": "Congress MP Ummeda Ram Beniwal posted on X asking who the men in civil clothes carrying lathis alongside Delhi Police were, demanding the government clarify their authorisation and identities, per TV9 Hindi, which reported social-media videos of plainclothes personnel beating protesters and set out the legal frame: mandatory name tags under D.K. Basu v. West Bengal (1997) even for plainclothes officers, BNSS s.36 self-identification, and lathi-charge authorisation limits. This is the first parliamentary-level demand tied to the unbadged/plainclothes claims (extends evt-007).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "X @UmmedaRamBaytu (via TV9 Hindi embed)",
+          "url": "https://x.com/UmmedaRamBaytu/status/2079445672701649353"
+        },
+        {
+          "outlet": "TV9 Hindi",
+          "url": "https://www.tv9hindi.com/india/without-uniform-police-in-protest-lathicharge-rules-cjp-march-delhi-3856836.html"
+        }
+      ],
+      "tags": [
+        "citizen",
+        "unbadged"
+      ]
+    },
+    {
+      "id": "cit-012",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Recycled and false videos begin contaminating the citizen record",
+      "description": "The Quint's fact-check found a 2023 pro-Palestine-protest video (woman's flag snatched by police) recirculating as footage from the CJP protest; Delhi Police had separately debunked (19 July) a viral video falsely linking actor Vijay to the protest and warned against sharing unverified content. A genuine viral clip of a student threatening to 'uproot' Parliament (Newstrack) was meanwhile amplified to justify the security posture. Logged for archive hygiene: intake verification must reverse-search every submission against pre-20-July footage.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "The Quint (Webqoof fact-check)",
+          "url": "https://www.thequint.com/news/webqoof/old-unrelated-video-shared-as-a-visual-from-the-cjp-protest-at-jantar-mantar-false-claim-fact-check"
+        },
+        {
+          "outlet": "Newskarnataka (police debunk)",
+          "url": "https://newskarnataka.com/india/delhi-police-debunks-viral-claim-linking-vijay-to-jantar-mantar-protest/20072026/"
+        },
+        {
+          "outlet": "Newstrack (student threat video)",
+          "url": "https://newstrack.com/india/student-threat-video-goes-viral-delhi-jantar-mantar-protest-parliament-security-tightened-video-616427"
+        }
+      ],
+      "tags": [
+        "citizen"
+      ]
+    },
+    {
+      "id": "evt-024",
+      "date": "2026-07-21",
+      "time": null,
+      "timeLabel": "Day",
+      "title": "Five FIRs registered; police analyse 250+ videos, CCTV, drone and body-cam footage to identify protesters",
+      "description": "Delhi Police registered five FIRs over the violence, covering rioting, unlawful assembly, assault on public servants, criminal conspiracy and damage to property, and said investigators are examining more than 250 videos, including mobile recordings, CCTV footage, drone visuals and police body-worn camera footage, to identify alleged miscreants; a conspiracy angle is being probed, with vehicle vandalism across Connaught Place and Parliament Street attributed to protesters. The asymmetry belongs in this record: the state is applying CCTV, drones and body-cams to identify protesters, while the personnel who carried out the lathi-charges include crews documented without name identification (see the 20 July name-badge entry).",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "The Week",
+          "url": "https://www.theweek.in/news/india/2026/07/21/jantar-mantar-protest-violence-investigation-cctv-fir.html"
+        },
+        {
+          "outlet": "India TV",
+          "url": "https://www.indiatvnews.com/news/india/delhi-police-registers-firs-over-cjp-protest-violence-scanning-cctv-footage-to-identify-accused-latest-updates-2026-07-21-1048894"
+        },
+        {
+          "outlet": "ANI",
+          "url": "https://aninews.in/news/national/general-news/delhi-police-analyse-digital-evidence-cctvs-to-identify-miscreants-for-stone-pelting-vandalism-in-cjp-parliament-march20260721092859/"
+        },
+        {
+          "outlet": "IANS",
+          "url": "https://ianslive.in/five-firs-registered-in-violent-delhi-protest-clashes--20260721121036"
+        },
+        {
+          "outlet": "Republic World",
+          "url": "https://www.republicworld.com/india/vandalism-of-vehicles-stone-pelting-delhi-police-lodge-fir-over-cjp-violence-in-delhi-s-connaught-place-neet-protest-breaking-news-2026-07-21-132961"
+        }
+      ],
+      "tags": [
+        "police-account",
+        "detention"
+      ]
+    },
+    {
+      "id": "evt-021",
+      "date": "2026-07-21",
+      "time": "2026-07-21T18:05:00+05:30",
+      "timeLabel": "Evening",
+      "title": "Opposition leaders visit Jantar Mantar; Congress demands Home Minister's statement",
+      "description": "The Federal's live blog reported that Sharad Pawar, Arvind Kejriwal and Left MPs visited Jantar Mantar in solidarity with the protesters (6:05 pm entry), and that the Congress demanded Home Minister Amit Shah make a statement in Parliament on the police action (5:52 pm entry).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "The Federal (live blog)",
+          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-022",
+      "date": "2026-07-21",
+      "time": "2026-07-21T18:45:00+05:30",
+      "timeLabel": "Evening",
+      "title": "Congress dharna at PM's residence; Rahul and Priyanka Gandhi detained",
+      "description": "The Federal's live blog reported police detained Congress leaders holding a dharna near the PM's residence after Rahul Gandhi rejected a government proposal, conveyed by Minister Jitendra Singh, to relocate the protest; Priyanka Gandhi was 'pushed inside a bus' during the clearance operation (6:45 pm entry). At 7:22 pm, The Federal reported Rahul Gandhi sustained injuries in a scuffle with police while being detained. Found in one outlet's live coverage at time of writing.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "The Federal (live blog)",
+          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
+        }
+      ],
+      "tags": [
+        "detention",
+        "injuries"
+      ]
+    },
+    {
+      "id": "evt-023",
+      "date": "2026-07-21",
+      "time": "2026-07-21T19:20:00+05:30",
+      "timeLabel": "Evening",
+      "title": "Protests spread beyond Delhi: Mumbai and Hyderabad demonstrations",
+      "description": "The Federal's live blog reported Mumbai protests continuing for a second day, with an MNS demonstration at Shivaji Park and a Shiv Sena (UBT) rally in Dongri (7:39 pm entry), and CJP members in Hyderabad marching from Somajiguda toward Lok Bhavan (7:20 pm entry).",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "The Federal (live blog)",
+          "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-025",
+      "date": "2026-07-22",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Supreme Court refuses urgent hearing on police action against student protesters",
+      "description": "A bench led by Chief Justice Surya Kant declined to urgently list a plea alleging police excesses against CJP student protesters, and declined to view video footage at the mentioning stage, telling counsel not to waste the court's time (\"We don't want to watch videos\"). Reported by multiple legal-news outlets.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "LiveLaw",
+          "url": "https://www.livelaw.in/top-stories/dont-waste-our-time-supreme-court-refuses-urgent-listing-of-plea-against-police-action-on-student-protesters-542319"
+        },
+        {
+          "outlet": "The Quint",
+          "url": "https://www.thequint.com/news/breaking-news/supreme-court-refuses-to-hear-urgent-plea-against-police-action-on-cjp-protest"
+        }
+      ],
+      "tags": [
+        "courts",
+        "police-account"
+      ]
+    },
+    {
+      "id": "evt-026",
+      "date": "2026-07-22",
+      "time": null,
+      "timeLabel": "Morning",
+      "title": "Delhi High Court takes up PIL on excessive force, seeks Centre and Delhi Police reply",
+      "description": "Separately from the Supreme Court, the Delhi High Court agreed to hear a public interest litigation alleging excessive force by police during the Chalo Sansad march and sought responses from the Centre and Delhi Police on the allegations.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "The Pioneer",
+          "url": "https://dailypioneer.com/news/slug-lite/sc-turns-down-delhi-hc-takes-up-pleas-on-police-violence-at-cjp-protest?year=2026"
+        },
+        {
+          "outlet": "Bilkul Online",
+          "url": "https://bilkulonline.com/2026/07/22/hc-seeks-centre-delhi-police-response-on-pils-alleging-excessive-force-during-neet-protest/"
+        }
+      ],
+      "tags": [
+        "courts"
+      ]
+    },
+    {
+      "id": "evt-027",
+      "date": "2026-07-22",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "Sit-in continues at Jantar Mantar; second march to Parliament called off over safety",
+      "description": "The Jantar Mantar sit-in continued a second day after the crackdown, with supporters sending in food past police barricades. Movement founder Abhijeet Dipke said the group would not attempt another march to Parliament because police would hurt young people, and sharply criticised the government's handling.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "TIME",
+          "url": "https://time.com/article/2026/07/22/india-cockroach-janta-party-protest-movement/"
+        }
+      ],
+      "tags": [
+        "march"
+      ]
+    },
+    {
+      "id": "evt-028",
+      "date": "2026-07-22",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "State response escalates: 16 metro stations shut, central forces moved in",
+      "description": "The Delhi Metro Rail Corporation temporarily closed 16 stations across central Delhi to keep protesters from reaching Jantar Mantar, and reports said roughly twenty CRPF companies were airlifted from Kolkata to Delhi on Ministry of Home Affairs orders. Aggregated from public reporting; primary documents (the DMRC notice, the MHA order) are a capture priority and remain unverified here.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "2026 Delhi Jantar Mantar protests (Wikipedia, aggregating public reporting)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "shutdown",
+        "police-account"
+      ]
+    },
+    {
+      "id": "evt-029",
+      "date": "2026-07-22",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "Wangchuk sets conditions to end hunger strike; ~65 Opposition MPs urge him to withdraw",
+      "description": "In a letter to Union Ministers J.P. Nadda and Jitendra Singh, Sonam Wangchuk said he would end his hunger strike if the government assured no punitive action against protesting students, acknowledged compensation for families of NEET-related suicides, and held a substantive parliamentary debate on accountability including consideration of Education Minister Dharmendra Pradhan's resignation. Around sixty-five Opposition MPs separately wrote urging him to withdraw the fast while pledging to oppose government coercion. Aggregated from public reporting; primary letters are a capture priority and unverified here.",
+      "status": "claimed",
+      "sources": [
+        {
+          "outlet": "2026 Delhi Jantar Mantar protests (Wikipedia, aggregating public reporting)",
+          "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
+        }
+      ],
+      "tags": [
+        "parliament"
+      ]
     }
-   ],
-   "tags": [
-    "detention"
-   ]
-  },
-  {
-   "id": "cit-001",
-   "date": "2026-07-18",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Viral images: plainclothes police screen Wangchuk's removal behind white curtains",
-   "description": "Aggregate coverage states that police entered the Jantar Mantar protest site in civilian dress on 18 July and covered the stage with white curtains while removing Sonam Wangchuk, with images of the operation going viral on social media; the CJP's account (@Cockroachisback) posted Abhijeet Dipke's statement on the removal. Filmibeat coverage separately reported Wangchuk was taken to Safdarjung Hospital by plainclothes personnel. The viral images themselves have not yet been located and captured.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @Cockroachisback (via Wikipedia citation)",
-     "url": "https://x.com/Cockroachisback/status/2078778925585449150"
-    },
-    {
-     "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
-     "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "unbadged",
-    "detention"
-   ],
-   "action": "Find and capture the viral images of the white-curtain removal."
-  },
-  {
-   "id": "evt-002",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "March to Parliament denied permission; prohibitory orders and metro closures imposed",
-   "description": "DCP Sachin Sharma said no permission had been sought or granted for the CJP's march from Jantar Mantar to Parliament, per Outlook. Prohibitory orders under Section 163 of the BNSS were imposed in central Delhi, over 5,000 police personnel were deployed per a PTI report carried by Deccan Chronicle, and metro stations including Rajiv Chowk, Janpath and Patel Chowk were closed, per SFLC.in and PTC News.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-    },
-    {
-     "outlet": "Deccan Chronicle (PTI)",
-     "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-    },
-    {
-     "outlet": "SFLC.in",
-     "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
-    },
-    {
-     "outlet": "PTC News",
-     "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "evt-003",
-   "date": "2026-07-20",
-   "time": "2026-07-20T07:00:00+05:30",
-   "timeLabel": "Morning",
-   "title": "Heavy police buildup around Jantar Mantar",
-   "description": "ThePrint's live blog reported at 7:00 am that Delhi Police had beefed up their presence with over 300 personnel, tear-gas vehicles and barricades around Jantar Mantar ahead of the unauthorised march. Thousands of protesters, largely students and CJP supporters, had assembled at the site, where a sit-in over alleged NEET-UG irregularities had been running for weeks.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    }
-   ],
-   "tags": [
-    "march"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-a1-qrt.jpg",
-     "caption": "Quick-response team, rifles raised over an armoured vehicle at the Parliament approach (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ]
-  },
-  {
-   "id": "cit-013",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "Ahead of the march, Dipke posts photos of lorries at Jantar Mantar, alleging planted stones",
-   "description": "Before the march set out, CJP founder Abhijeet Dipke posted photographs of lorries parked at Jantar Mantar which he claimed were loaded with stones, alleging that authorities might allow 'goons' to disrupt the protest so that the violence would be blamed on CJP. If genuine, the photographs bear directly on the later official account that escalation began with stone-pelting by protesters; the original post and photos are a capture priority. Single-sided allegation, aggregated by Wikipedia's account of the protests; not confirmed by police and no outlet verification of the lorries' contents found.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating Dipke's post)",
-     "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "stone-pelting"
-   ],
-   "action": "Locate Dipke's original lorry photos and post."
-  },
-  {
-   "id": "evt-004",
-   "date": "2026-07-20",
-   "time": "2026-07-20T07:30:00+05:30",
-   "timeLabel": "Morning",
-   "title": "First reported use of lathis, near Park Hotel",
-   "description": "ThePrint's live blog reported at 7:30 am that police used lathis on crowds near the Park Hotel to disperse demonstrators toward Palika Bazaar, before the march had formally begun. This is the earliest reported use of force that day; it appears only in ThePrint's account.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    }
-   ],
-   "tags": [
-    "lathi-charge"
-   ]
-  },
-  {
-   "id": "evt-005",
-   "date": "2026-07-20",
-   "time": "2026-07-20T09:00:00+05:30",
-   "timeLabel": "Morning",
-   "title": "Scheduled 9 am march start passes without a formal start",
-   "description": "Outlook reported the procession was scheduled to begin at 9 am but 'never formally started' amid barricading and prohibitory orders. Entry to Jantar Mantar had been restricted to the Tolstoy Marg side, per ThePrint's live blog (8:14 am entry).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-    },
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "evt-006",
-   "date": "2026-07-20",
-   "time": "2026-07-20T10:04:00+05:30",
-   "timeLabel": "Morning",
-   "title": "Police lathi-charge and tear gas as marchers move toward Parliament",
-   "description": "As protesters began moving from Jantar Mantar toward Parliament, police lathi-charged the crowd (ThePrint live blog, 10:04 am entry) and fired tear gas near the Parliament premises (ThePrint, 10:50 am), with tear-gas use also reported near Shastri Bhawan, Raisina Road and the Sansad Marg-Tolstoy Marg stretch by Daily Pioneer and Outlook. Accounts of the trigger conflict: police sources told PTI the action followed stone-pelting and barricade breaches by protesters, while protesters quoted by Al Jazeera and Daily Pioneer said the march was peaceful when the lathi-charge began suddenly.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Deccan Chronicle (PTI)",
-     "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-    },
-    {
-     "outlet": "Al Jazeera",
-     "url": "https://www.aljazeera.com/news/2026/7/20/now-or-never-students-defy-delhi-lockdown-to-march-on-indias-parliament"
-    },
-    {
-     "outlet": "Daily Pioneer",
-     "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-    },
-    {
-     "outlet": "The South First",
-     "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-    }
-   ],
-   "tags": [
-    "march",
-    "lathi-charge"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-b1-teargas-downed.jpg",
-     "caption": "A shell lands on a protester already on the ground (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    },
-    {
-     "src": "/evidence/ev-e1-teargas-wide.jpg",
-     "caption": "Tear gas over the crowd (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ]
-  },
-  {
-   "id": "cit-002",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "Journalist's on-the-spot post marks the moment the lathi charge began",
-   "description": "Piyush Rai (@Benarasiyaa) posted video with the caption 'And it has finally begun. Security personnel using lathicharge to disperse crowd at CJP protest in Delhi'; an on-the-ground timestamp for the onset of force, phrased as a sudden beginning rather than a response to violence. Seen via IBTimes UK's embed (media fragment pic.twitter.com/JYTNKLq0Tj); exact status URL not yet resolved.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "IBTimes UK (embedding @Benarasiyaa)",
-     "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge"
-   ],
-   "action": "Resolve the exact URL of the journalist's onset post."
-  },
-  {
-   "id": "evt-007",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "Officers reported without name badges; plainclothes personnel with lathis",
-   "description": "Newslaundry's photo report stated that several police personnel were without name badges even before the protest began, and that some personnel in plain clothes wielded lathis against demonstrators, making identification difficult. TV9 Hindi separately reported social-media videos of plainclothes men beating protesters with lathis at Jantar Mantar, and set out the legal frame: name identification is mandatory under D.K. Basu (1997) even in plain clothes, and BNSS s.36 requires self-identification. The badge-absence photographs still rest on one outlet and are not confirmed by police; the plainclothes-lathis reports now appear in two outlets. A separate Instagram reel preserved in the protestor-side compilation shows RAF personnel at Jantar Mantar without visible name badges, a third independent carrier of the identification claim.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Newslaundry",
-     "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-    },
-    {
-     "outlet": "TV9 Hindi",
-     "url": "https://www.tv9hindi.com/india/without-uniform-police-in-protest-lathicharge-rules-cjp-march-delhi-3856836.html"
-    },
-    {
-     "outlet": "Instagram reel (RAF without name badges)",
-     "url": "https://www.instagram.com/reel/DbAIG2FvUTG/"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "unbadged",
-    "lathi-charge"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-d1-raf-nobadges.jpg",
-     "caption": "RAF personnel at Jantar Mantar without visible name badges (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ],
-   "action": "Photos showing crews with or without name plates? Submit them."
-  },
-  {
-   "id": "evt-008",
-   "date": "2026-07-20",
-   "time": "2026-07-20T11:29:00+05:30",
-   "timeLabel": "Morning",
-   "title": "Barricades breached near Parliament Street; injuries reported",
-   "description": "PTC News' live blog reported at 11:29 am that protesters breached barricades near the Parliament Street police station, with several injuries reported. Police sources quoted by PTI said barricade-breach attempts occurred at Parliament Street, Patel Chowk, Constitution Club, Rail Bhavan and Shastri Bhawan through the day.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "PTC News (live blog)",
-     "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    }
-   ],
-   "tags": [
-    "march",
-    "injuries"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-a2-barricades.jpg",
-     "caption": "Crowds against overturned barricades (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ]
-  },
-  {
-   "id": "evt-009",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "Mobile internet suspended in parts of central Delhi; no suspension order published",
-   "description": "Mobile internet services were suspended in parts of central Delhi, including around Jantar Mantar and Sansad Marg; The South First reported the shutdown covered roughly a 5-km radius from Jantar Mantar. The Internet Freedom Foundation said that, as of its statement (published 6:14 pm on 20 July via The Wire), no copy of any suspension order had been published by the MHA, DoT, Delhi government or police; SFLC.in and The Logical Indian also reported the shutdown. Reported radii conflict: roughly 5 km per The South First, while MHA orders reported on 21 July covered a 1.5 km radius (see that entry); telecom operators confirmed receiving orders that were never published.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "The Wire (IFF statement)",
-     "url": "https://m.thewire.in/article/rights/iff-slams-delhi-internet-shutdown-during-chalo-sansad-protest-demands-immediate-restoration"
-    },
-    {
-     "outlet": "SFLC.in",
-     "url": "https://sflc.in/sflc-ins-statement-on-the-internet-shutdown-imposed-in-parts-of-central-delhi/"
-    },
-    {
-     "outlet": "The Logical Indian",
-     "url": "https://thelogicalindian.com/internet-suspended-delhi-cjp-protest-sansad/"
-    },
-    {
-     "outlet": "The Tribune",
-     "url": "https://www.tribuneindia.com/news/delhi/mobile-internet-disruption-leaves-protesters-commuters-stranded/"
-    },
-    {
-     "outlet": "The South First",
-     "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-    }
-   ],
-   "tags": [
-    "shutdown"
-   ]
-  },
-  {
-   "id": "evt-010",
-   "date": "2026-07-20",
-   "time": "2026-07-20T12:00:00+05:30",
-   "timeLabel": "Afternoon",
-   "title": "Parliament disrupted; Kharge raises lathi-charge in Rajya Sabha; police initially deny use of force",
-   "description": "On the Monsoon Session's opening day, the Lok Sabha was adjourned around 11:30 am and the Rajya Sabha around noon amid Opposition uproar over the NEET paper leaks, per PTC News. Leader of Opposition Mallikarjun Kharge accused the government of using force on demonstrators (IANS wire, 1:20 pm). At that stage Delhi Police denied the reports, saying 'no such incident has taken place and the protest is being handled professionally', a denial contradicted by the injury figures police themselves released later the same day.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "IANS via Prokerala",
-     "url": "https://www.prokerala.com/news/articles/a1790111.html"
-    },
-    {
-     "outlet": "PTC News (live blog)",
-     "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-    }
-   ],
-   "tags": [
-    "lathi-charge"
-   ]
-  },
-  {
-   "id": "cit-017",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Afternoon",
-   "title": "Congress MP alleges signal jammers around Parliament in session; MPs 'locked inside'",
-   "description": "Per a PTI post preserved in the protestor-side compilation, Congress MP Renuka Chowdhury alleged that signal or cell-phone jammers were used around Parliament while the House sat, so that members inside could not learn what was happening on the street outside, and that members were locked inside. Attributed to a sitting MP via a wire agency's account; the PTI post itself is a capture priority and the claim is otherwise unverified.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @PTI_News (quoting MP Renuka Chowdhury)",
-     "url": "https://x.com/PTI_News/status/2079135837225472499"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "shutdown",
-    "parliament"
-   ]
-  },
-  {
-   "id": "cit-003",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Beating and dragging videos circulate while Delhi Police's X account denies any force",
-   "description": "Citizen videos showing police beating protesters (@ViralDecoder) and dragging demonstrators (@diplomattimes) circulated on X the same day Delhi Police's official account posted that no such incident had taken place and the protest was being handled 'professionally'. Madhyamam reported the denial explicitly against the viral footage. The denial post is itself a capture priority: it is contradicted by the injury figures police released the same evening (see evt-011).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @ViralDecoder (via Wikipedia citation)",
-     "url": "https://x.com/ViralDecoder/status/2079227176055152886"
-    },
-    {
-     "outlet": "X @diplomattimes (via Wikipedia citation)",
-     "url": "https://x.com/diplomattimes/status/2079258288798232635"
-    },
-    {
-     "outlet": "X @DelhiPolice (denial, via Wikipedia citation)",
-     "url": "https://x.com/DelhiPolice/status/2079072102691565811"
-    },
-    {
-     "outlet": "Madhyamam",
-     "url": "https://madhyamamonline.com/india/delhi-police-deny-lathi-charge-on-cjp-protesters-despite-viral-videos-from-jantar-mantar-1538938"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge"
-   ]
-  },
-  {
-   "id": "cit-004",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "13-second 'maro sir, maar dalo humko' video of youth under lathis goes viral",
-   "description": "A 13-second clip of a young protester crying 'मारो सर, मार डालो हमको' ('hit me sir, kill me') while being beaten by police went widely viral on 20 July, per Navbharat Live, which describes the clip but gives no originating handle or post URL. A separate YouTube upload titled 'छात्रों पर लाठीचार्ज, कई लोगों के सिर फूटे, चीख पुकार' carries footage of head injuries and screaming (cited by Wikipedia for police conduct). Locating the original upload of the 13-second clip is a capture priority.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Navbharat Live",
-     "url": "https://navbharatlive.com/videos/delhi-youth-protest-paper-leak-lathicharge-viral-video-1876912.html"
-    },
-    {
-     "outlet": "YouTube (via Wikipedia citation)",
-     "url": "https://www.youtube.com/watch?v=D9kCEsVQq2E"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge",
-    "injuries"
-   ],
-   "action": "Locate the original upload of the 13-second 'maro sir' clip."
-  },
-  {
-   "id": "cit-015",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Close-up video claims nails embedded in police lathis",
-   "description": "An Instagram reel, preserved in the protestor-side compilation, shows a close-up of what is presented as a lathi with a nail through its tip, said to have been taken from police lines during the crackdown. A modified weapon in official hands would move the force used that day into a different legal category; single-sourced and not independently verified.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Instagram reel",
-     "url": "https://www.instagram.com/reels/DbBd3HkiXtm/"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-c2-nailed-lathi.jpg",
-     "caption": "Close-up presented as a nail through a lathi tip (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ],
-   "action": "Identify the original poster of the nailed-lathi reel."
-  },
-  {
-   "id": "evt-011",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Afternoon",
-   "title": "Delhi Police report injury toll: around 60 protesters, more than 118 police personnel",
-   "description": "Delhi Police said around 60 protesters and more than 118 police personnel, including senior officers, sustained injuries (ThePrint live blog, 12:10 pm entry; also reported by Newslaundry and Daily Pioneer). A later Deccan Chronicle report citing police put total police-side injuries above 160, including over 50 officers, some of IPS/DANIPS rank; protester-side counts vary by source (see evt-014 for hospital figures).",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Newslaundry",
-     "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    },
-    {
-     "outlet": "Daily Pioneer",
-     "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-    }
-   ],
-   "tags": [
-    "injuries",
-    "lathi-charge"
-   ]
-  },
-  {
-   "id": "evt-012",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Afternoon",
-   "title": "Wire reports say Dipke ended his hunger strike; the claim is disputed and the strike continued",
-   "description": "PTC News's live blog (12:06 pm) and ThePrint (12:58 pm) reported that CJP founder Abhijeet Dipke ended his hunger strike to lead the march. That report is disputed and treated as incorrect in this record: subsequent coverage described the strike and sit-in continuing, including Siasat's live blog the next day headlined on CJP continuing the sit-in. Detention accounts conflict as well: PTC News reported Dipke detained at Jantar Mantar at 12:51 pm; The South First reported Dipke, Samajwadi Party MP Dimple Yadav and others detained and released later in the day; ThePrint reported (2:56 pm) that CJP first claimed Dipke was picked up by police and later clarified he was not detained or arrested.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "PTC News (live blog)",
-     "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-    },
-    {
-     "outlet": "The South First",
-     "url": "https://thesouthfirst.com/beyond-south/delhi-police-lathi-charge-fire-tear-gas-at-sansad-chalo-march-arrest-abhijeet-dipke-dimple-yadav-and-others/"
-    },
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Siasat (live blog: CJP continues sit-in)",
-     "url": "https://www.siasat.com/live-sonams-new-message-cjp-continues-sit-in-amid-heavy-police-pressence-3509588/"
-    }
-   ],
-   "tags": [
-    "detention",
-    "march"
-   ],
-   "action": "Were you near the stage around noon? Footage settles whether the strike ended."
-  },
-  {
-   "id": "evt-013",
-   "date": "2026-07-20",
-   "time": "2026-07-20T15:08:00+05:30",
-   "timeLabel": "Afternoon",
-   "title": "Afternoon clashes at Patel Chowk; stone-pelting and vehicle damage reported",
-   "description": "ThePrint's live blog reported heavy clashes at Patel Chowk metro around 3:08 pm, with protesters hurling bottles at security forces and extensive tear-gas use. Daily Pioneer reported that by 4 pm stone-pelting had begun and police vehicles were smashed; police cited by Deccan Chronicle said 15-20 government vehicles were vandalised, with further damage at Connaught Place. Protest organisers disputed the police characterisation, alleging excessive force including, per CJP claims reported by Outlook, the use of pellet guns, a claim not confirmed by other outlets.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Daily Pioneer",
-     "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    }
-   ],
-   "tags": [
-    "march",
-    "injuries"
-   ]
-  },
-  {
-   "id": "cit-005",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Lathi charge on students marching from Mandi House toward Jantar Mantar",
-   "description": "Video carried by Assam Tribune shows Delhi Police using lathis on protesters marching from Mandi House metro station toward Jantar Mantar; force applied to people attempting to reach the protest site, distinct from the Parliament-bound march covered in evt-006. Corroborates that dispersal actions extended beyond the Sansad Marg axis.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Assam Tribune (video)",
-     "url": "https://assamtribune.com/video/delhi-police-lathi-charge-students-marching-towards-jantar-mantar-1614500"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge",
-    "march"
-   ]
-  },
-  {
-   "id": "cit-014",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Video circulated as police smashing a car's glass themselves, 'to make protesters look aggressive'",
-   "description": "Footage circulated on X, and preserved in a protestor-side compilation, is presented as showing police personnel beside a car with its rear glass freshly smashed, with the claim that officers vandalised vehicles themselves so the damage would be blamed on protesters. If genuine and geolocatable this is the direct counter-record to the vehicle-vandalism FIRs registered against protesters (see the 21 July FIR entry). Anonymous posts, not independently verified; the underlying video is a top capture priority.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X post (via compilation)",
-     "url": "https://x.com/i/status/2079265193683816647"
-    },
-    {
-     "outlet": "X @Cockroachisback",
-     "url": "https://x.com/Cockroachisback/status/2079447899759681853"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "staging"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-c1-carglass.jpg",
-     "caption": "Personnel beside a car with its rear glass freshly smashed (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ],
-   "action": "Geolocate the smashed-car footage; find the CCTV original."
-  },
-  {
-   "id": "evt-014",
-   "date": "2026-07-20",
-   "time": "2026-07-20T17:30:00+05:30",
-   "timeLabel": "Evening",
-   "title": "Hospitals receive casualties: ~100 at RML emergency by 5:30 pm; 65 medico-legal cases by 7 pm",
-   "description": "Around 100 injured people, including 10 police personnel, had been brought to Ram Manohar Lohia Hospital's emergency by 5:30 pm, with four protesters admitted to ICU and overflow cases sent to Lady Hardinge Hospital, per Newslaundry citing The Indian Express and hospital sources. Deccan Chronicle, citing police/hospital figures, reported RML recorded 65 medico-legal cases by 7 pm.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "Newslaundry (citing The Indian Express)",
-     "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    }
-   ],
-   "tags": [
-    "injuries"
-   ],
-   "action": "Hospital-scene footage from RML or Lady Hardinge is missing entirely."
-  },
-  {
-   "id": "evt-015",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Afternoon",
-   "title": "CJP delegation meets Union Health Minister J.P. Nadda",
-   "description": "A CJP delegation including spokespersons Saurav Das and Ashutosh Ranka met Union Health Minister J.P. Nadda and submitted a memorandum demanding release of detained activists, Education Minister Dharmendra Pradhan's removal, and compensation (Outlook reported a Rs 1 crore compensation demand). PTC News' live blog logged the meeting at 3:16 pm, while Nadda later said dialogue began at 11:50 am and a written petition was submitted around 4 pm; Das said Nadda gave assurances but 'no immediate commitment'.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "PTC News (live blog)",
-     "url": "https://www.ptcnews.tv/amp/nation/parliament-monsoon-session-live-chalo-sansad-protest-police-lathi-charge-neet-livenews-4427069"
-    },
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/from-barricades-to-talks-inside-delhis-chalo-sansad-protest"
-    },
-    {
-     "outlet": "The News Minute",
-     "url": "https://www.thenewsminute.com/news/under-shadow-of-lathis-and-barricades-the-day-the-modi-govt-finally-engaged-the-cjp"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "evt-016",
-   "date": "2026-07-20",
-   "time": "2026-07-20T18:43:00+05:30",
-   "timeLabel": "Evening",
-   "title": "Police clear Jantar Mantar protest site",
-   "description": "By evening, Delhi Police cleared the Jantar Mantar protest site, removing barricades, the stage and tents (ThePrint live blog, 6:43 pm entry; Newslaundry also reported the site was cleared by evening). Protesters regrouped overnight and resumed their demonstration, per Newslaundry.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Newslaundry",
-     "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "cit-006",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Videos of detainees loaded into police buses circulate; police later say detainees 'were not students'",
-   "description": "Two X posts by @TyrantOppressor carried video of detainees being taken into police buses during the crackdown (cited by Wikipedia). These are the checkable counter-record to the police statement, reported after midnight, that those detained 'were not students' (evt-017): the faces and ages of those boarding the buses are ascertainable from the footage.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @TyrantOppressor (via Wikipedia citation)",
-     "url": "https://x.com/TyrantOppressor/status/2079092607502954810"
-    },
-    {
-     "outlet": "X @TyrantOppressor (via Wikipedia citation)",
-     "url": "https://x.com/TyrantOppressor/status/2079143362511466590"
-    },
-    {
-     "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
-     "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "detention"
-   ]
-  },
-  {
-   "id": "cit-007",
-   "date": "2026-07-20",
-   "time": "2026-07-20T22:58:00+05:30",
-   "timeLabel": "Night",
-   "title": "Claim that Rapid Action Force beat students",
-   "description": "An X post by @Nher_who at 10:58 pm claimed students were beaten by Rapid Action Force personnel (preserved by the independent delhi-police-violence.vercel.app public record). RAF/RPF involvement in lathi use is separately visible in an ANI video embedded in State Mirror's five-video roundup and in @brijshyam8 footage embedded by Bhadas4Media; meaning force that day was applied by units beyond Delhi Police proper, which matters for accountability mapping.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @Nher_who (via delhi-police-violence.vercel.app)",
-     "url": "https://x.com/Nher_who/status/2079257100279247190"
-    },
-    {
-     "outlet": "State Mirror (five-video roundup)",
-     "url": "https://www.statemirror.com/state/delhi-ncr/jantar-mantar-protest-5-videos-cockroach-janata-party-protest-170489"
-    },
-    {
-     "outlet": "Bhadas4Media (embedding @brijshyam8)",
-     "url": "https://www.bhadas4media.com/jantar-mantar-police-lathicharge/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "lathi-charge"
-   ]
-  },
-  {
-   "id": "cit-018",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Night",
-   "title": "Reporters arrested; doctors reported beaten while treating injured; crowd of police filmed beating one detainee",
-   "description": "Posts collected in the protestor-side compilation claim: reporters were arrested during the crackdown; doctors were beaten while giving medical aid to injured protesters; and a widely shared video shows dozens of policemen beating a single bare-chested boy after pulling him off a bus carrying detainees. Each rests on citizen posts not yet captured or independently verified.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @neeraj_jhaa (reporters)",
-     "url": "https://x.com/neeraj_jhaa/status/2079269300502950060"
-    },
-    {
-     "outlet": "X @kadaipaneeeer (doctors)",
-     "url": "https://x.com/kadaipaneeeer/status/2079244343857254603"
-    },
-    {
-     "outlet": "X post (detainee beating)",
-     "url": "https://x.com/i/status/2079237953042502120"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "detention",
-    "injuries"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-e2-detained-reporter.jpg",
-     "caption": "From inside a detainee bus: 'Delhi police detained me for covering the protests' (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    },
-    {
-     "src": "/evidence/ev-e3-rain-bus.jpg",
-     "caption": "Detainee bus in the rain, police massed alongside (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ],
-   "action": "Medical staff and reporters who were there: contact the archive."
-  },
-  {
-   "id": "cit-008",
-   "date": "2026-07-20",
-   "time": "2026-07-20T23:36:00+05:30",
-   "timeLabel": "Night",
-   "title": "Video of Class 7 student circulates; viral post claims 12-year-old girl among injured; police deny",
-   "description": "An X post by @SidKeVichaar (11:36 pm) carried video of a Class 7 student from Odisha speaking against the authorities, preserved by the delhi-police-violence.vercel.app record. Separately, a viral post alleged police assaulted a woman said to be Sonam Wangchuk's wife Geetanjali Angmo and injured 40-50 protesters including a 12-year-old girl; Delhi Police dismissed that post as false (per Siasat's live blog); its original has not been located. IBTimes UK reported that independent media verified footage of police assaulting protesters as young as 15 or 16. Minors' presence in the crowd is consistent across accounts; each specific minor-injury claim remains unverified.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @SidKeVichaar (via delhi-police-violence.vercel.app)",
-     "url": "https://x.com/SidKeVichaar/status/2079266679763382719"
-    },
-    {
-     "outlet": "IBTimes UK",
-     "url": "https://www.ibtimes.co.uk/indian-police-crackdown-student-protests-neet-ug-paper-leak-1809764"
-    },
-    {
-     "outlet": "Siasat (live blog, police denial of viral post)",
-     "url": "https://www.siasat.com/live-sonams-new-message-cjp-continues-sit-in-amid-heavy-police-pressence-3509588/"
-    },
-    {
-     "outlet": "The Wire (headline citing minors; via Wikipedia citation, not directly fetched)",
-     "url": "https://thewire.in/government/police-lathicharges-thousands-fires-tear-gas-at-protesters-including-minors"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "injuries",
-    "minors"
-   ],
-   "media": [
-    {
-     "src": "/evidence/ev-b2-minor-lathi.jpg",
-     "caption": "An officer swings a lathi at a young protester; minors reported among those beaten (claimed)",
-     "credit": "via the citizen record; civilian faces blurred"
-    }
-   ]
-  },
-  {
-   "id": "cit-016",
-   "date": "2026-07-20",
-   "time": null,
-   "timeLabel": "Night",
-   "title": "Gravest night reports: sexual violence against women protesters and electric shocks in the rain",
-   "description": "Posts collected in the protestor-side compilation allege, on video: an officer attacking a woman protester's private parts; women beaten; women given electric shocks amid heavy rain; and policemen groping girls 'and laughing about it'. These are the gravest allegations in the record and each rests on a single anonymous post that has not been independently verified or captured; they are logged so the originals are preserved before takedown, and they will not be presented as established unless verification succeeds.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @TyrantOppressor",
-     "url": "https://x.com/TyrantOppressor/status/2079444223569559766"
-    },
-    {
-     "outlet": "X post (women beaten)",
-     "url": "https://x.com/i/status/2079423530987573275"
-    },
-    {
-     "outlet": "X post (electric shocks in rain)",
-     "url": "https://x.com/i/status/2079495077043581231"
-    },
-    {
-     "outlet": "X post (groping)",
-     "url": "https://x.com/i/status/2079481177493397836"
-    },
-    {
-     "outlet": "Protestor compilation doc (anonymous, running)",
-     "url": "https://docs.google.com/document/d/1nzEaVs1otNpbG6LH-WAufAZNKCmJ3pCdMGQoxOmvL-o/"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "injuries",
-    "women"
-   ],
-   "action": "Capture these originals before takedown. Handle with care; do not reshare."
-  },
-  {
-   "id": "cit-009",
-   "date": "2026-07-20",
-   "time": "2026-07-20T23:59:00+05:30",
-   "timeLabel": "Night",
-   "title": "Single-source claim of electrified barricades",
-   "description": "An X post by @Kumarjyoti49291 carried video claimed to show electrified barricades at the protest perimeter (cited by Wikipedia). No second citizen account and no outlet pickup were found in targeted searching; this is an extraordinary claim resting on one post. Recorded here at lowest confidence solely so the video is captured before any takedown; do not surface publicly without independent verification.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @Kumarjyoti49291 (via Wikipedia citation)",
-     "url": "https://x.com/Kumarjyoti49291/status/2079199366217453738"
-    },
-    {
-     "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests)",
-     "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-    }
-   ],
-   "tags": [
-    "citizen"
-   ],
-   "action": "Capture the electrified-barricade video before it disappears."
-  },
-  {
-   "id": "evt-017",
-   "date": "2026-07-21",
-   "time": "2026-07-21T00:10:00+05:30",
-   "timeLabel": "Night",
-   "title": "Police confirm detentions and FIR; detainee numbers and identities disputed",
-   "description": "ThePrint's live blog reported shortly after midnight that approximately 70 protesters had been detained and an FIR registered on charges including rioting and assault; a PTI report carried by Deccan Chronicle put detentions at over 100, moved to police stations including Parliament Street and Mandir Marg areas, to be released after verification. Police stated those detained 'were not students', while eyewitness accounts cited in aggregate coverage said students and minors were among those put in police buses; the CJP's Ashutosh Ranka demanded police disclose how many remained in custody.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    },
-    {
-     "outlet": "Deccan Chronicle (PTI)",
-     "url": "https://www.deccanchronicle.com/nation/more-than-50-police-personnel-protesters-injured-during-cjps-chalo-sansad-march-over-100-detained-1972502"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    },
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-    }
-   ],
-   "tags": [
-    "detention"
-   ]
-  },
-  {
-   "id": "evt-018",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Morning",
-   "title": "Protesters return to Jantar Mantar; protest enters day 24 amid tightened security",
-   "description": "Demonstrators returned to Jantar Mantar on Tuesday morning as the protest entered its 24th day, reclaiming the site after police had removed the stage and tents the previous evening, per Outlook and Newslaundry. Deccan Herald's live coverage reported Delhi tightening security across central Delhi after the previous day's unrest.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-    },
-    {
-     "outlet": "Newslaundry",
-     "url": "https://www.newslaundry.com/2026/07/21/lathis-tear-gas-and-injured-protesters-the-chalo-sansad-crackdown-in-pictures"
-    },
-    {
-     "outlet": "Deccan Herald (live blog)",
-     "url": "https://www.deccanherald.com/india/cjp-chalo-sansad-parliament-march-live-updates-cockroach-janta-party-founder-abhijeet-dipke-sonam-wangchuk-hunger-strike-protest-delhi-jantar-mantar-dharmendra-pradhan-abhijeet-dipke-opposition-mps-to-join-delhi-protest-police-brutality-jantar-mantar-sonam-wangchuk-delhi-hc-hearing-demands-nadda-abhijeet-dipke-news-july-21-cjp-protest-jantar-mantar-cockroach-janta-party-jp-nadda-cjp-meet-abhijeet-dipke-jantar-mantar-neet-exam-pradhan-cjp-chalo-sansad-parliament-march-live-updates-4081192"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "evt-019",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Delhi High Court orders Sonam Wangchuk's transfer to Medanta Hospital",
-   "description": "The Delhi High Court on 21 July ordered that Sonam Wangchuk, hospitalised after his hunger strike and removal from Jantar Mantar, be transferred to Medanta Hospital, per aggregate coverage of the protests. His wife Gitanjali Angmo had challenged an earlier order denying a shift to a private hospital, per ThePrint's live coverage; Wangchuk vowed to continue his hunger strike, citing 'brutality' against peaceful protesters.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "Wikipedia (2026 Delhi Jantar Mantar protests, aggregating BBC/The Hindu/HT citations)",
-     "url": "https://en.wikipedia.org/wiki/2026_Delhi_Jantar_Mantar_protests"
-    },
-    {
-     "outlet": "ThePrint (live blog)",
-     "url": "https://theprint.in/india/cockroach-cjp-parliament-protest-march-dipke-wangchuk-jantar-mantar-delhi-live-updates/2980234/"
-    }
-   ],
-   "tags": []
-  },
-  {
-   "id": "evt-020",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Political reactions: Dipke apology, Rahul Gandhi criticism, government response",
-   "description": "CJP founder Abhijeet Dipke apologised to supporters, 'especially the girls who were brutally beaten by male police officers', and vowed to continue the protest until Education Minister Dharmendra Pradhan resigns (Outlook; Deccan Chronicle). Leader of Opposition Rahul Gandhi called the Delhi Police's handling of the protest 'disgusting' (Daily Pioneer coverage), while Parliamentary Affairs Minister Kiren Rijiju said the PM 'made it clear that the government stands with students and that paper leaks are a matter of national concern' (Outlook); The Federal reported Pradhan refused to resign.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "Outlook India",
-     "url": "https://www.outlookindia.com/national/over-170-injured-in-delhi-during-cjps-sansad-chalo-march-protest-enters-day-24"
-    },
-    {
-     "outlet": "Deccan Chronicle",
-     "url": "https://www.deccanchronicle.com/nation/crime/cjps-chalo-sansad-march-turns-violent-prompting-police-action-1972600"
-    },
-    {
-     "outlet": "Daily Pioneer",
-     "url": "https://dailypioneer.com/news/neet-protest-march-turns-violent-tear-gas-and-lathi-charge-in-capital"
-    },
-    {
-     "outlet": "The Federal (live blog)",
-     "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-    }
-   ],
-   "tags": []
-  },
-  {
-   "id": "cit-010",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "MHA issued at least two shutdown orders for a 1.5 km radius; ground workarounds via WiFi hotspots",
-   "description": "Vijaita Singh of The Hindu posted on X that at least two internet suspension orders were issued by the MHA on 20 July covering a 1.5 km radius of Jantar Mantar (the first effective 6 am to 12 noon, then extended to 6 pm), asking whether the government assumed the protest would end by noon. Medianama reported the shutdown forced journalists and demonstrators onto WiFi from nearby establishments, one person filing updates through a Jio hotspot with 34 MB of data; WION carried video of commuters jumping metro gates amid station closures. The 1.5 km radius conflicts with The South First's earlier 5 km figure (evt-009).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @vijaita (The Hindu journalist)",
-     "url": "https://x.com/vijaita/status/2079393447208009768"
-    },
-    {
-     "outlet": "Medianama",
-     "url": "https://www.medianama.com/2026/07/223-internet-shutdown-delhi-jantar-mantar-protest-march/"
-    },
-    {
-     "outlet": "The Wire (telecoms confirm orders)",
-     "url": "https://m.thewire.in/article/government/telecom-companies-confirm-delhi-internet-shutdown-order-government-yet-to-publish-it"
-    },
-    {
-     "outlet": "WION (metro-gate videos)",
-     "url": "https://www.wionews.com/india-news/lathi-charge-tear-gas-commuters-jumping-metro-gates-videos-show-what-s-happening-at-cjp-s-chalo-sansad-march-watch-1784529207478"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "shutdown"
-   ],
-   "action": "Have a copy of either MHA suspension order? Submit it."
-  },
-  {
-   "id": "cit-011",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Congress MP demands identification of plainclothes men who wielded lathis",
-   "description": "Congress MP Ummeda Ram Beniwal posted on X asking who the men in civil clothes carrying lathis alongside Delhi Police were, demanding the government clarify their authorisation and identities, per TV9 Hindi, which reported social-media videos of plainclothes personnel beating protesters and set out the legal frame: mandatory name tags under D.K. Basu v. West Bengal (1997) even for plainclothes officers, BNSS s.36 self-identification, and lathi-charge authorisation limits. This is the first parliamentary-level demand tied to the unbadged/plainclothes claims (extends evt-007).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "X @UmmedaRamBaytu (via TV9 Hindi embed)",
-     "url": "https://x.com/UmmedaRamBaytu/status/2079445672701649353"
-    },
-    {
-     "outlet": "TV9 Hindi",
-     "url": "https://www.tv9hindi.com/india/without-uniform-police-in-protest-lathicharge-rules-cjp-march-delhi-3856836.html"
-    }
-   ],
-   "tags": [
-    "citizen",
-    "unbadged"
-   ]
-  },
-  {
-   "id": "cit-012",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Recycled and false videos begin contaminating the citizen record",
-   "description": "The Quint's fact-check found a 2023 pro-Palestine-protest video (woman's flag snatched by police) recirculating as footage from the CJP protest; Delhi Police had separately debunked (19 July) a viral video falsely linking actor Vijay to the protest and warned against sharing unverified content. A genuine viral clip of a student threatening to 'uproot' Parliament (Newstrack) was meanwhile amplified to justify the security posture. Logged for archive hygiene: intake verification must reverse-search every submission against pre-20-July footage.",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "The Quint (Webqoof fact-check)",
-     "url": "https://www.thequint.com/news/webqoof/old-unrelated-video-shared-as-a-visual-from-the-cjp-protest-at-jantar-mantar-false-claim-fact-check"
-    },
-    {
-     "outlet": "Newskarnataka (police debunk)",
-     "url": "https://newskarnataka.com/india/delhi-police-debunks-viral-claim-linking-vijay-to-jantar-mantar-protest/20072026/"
-    },
-    {
-     "outlet": "Newstrack (student threat video)",
-     "url": "https://newstrack.com/india/student-threat-video-goes-viral-delhi-jantar-mantar-protest-parliament-security-tightened-video-616427"
-    }
-   ],
-   "tags": [
-    "citizen"
-   ]
-  },
-  {
-   "id": "evt-024",
-   "date": "2026-07-21",
-   "time": null,
-   "timeLabel": "Day",
-   "title": "Five FIRs registered; police analyse 250+ videos, CCTV, drone and body-cam footage to identify protesters",
-   "description": "Delhi Police registered five FIRs over the violence, covering rioting, unlawful assembly, assault on public servants, criminal conspiracy and damage to property, and said investigators are examining more than 250 videos, including mobile recordings, CCTV footage, drone visuals and police body-worn camera footage, to identify alleged miscreants; a conspiracy angle is being probed, with vehicle vandalism across Connaught Place and Parliament Street attributed to protesters. The asymmetry belongs in this record: the state is applying CCTV, drones and body-cams to identify protesters, while the personnel who carried out the lathi-charges include crews documented without name identification (see the 20 July name-badge entry).",
-   "status": "corroborated",
-   "sources": [
-    {
-     "outlet": "The Week",
-     "url": "https://www.theweek.in/news/india/2026/07/21/jantar-mantar-protest-violence-investigation-cctv-fir.html"
-    },
-    {
-     "outlet": "India TV",
-     "url": "https://www.indiatvnews.com/news/india/delhi-police-registers-firs-over-cjp-protest-violence-scanning-cctv-footage-to-identify-accused-latest-updates-2026-07-21-1048894"
-    },
-    {
-     "outlet": "ANI",
-     "url": "https://aninews.in/news/national/general-news/delhi-police-analyse-digital-evidence-cctvs-to-identify-miscreants-for-stone-pelting-vandalism-in-cjp-parliament-march20260721092859/"
-    },
-    {
-     "outlet": "IANS",
-     "url": "https://ianslive.in/five-firs-registered-in-violent-delhi-protest-clashes--20260721121036"
-    },
-    {
-     "outlet": "Republic World",
-     "url": "https://www.republicworld.com/india/vandalism-of-vehicles-stone-pelting-delhi-police-lodge-fir-over-cjp-violence-in-delhi-s-connaught-place-neet-protest-breaking-news-2026-07-21-132961"
-    }
-   ],
-   "tags": [
-    "police-account",
-    "detention"
-   ]
-  },
-  {
-   "id": "evt-021",
-   "date": "2026-07-21",
-   "time": "2026-07-21T18:05:00+05:30",
-   "timeLabel": "Evening",
-   "title": "Opposition leaders visit Jantar Mantar; Congress demands Home Minister's statement",
-   "description": "The Federal's live blog reported that Sharad Pawar, Arvind Kejriwal and Left MPs visited Jantar Mantar in solidarity with the protesters (6:05 pm entry), and that the Congress demanded Home Minister Amit Shah make a statement in Parliament on the police action (5:52 pm entry).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "The Federal (live blog)",
-     "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  },
-  {
-   "id": "evt-022",
-   "date": "2026-07-21",
-   "time": "2026-07-21T18:45:00+05:30",
-   "timeLabel": "Evening",
-   "title": "Congress dharna at PM's residence; Rahul and Priyanka Gandhi detained",
-   "description": "The Federal's live blog reported police detained Congress leaders holding a dharna near the PM's residence after Rahul Gandhi rejected a government proposal, conveyed by Minister Jitendra Singh, to relocate the protest; Priyanka Gandhi was 'pushed inside a bus' during the clearance operation (6:45 pm entry). At 7:22 pm, The Federal reported Rahul Gandhi sustained injuries in a scuffle with police while being detained. Found in one outlet's live coverage at time of writing.",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "The Federal (live blog)",
-     "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-    }
-   ],
-   "tags": [
-    "detention",
-    "injuries"
-   ]
-  },
-  {
-   "id": "evt-023",
-   "date": "2026-07-21",
-   "time": "2026-07-21T19:20:00+05:30",
-   "timeLabel": "Evening",
-   "title": "Protests spread beyond Delhi: Mumbai and Hyderabad demonstrations",
-   "description": "The Federal's live blog reported Mumbai protests continuing for a second day, with an MNS demonstration at Shivaji Park and a Shiv Sena (UBT) rally in Dongri (7:39 pm entry), and CJP members in Hyderabad marching from Somajiguda toward Lok Bhavan (7:20 pm entry).",
-   "status": "claimed",
-   "sources": [
-    {
-     "outlet": "The Federal (live blog)",
-     "url": "https://thefederal.com/category/news/parliament-sansad-chalo-cjp-dharmendra-pradhan-250798"
-    }
-   ],
-   "tags": [
-    "march"
-   ]
-  }
- ]
+  ]
 }
