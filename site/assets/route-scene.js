@@ -828,8 +828,8 @@
     captions.forEach(function (cap) {
       var s = parseFloat(cap.getAttribute("data-s"));
       var e = parseFloat(cap.getAttribute("data-e"));
-      var fadeIn = s <= 0 ? 1 : smooth(range(p, s, s + 0.022));
-      var vis = Math.min(fadeIn, 1 - smooth(range(p, e - 0.022, e)));
+      var fadeIn = s <= 0 ? 1 : smooth(range(p, s, s + 0.015));
+      var vis = Math.min(fadeIn, 1 - smooth(range(p, e - 0.015, e)));
       cap.style.opacity = vis.toFixed(3);
       cap.style.transform = "translateY(" + ((1 - vis) * 14).toFixed(1) + "px)";
       cap.style.visibility = vis > 0.01 ? "visible" : "hidden";
