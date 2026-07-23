@@ -51,3 +51,6 @@ DIRECTIONS.md
 # Local MCP config + Instagram monitor secrets (operator machine only)
 .mcp.json
 tools/ig-monitor/.env
+
+# Local operator ops notes (infra identifiers; never public)
+ops-local/

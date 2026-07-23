@@ -5,17 +5,16 @@ Cloud Storage in the Netherlands (europe-west4 — off-India jurisdiction, per
 the threat model). restic encrypts client-side: Google only ever holds
 ciphertext.
 
-## Layout
-- GCP project: `unbadged-vault-38608` (dedicated). **Billing migration
-  pending:** currently on the operator's personal Google account; move to the
-  project (anon) identity as part of the deanonymization sweep so the backup
-  is not linkable to the operator via billing records.
-- Bucket: `gs://unbadged-vault-38608-evidence` (uniform access, public-access
-  prevention ON)
-- restic repo: `gs:unbadged-vault-38608-evidence:/restic`
-- Service account: `vault-backup@unbadged-vault-38608.iam.gserviceaccount.com`
-  (scoped to this bucket only)
-- Credentials + password: `~/.config/unbadged/` (backup-env.sh, restic
+## Architecture
+- Provider: Google Cloud Storage, region europe-west4 (Netherlands),
+  chosen for off-India jurisdiction per the threat model.
+- A dedicated GCP project and a single private bucket (uniform access,
+  public-access prevention ON) hold the restic repository.
+- Access is via a service account scoped to that bucket only.
+- Specific project / bucket / service-account identifiers are operational
+  and are **not** published here; they live in the operator's local ops
+  note, not in this repo.
+- Credentials + restic password: `~/.config/unbadged/` (backup-env.sh, restic
   password file, SA key). **NEVER commit. Outside the repo by design.**
 
 ## CRITICAL — the restic password
