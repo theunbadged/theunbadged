@@ -9,6 +9,9 @@ a new entry instead. Format: context → decision → consequences.
 - [0002 — Two-tier architecture: restricted vault + redacted public repo](0002-two-tier-architecture.md)
 - [0003 — Code is open source, hosted on GitHub](0003-open-source-on-github.md)
 - [0004 — Actor tracking uses neutral designators; no epithets in the archive](0004-actor-designators.md)
+- [0005 — Analytics on story pages only; submission channel stays clean](0005-analytics-scope.md)
+- [0006 — Anonymous anti-spam on intake](0006-anonymous-antispam.md)
+- [0007 — Submitted evidence is never published](0007-submissions-never-published.md)
 
 ## Open (decide before/at Phase 1 build)
 

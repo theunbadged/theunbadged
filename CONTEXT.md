@@ -96,12 +96,16 @@ accountability through the legal process — at every level, especially command.
   a copy already held by a rights org). No single takedown/seizure kills it.
 - Access restricted to a legal team.
 
-**Tier 2 — Public repository (redacted, for visibility + submission)**
-- Every public item is a derived, redacted copy: bystander/protester faces
-  blurred by default, location/time generalized.
-- "claimed / corroborated / court-ready" status labels — an evidence platform,
-  not a rumor mill.
-- Map + timeline + gallery of claimed incidents.
+**Tier 2 — Public record (built only from already-public material)**
+- The public site carries the sourced narrative and timeline, plus exhibits
+  drawn *only* from material already published elsewhere (e.g. posts on
+  X/Instagram), as redacted derivatives with civilian faces blurred.
+- **Submitted evidence is never published here or anywhere, in any form** (see
+  decision 0007). It lives only in Tier 1 and is handed to legal aid when
+  proceedings occur. A submission can move a public entry's status
+  (claimed to corroborated) without the clip itself ever being shown.
+- "claimed / corroborated / court-ready" status labels on every public claim.
+- Map + timeline. No gallery of submitted clips.
 
 ---
 
@@ -110,8 +114,8 @@ accountability through the legal process — at every level, especially command.
 **Phase 1 — Secure intake + vault** *(START HERE)*
 - Anonymous upload channel (Tor/onion + Signal drop), no IP logging.
 - On intake: SHA-256 hash → timestamp → write original to vault untouched.
-- Two copies: metadata-intact (restricted vault) + metadata-stripped derivative
-  (for anything public).
+- Two copies: metadata-intact original (restricted vault) + a working derivative
+  for internal verification only (never for publication).
 - Anti-takedown redundancy from day one.
 
 **Phase 2 — Verification workflow**
@@ -121,8 +125,10 @@ accountability through the legal process — at every level, especially command.
   flag, witness ID (only if corroborated), Actor-continuity links across clips
   (tracking one actor across footage by appearance/position — NOT biometrics).
 
-**Phase 3 — Public redacted repository**
-- Map + timeline + gallery. Faces blurred by default. Status label on everything.
+**Phase 3 — Public record**
+- Map + timeline + exhibits drawn only from already-public material, civilian
+  faces blurred, status label on everything. Submitted evidence stays in the
+  vault and is never published (decision 0007).
 
 **Phase 4 — Legal handoff**
 - One-click export of an incident's full chain-of-custody package (originals,
