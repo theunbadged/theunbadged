@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#070a0e">
 <title>The Unbadged: they removed the badges; the record remains</title>
 <meta name="description" content="Students marched for their future, peacefully; the police came prepared, with name plates removed. The record of the 20 July 2026 crackdown on the Chalo Sansad march, New Delhi.">
-<link rel="stylesheet" href="/assets/story.css?v=20260723">
+<link rel="stylesheet" href="/assets/story.css?v=20260724">
 <!-- Google tag (gtag.js) story/timeline pages only, NEVER submit.html (docs/decisions/0005) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J5KC5SE6GF"></script>
 <script>
@@ -21,7 +21,7 @@
 <div class="paper-grain" aria-hidden="true"></div><div class="edge-shade" aria-hidden="true"></div>
 <header class="story-header">
   <a class="brand" href="/" aria-label="The Unbadged, home">THE <span class="un">UN</span>BADGED</a>
-  <nav aria-label="Primary navigation"><a href="/timeline.html">Timeline</a><a class="nav-submit" href="/submit.html">Submit evidence</a></nav>
+  <nav aria-label="Primary navigation"><a href="/timeline.html">Timeline</a><a href="/method.html">Method</a><a class="nav-submit" href="/submit.html">Submit evidence</a></nav>
   <div class="read-progress" aria-hidden="true"><span></span></div>
 </header>
 <main id="route-start">
@@ -154,7 +154,7 @@
               </figure>
             </div>
             <p class="ex-src">From the citizen record · civilian faces blurred ·
-              <a href="https://x.com/i/status/2079169208362185045" rel="noopener nofollow">post ↗</a>
+              the original post has since been removed from X; a copy is preserved in this archive ·
               <a href="https://drive.google.com/file/d/1iMRtMal7xbxcU4PrtCNAmWS9CxAWCjMM/view" rel="noopener nofollow">video ↗</a></p>
           </div>
         </div>
@@ -192,7 +192,7 @@
               </figure>
             </div>
             <p class="ex-src">From the citizen record ·
-              <a href="https://x.com/i/status/2079237953042502120" rel="noopener nofollow">original post ↗</a></p>
+              the original post has since been removed from X; a copy is preserved in this archive</p>
           </div>
         </div>
 
@@ -289,7 +289,56 @@
   </section>
 </main>
 <footer class="story-footer"><span>The Unbadged. All timestamps IST (UTC+05:30).
+  <a href="/method.html">Method &amp; statement</a>.
   Open source: <a href="https://github.com/theunbadged/theunbadged" rel="noopener">code &amp; methods</a>.</span></footer>
+
+<!-- the statement gate: the record states its terms on every visit -->
+<div class="statement-gate" id="statement-gate" role="dialog" aria-modal="true" aria-label="Statement" hidden>
+  <div class="sg-inner">
+    <p class="sg-kicker">Statement</p>
+    <p>On 20 July 2026, students marching peacefully for the repair of a broken
+    examination system were met in central Delhi with tear gas, lathis, and mass
+    detention, by personnel whose name plates had been removed. In the days since,
+    footage has been deleted, accounts have been locked, and the internet was cut.
+    The courts have so far declined to watch what happened.</p>
+    <p>The Unbadged was built in that gap: to preserve the record before it
+    disappears, and to hold it in a form that can stand in court. It names no one
+    as guilty, uses no facial recognition, and publishes nothing sent to it in
+    confidence. It asks the one question the law already asks:</p>
+    <p class="sg-q">When the name plates come off before a crowd is charged, who
+    gave that order?</p>
+    <div class="sg-sign">
+      <span class="who">THE <span class="un">UN</span>BADGED</span>
+      <span class="date">24 July 2026 · IST</span>
+    </div>
+    <div class="sg-actions">
+      <button class="btn fire" id="sg-enter" type="button"><span>Enter the record</span> <small>the story of that morning</small></button>
+      <a class="sg-full" href="/method.html#statement">Read the full statement →</a>
+    </div>
+  </div>
+</div>
+<script>
+(function () {
+  var gate = document.getElementById("statement-gate");
+  gate.hidden = false;
+  document.documentElement.classList.add("gate-open");
+  // the reader is on the statement: use the pause to buffer the heavy media
+  document.querySelectorAll("video[preload='metadata']").forEach(function (v) {
+    v.preload = "auto";
+  });
+  function close() {
+    document.documentElement.classList.remove("gate-open");
+    gate.classList.add("leaving");
+    window.setTimeout(function () { gate.remove(); }, 750);
+    if (window.gtag) gtag("event", "statement_gate_enter");
+  }
+  document.getElementById("sg-enter").addEventListener("click", close);
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && document.body.contains(gate)) close();
+  });
+  document.getElementById("sg-enter").focus({ preventScroll: true });
+})();
+</script>
 <script src="/assets/vendor/three.min.js"></script><script src="/assets/route-scene.js?v=20260723"></script>
 <script src="/assets/analytics.js?v=20260723" defer></script>
 </body>

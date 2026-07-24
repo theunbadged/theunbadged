@@ -219,12 +219,24 @@ def pull(keep: bool = False) -> None:
         print("mailbox empty")
         return
 
+    failed = []
     for sub_id, sub_keys in sorted(subs.items()):
         meta_key = f"sub/{sub_id}/meta.json"
         if meta_key not in sub_keys:
             print(f"skip {sub_id}: no meta.json yet (upload may be in progress)")
             continue
 
+        try:
+            _pull_one(s3, bucket, sub_id, sub_keys, meta_key, keep)
+        except Exception as ex:  # noqa: BLE001 - one bad submission must not block the drain
+            failed.append(sub_id)
+            print(f"!! {sub_id[:8]}… FAILED ({type(ex).__name__}); left in mailbox for retry")
+
+    if failed:
+        print(f"{len(failed)} submission(s) left in mailbox after errors; re-run pull to retry")
+
+
+def _pull_one(s3, bucket: str, sub_id: str, sub_keys: list, meta_key: str, keep: bool) -> None:
         meta = json.loads(s3.get_object(Bucket=bucket, Key=meta_key)["Body"].read())
         token_doc = {}
         token_key = f"sub/{sub_id}/token.json"
