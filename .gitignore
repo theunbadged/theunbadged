@@ -48,9 +48,12 @@ Thumbs.db
 # Operator's private working notes (kept local, never public)
 DIRECTIONS.md
 
-# Local MCP config + Instagram monitor secrets (operator machine only)
+# Local MCP config + Instagram monitor (operator machine only)
 .mcp.json
-tools/ig-monitor/.env
+tools/ig-monitor/
+
+# Promo assets + reel-recording pipeline (operator machine only)
+promo/
 
 # Local operator ops notes (infra identifiers; never public)
 ops-local/
