@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-25T02:24:47+05:30",
+  "generated": "2026-07-25T15:13:21+05:30",
   "note": "Sourced from published reporting 18-21 July 2026. Live-blog timestamps are the publishing outlet's report, not independently verified clock readings. Entries with ids beginning cit- rest on citizen posts seen second-hand (article embeds, Wikipedia citations, or the independent delhi-police-violence.vercel.app public record); they stay at claimed until the original posts are captured and verified. Updated as events unfold.",
   "events": [
     {
@@ -1356,6 +1356,39 @@
         "press",
         "detention",
         "this-archive"
+      ]
+    },
+    {
+      "id": "evt-034",
+      "date": "2026-07-25",
+      "time": null,
+      "timeLabel": "Daytime",
+      "title": "Education Minister Dharmendra Pradhan resigns",
+      "description": "Dharmendra Pradhan submitted his resignation as Union Education Minister to the Prime Minister, the central demand of the movement since the NEET-UG paper leak and the largest concession made to it so far. He said he had taken full responsibility from day one and cited students' future in announcing the decision; at publication time the Prime Minister had not yet formally accepted the resignation and no successor was named. The resignation answers the demand the students marched for on 20 July. Who ordered that march to be met by personnel with their name plates removed remains unanswered, and this record remains open.",
+      "status": "corroborated",
+      "sources": [
+        {
+          "outlet": "The Week",
+          "url": "https://www.theweek.in/news/india/2026/07/25/dharmendra-pradhan-resigns-as-education-minister-hands-letter-to-pm-modi.html"
+        },
+        {
+          "outlet": "ThePrint",
+          "url": "https://theprint.in/politics/union-education-minister-dharmendra-pradhan-resigns/2996534/"
+        },
+        {
+          "outlet": "Bloomberg",
+          "url": "https://www.bloomberg.com/news/articles/2026-07-25/india-education-minister-pradhan-resigns-after-student-protests"
+        },
+        {
+          "outlet": "The News Minute",
+          "url": "https://www.thenewsminute.com/news/union-education-minister-dharmendra-pradhan-resigns"
+        }
+      ],
+      "tags": [
+        "aftermath",
+        "resignation",
+        "accountability",
+        "neet"
       ]
     }
   ]
