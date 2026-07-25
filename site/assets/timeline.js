@@ -1,8 +1,7 @@
 /* Renders site/data/timeline.json into the #timeline container, and lets the
-   reader export any entry (or all of them) as 1080x1080 PNG slides for
-   sharing. Libraries are vendored locally (assets/vendor/), never loaded from
-   a third party at runtime; nothing leaves the browser (slides are built
-   client-side and saved via a local download). */
+   reader share any entry as a 1080x1080 PNG slide. The slide is drawn directly
+   on a <canvas> with no third-party library, so it renders identically and
+   reliably on every device (mobile included) and nothing leaves the browser. */
 (async function () {
   const el = document.getElementById("timeline");
 
@@ -45,76 +44,140 @@
     return `${day} · ${ev.timeLabel || "time unconfirmed"}`;
   }
 
-  /* vendored-only loader: refuses any non-local source */
-  function loadLocalScript(src, globalName) {
-    if (!src.startsWith("/assets/vendor/")) {
-      return Promise.reject(new Error("refused non-vendored script: " + src));
+  /* wrap `text` into lines no wider than maxW at the canvas's current font */
+  function wrapLines(ctx, text, maxW) {
+    const words = String(text || "").split(/\s+/).filter(Boolean);
+    const lines = [];
+    let line = "";
+    for (const w of words) {
+      const trial = line ? line + " " + w : w;
+      if (ctx.measureText(trial).width > maxW && line) {
+        lines.push(line);
+        line = w;
+      } else {
+        line = trial;
+      }
     }
-    if (window[globalName]) return Promise.resolve(window[globalName]);
-    return new Promise((resolve, reject) => {
-      const s = document.createElement("script");
-      s.src = src;
-      s.onload = () => resolve(window[globalName]);
-      s.onerror = () => reject(new Error("failed to load " + src));
-      document.head.appendChild(s);
-    });
+    if (line) lines.push(line);
+    return lines;
   }
 
-  /* one 1080x1080 slide, styled to the site's identity */
-  async function slideBlob(ev) {
-    const html2canvas = await loadLocalScript("/assets/vendor/html2canvas.min.js", "html2canvas");
+  /* one 1080x1080 slide, drawn natively — no external renderer */
+  function slideBlob(ev) {
+    const S = 1080, PAD = 88, INNER = S - PAD * 2;
+    const dpr = 2; // crisp on retina without depending on device
+    const canvas = document.createElement("canvas");
+    canvas.width = S * dpr;
+    canvas.height = S * dpr;
+    const ctx = canvas.getContext("2d");
+    ctx.scale(dpr, dpr);
+    ctx.textBaseline = "alphabetic";
 
+    // background: dark radial, matching the site
+    const g = ctx.createRadialGradient(S * 0.3, 0, 0, S * 0.3, 0, S * 1.05);
+    g.addColorStop(0, "#0e1620");
+    g.addColorStop(0.7, "#070a0e");
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, S, S);
+
+    const SANS = "'Helvetica Neue',Arial,sans-serif";
+    const SERIF = "Georgia,'Times New Roman',serif";
+
+    // --- header: wordmark (left) + date (right) ---
+    let y = PAD + 20;
+    ctx.textAlign = "left";
+    ctx.font = "800 26px " + SANS;
+    const the = "THE ", un = "UN", badged = "BADGED";
+    ctx.save();
+    ctx.letterSpacing = "3px";
+    let x = PAD;
+    ctx.fillStyle = "#e8e3d8"; ctx.fillText(the, x, y); x += ctx.measureText(the).width + 3;
+    ctx.fillStyle = "#c53b2c"; ctx.fillText(un, x, y); x += ctx.measureText(un).width + 3;
+    ctx.fillStyle = "#e8e3d8"; ctx.fillText(badged, x, y);
+    ctx.restore();
+
+    ctx.save();
+    ctx.letterSpacing = "0.5px";
+    ctx.font = "600 19px " + SANS;
+    ctx.fillStyle = "rgba(232,227,216,.6)";
+    ctx.textAlign = "right";
+    ctx.fillText(slideWhen(ev), S - PAD, y);
+    ctx.restore();
+
+    // --- status pill ---
+    y += 62;
     const isCorrob = ev.status === "corroborated";
-    const statusStyle = isCorrob
-      ? "background:rgba(159,196,222,.16);color:#9fc4de;border:1px solid rgba(159,196,222,.5);"
-      : "background:rgba(196,154,69,.16);color:#c49a45;border:1px solid rgba(196,154,69,.55);";
-    const sources = (ev.sources || []).map(s => esc(s.outlet)).join("  ·  ");
-    const mediaCount = (ev.media || []).length;
+    const pillCol = isCorrob ? "#9fc4de" : "#c49a45";
+    const pillBg = isCorrob ? "rgba(159,196,222,.16)" : "rgba(196,154,69,.16)";
+    const label = String(ev.status || "unconfirmed").toUpperCase();
+    ctx.save();
+    ctx.font = "750 17px " + SANS;
+    ctx.letterSpacing = "2px";
+    const tw = ctx.measureText(label).width;
+    const px = 18, ph = 34;
+    ctx.fillStyle = pillBg;
+    if (ctx.roundRect) { ctx.beginPath(); ctx.roundRect(PAD, y - 24, tw + px * 2 + 2, ph, 99); ctx.fill(); }
+    ctx.strokeStyle = pillCol; ctx.globalAlpha = 0.55;
+    if (ctx.roundRect) { ctx.stroke(); }
+    ctx.globalAlpha = 1;
+    ctx.fillStyle = pillCol; ctx.textAlign = "left";
+    ctx.fillText(label, PAD + px, y);
+    ctx.restore();
 
-    const box = document.createElement("div");
-    box.style.cssText =
-      "position:absolute;left:-9999px;top:-9999px;width:1080px;height:1080px;" +
-      "box-sizing:border-box;padding:88px;background:radial-gradient(ellipse at 30% 0%,#0e1620 0%,#070a0e 70%);" +
-      "color:#e8e3d8;font-family:Georgia,'Times New Roman',serif;";
-    box.innerHTML = `
-      <div style="display:flex;flex-direction:column;height:100%;justify-content:space-between;">
-        <div>
-          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:56px;">
-            <span style="font:800 26px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:#e8e3d8;">
-              THE <span style="color:#c53b2c;">UN</span>BADGED
-            </span>
-            <span style="font:600 19px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.5px;color:rgba(232,227,216,.6);">
-              ${esc(slideWhen(ev))}
-            </span>
-          </div>
-          <div style="margin-bottom:30px;">
-            <span style="font:750 17px/1.3 'Helvetica Neue',Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;padding:8px 18px;border-radius:99px;${statusStyle}">
-              ${esc(ev.status || "unconfirmed")}
-            </span>
-          </div>
-          <h1 style="font-size:56px;font-weight:400;line-height:1.22;margin:0 0 34px 0;color:#f3ede2;">
-            ${esc(ev.title)}
-          </h1>
-          <p style="font-size:29px;line-height:1.6;color:rgba(232,227,216,.72);margin:0;display:-webkit-box;-webkit-line-clamp:7;-webkit-box-orient:vertical;overflow:hidden;">
-            ${esc(ev.description)}
-          </p>
-        </div>
-        <div style="border-top:1px solid rgba(232,227,216,.14);padding-top:34px;display:flex;justify-content:space-between;align-items:flex-end;gap:24px;">
-          <div style="min-width:0;">
-            ${sources ? `<div style="font:600 18px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:1px;text-transform:uppercase;color:#7d8a97;margin-bottom:10px;">Sources</div>
-              <div style="font-size:22px;color:rgba(232,227,216,.82);">${sources}</div>` : ""}
-            ${mediaCount ? `<div style="font:500 18px/1 'Helvetica Neue',Arial,sans-serif;color:#9fc4de;margin-top:12px;">Includes ${mediaCount} media attachment(s), civilian faces blurred</div>` : ""}
-          </div>
-          <div style="font:600 21px/1 'Helvetica Neue',Arial,sans-serif;color:#c53b2c;white-space:nowrap;">theunbadged.com</div>
-        </div>
-      </div>`;
-    document.body.appendChild(box);
-    try {
-      const canvas = await html2canvas(box, { width: 1080, height: 1080, scale: 1, backgroundColor: "#070a0e" });
-      return await new Promise(r => canvas.toBlob(r, "image/png"));
-    } finally {
-      document.body.removeChild(box);
+    // --- title (serif, wrapped) ---
+    y += 60;
+    ctx.fillStyle = "#f3ede2";
+    ctx.font = "400 56px " + SERIF;
+    ctx.textAlign = "left";
+    const titleLines = wrapLines(ctx, ev.title, INNER);
+    const titleLH = 68;
+    for (const ln of titleLines) { ctx.fillText(ln, PAD, y); y += titleLH; }
+
+    // --- description (wrapped, clamped to fit above the footer) ---
+    y += 12;
+    ctx.fillStyle = "rgba(232,227,216,.72)";
+    ctx.font = "400 29px " + SANS;
+    const descLH = 46;
+    const footerTop = S - PAD - 150;
+    const descLines = wrapLines(ctx, ev.description, INNER);
+    const maxLines = Math.max(1, Math.floor((footerTop - y) / descLH));
+    for (let i = 0; i < descLines.length && i < maxLines; i++) {
+      let ln = descLines[i];
+      if (i === maxLines - 1 && descLines.length > maxLines) {
+        while (ctx.measureText(ln + "…").width > INNER && ln.length) ln = ln.slice(0, -1);
+        ln += "…";
+      }
+      ctx.fillText(ln, PAD, y);
+      y += descLH;
     }
+
+    // --- footer: hairline + sources (left) + wordmark (right) ---
+    const fy = S - PAD - 96;
+    ctx.strokeStyle = "rgba(232,227,216,.14)";
+    ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(PAD, fy); ctx.lineTo(S - PAD, fy); ctx.stroke();
+
+    const sources = (ev.sources || []).map(s => s.outlet).join("   ·   ");
+    let sy = fy + 34;
+    if (sources) {
+      ctx.fillStyle = "#7d8a97";
+      ctx.font = "600 18px " + SANS;
+      ctx.save(); ctx.letterSpacing = "1px";
+      ctx.fillText("SOURCES", PAD, sy); ctx.restore();
+      sy += 30;
+      ctx.fillStyle = "rgba(232,227,216,.82)";
+      ctx.font = "400 21px " + SANS;
+      let sline = wrapLines(ctx, sources, INNER - 260)[0] || sources;
+      while (ctx.measureText(sline).width > INNER - 260 && sline.length) sline = sline.slice(0, -1);
+      ctx.fillText(sline === sources ? sources : sline + "…", PAD, sy);
+    }
+
+    ctx.fillStyle = "#c53b2c";
+    ctx.font = "600 21px " + SANS;
+    ctx.textAlign = "right";
+    ctx.fillText("theunbadged.com", S - PAD, S - PAD - 4);
+
+    return new Promise(r => canvas.toBlob(r, "image/png"));
   }
 
   function saveBlob(blob, filename) {

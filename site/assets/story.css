@@ -268,8 +268,11 @@ strong { color: #fff; font-weight: 650; }
   .rf { padding: .55rem .6rem; }
   .rf .d { font-size: .52rem; }
   .ctas { gap: .55rem; }
-  .btn { min-width: 0; width: calc(50% - .3rem); padding: .7rem .65rem; }
-  .btn span { font-size: .66rem; }
+  /* only the paired end-of-story CTAs share a row; lone buttons (hero,
+     statement gate) size to their content and never get squished */
+  .ctas .btn { flex: 1 1 0; min-width: 0; width: auto; padding: .7rem .65rem; }
+  .ctas .btn span { font-size: .66rem; }
+  .hero-cta .btn, .sg-actions .btn { min-width: 0; width: auto; }
   .sources-row { font-size: .66rem; }
 }
 @media (max-width: 480px) {
